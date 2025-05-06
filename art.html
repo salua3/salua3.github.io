@@ -74,6 +74,20 @@ html {  scroll-behavior: smooth;}
 <body data-bs-spy="scroll" data-bs-target="#header" tabindex="0">
 
 	
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+		    <defs>
+				<symbol xmlns="http://www.w3.org/2000/svg" id="star-outline" viewBox="0 0 15 15">
+				<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+					d="M7.5 9.804L5.337 11l.413-2.533L4 6.674l2.418-.37L7.5 4l1.082 2.304l2.418.37l-1.75 1.793L9.663 11L7.5 9.804Z" />
+			</symbol>
+
+			<symbol xmlns="http://www.w3.org/2000/svg" id="star-solid" viewBox="0 0 15 15">
+		       <path fill="currentColor"
+					d="M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z" />
+			</symbol>
+		  </defs>
+	</svg>
 
 
 		<header id="header">
@@ -121,56 +135,62 @@ html {  scroll-behavior: smooth;}
 
 
 
+	<section class="bg-sand padding-medium">
+		<div class="container"> <br /><br />
+			<div class="row">
 
-<section id="art" class="leaf-pattern-overlay">
-		<div class="corner-pattern-overlay"></div>
-		<div class="container"> <br /> <br />
-			<div class="row justify-content-center">
+				<div class="col-md-5">
+					<a href="#" class="product-image"><img src="images/prod/design-001.png" alt="art"></a>
+				</div>
 
-				<div class="col-md-8">
+				<div class="col-md-7 pl-5">
+					<div class="product-detail">
+						<span><small>By Salua</small></span>
+						<h1>Sally's Arty Stuff</h1>
 
-					<div class="row">
+					<div class="rating-container d-flex align-items-center text-warning mb-4">
+							<svg width="32" height="32">
+							  <use xlink:href="#star-solid"></use>
+							</svg>
+							<svg width="32" height="32">
+							  <use xlink:href="#star-solid"></use>
+							</svg>
+							<svg width="32" height="32">
+							  <use xlink:href="#star-solid"></use>
+							</svg>
+							<svg width="32" height="32">
+							  <use xlink:href="#star-outline"></use>
+							</svg>
+							<svg width="32" height="32">
+							  <use xlink:href="#star-outline"></use>
+							</svg>
+						</div> <br />
 
-						<div class="col-md-6">
-							<figure class="products-thumb">
-								<img src="images/prod/design-001.png" alt="art" class="single-image">
-							</figure>
-						</div>
 
-						<div class="col-md-6">
-							<div class="product-entry">
-                                                 <p ><small>By Salua </small></p>
-								<h2 class="section-title " >Sally's Arty Stuff</h2>
+						
+						<p>
+							Hi, my name is Salua. <br />Welcome to my digital art collection 'Sally's Arty Stuff'. <br /><br />Here are some minimalist drawings made by me after finishing my art & design studies, and can be printed as big as A4. My digital downloads are for private, non-commercial use only, and come as a pdf file that will be sent to you via email. <br /><br /> Learn more about how I make my own <a href="the-art-of-color-mixing.html" >color palette</a>. <br /> <br /> To purchase, please contact me. <br /><br /> 
+IMPORTANT: <br />  The PDF file must be downloaded on your computer first. You can then transfer it to your phone or iPad/tablet. (You may need to download an app to open the file, Adobe Reader or iBooks). You will get a PDF (39KB) file.
+						</p>
 
-								<div class="products-content">
 
-									<div class="item-price" style="font-size:90%">€ 180.00</div> <br />
+						<p><span class="price colored fs-4">€ 180.00</span></p>	
 
-								</div> 
-									<p style="font-size:90%">Hi, my name is Salua. <br />Welcome to my digital art collection 'Sally's Arty Stuff'. <br /><br />Here are some minimalist drawings made by me after finishing my art & design studies, and can be printed as big as A4. My digital downloads are for private, non-commercial use only, and come as a pdf file that will be sent to you via email. <br /> <br />Learn more about how I make my own <a href="the-art-of-color-mixing.html" >color palette</a>. <br /> <br /> To purchase, please contact me. <br /><br /> 
-IMPORTANT: <br />  The PDF file must be downloaded on your computer first. You can then transfer it to your phone or iPad/tablet. (You may need to download an app to open the file, Adobe Reader or iBooks). You will get a PDF (39KB) file. </p>
-									
-									<div class="btn-wrap">
-										<a href="#shop" class="btn-accent-arrow">Shop <i
-												class="icon icon-ns-arrow-right"></i></a> <br />
-										<a href="#footer" class="btn-accent-arrow">Contact <i
-												class="icon icon-ns-arrow-right"></i></a>
-									</div>
-								</div>
+					<div class="d-flex gap-3">
+				<input type="number" name="age" id="age" class="m-0 text-center" min="1" max="12" step="1" value="1" style="width: 18%;">
+		<button onclick="document.location='#'" type="submit" name="add-to-cart" value="27545" class="button m-0">Add to cart</button>
+						</div> <br /><br />
 
-							</div>
-						</div>
+							
+
 
 					</div>
-					<!-- / row -->
-
 				</div>
 
 			</div>
 		</div>
 	</section> <br />
-
-
+	
 
 	<section id="shop" class="py-5 my-5">
 		<div class="container">
@@ -190,7 +210,7 @@ IMPORTANT: <br />  The PDF file must be downloaded on your computer first. You c
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-										<a href="#footer"><img src="images/prod/design-01.png" alt="art" class="product-item"></a>
+										<img src="images/prod/design-01.png" alt="art" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -204,7 +224,7 @@ IMPORTANT: <br />  The PDF file must be downloaded on your computer first. You c
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-							<a href="#footer"><img src="images/prod/design-02.png" alt="art" class="product-item"></a>
+							<img src="images/prod/design-02.png" alt="art" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -218,7 +238,7 @@ IMPORTANT: <br />  The PDF file must be downloaded on your computer first. You c
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-								<a href="#footer"><img src="images/prod/design-03.png" alt="art" class="product-item"></a>
+								<img src="images/prod/design-03.png" alt="art" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -232,7 +252,7 @@ IMPORTANT: <br />  The PDF file must be downloaded on your computer first. You c
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-									<a href="#footer"><img src="images/prod/design-04.png" alt="art" class="product-item"></a>
+									<img src="images/prod/design-04.png" alt="art" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -252,7 +272,7 @@ IMPORTANT: <br />  The PDF file must be downloaded on your computer first. You c
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-							<a href="#footer"><img src="images/prod/design-05.png" alt="art" class="product-item"></a>
+							<img src="images/prod/design-05.png" alt="art" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -266,7 +286,7 @@ IMPORTANT: <br />  The PDF file must be downloaded on your computer first. You c
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-								<a href="#footer"><img src="images/prod/design-06.png" alt="art" class="product-item"></a>
+								<img src="images/prod/design-06.png" alt="art" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -280,7 +300,7 @@ IMPORTANT: <br />  The PDF file must be downloaded on your computer first. You c
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-									<a href="#footer"><img src="images/prod/design-07.png" alt="art" class="product-item"></a>
+									<img src="images/prod/design-07.png" alt="art" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -294,7 +314,7 @@ IMPORTANT: <br />  The PDF file must be downloaded on your computer first. You c
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-								<a href="#footer"><img src="images/prod/design-08.png" alt="art" class="product-item"></a>
+								<img src="images/prod/design-08.png" alt="art" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -313,7 +333,7 @@ IMPORTANT: <br />  The PDF file must be downloaded on your computer first. You c
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-									<a href="#footer"><img src="images/prod/design-09.png" alt="art" class="product-item"></a>
+									<img src="images/prod/design-09.png" alt="art" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -327,7 +347,7 @@ IMPORTANT: <br />  The PDF file must be downloaded on your computer first. You c
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-									<a href="#footer"><img src="images/prod/design-10.png" alt="art" class="product-item"></a>
+									<img src="images/prod/design-10.png" alt="art" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -341,7 +361,7 @@ IMPORTANT: <br />  The PDF file must be downloaded on your computer first. You c
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-									<a href="#footer"><img src="images/prod/design-11.png" alt="art" class="product-item"></a>
+									<img src="images/prod/design-11.png" alt="art" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -355,7 +375,7 @@ IMPORTANT: <br />  The PDF file must be downloaded on your computer first. You c
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-								<a href="#footer"><img src="images/prod/design-12.png" alt="art" class="product-item"></a>
+								<img src="images/prod/design-12.png" alt="art" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -373,7 +393,7 @@ IMPORTANT: <br />  The PDF file must be downloaded on your computer first. You c
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-									<a href="#footer"><img src="images/prod/design-13.png" alt="art" class="product-item"></a>
+									<img src="images/prod/design-13.png" alt="art" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -387,7 +407,7 @@ IMPORTANT: <br />  The PDF file must be downloaded on your computer first. You c
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-									<a href="#footer"><img src="images/prod/design-14.png" alt="art" class="product-item"></a>
+									<img src="images/prod/design-14.png" alt="art" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -401,7 +421,7 @@ IMPORTANT: <br />  The PDF file must be downloaded on your computer first. You c
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-										<a href="#footer"><img src="images/prod/design-15.png" alt="art" class="product-item"></a>
+										<img src="images/prod/design-15.png" alt="art" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -415,7 +435,7 @@ IMPORTANT: <br />  The PDF file must be downloaded on your computer first. You c
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-									<a href="#footer"><img src="images/prod/design-16.png" alt="art" class="product-item"></a>
+									<img src="images/prod/design-16.png" alt="art" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -437,7 +457,7 @@ IMPORTANT: <br />  The PDF file must be downloaded on your computer first. You c
 
 	
 		</div>
-	</section>
+	</section> <br /><br />
 
 
 
