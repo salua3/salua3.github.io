@@ -74,7 +74,20 @@ html {  scroll-behavior: smooth;}
 
 <body data-bs-spy="scroll" data-bs-target="#header" tabindex="0">
 
-	
+	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+		    <defs>
+				<symbol xmlns="http://www.w3.org/2000/svg" id="star-outline" viewBox="0 0 15 15">
+				<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+					d="M7.5 9.804L5.337 11l.413-2.533L4 6.674l2.418-.37L7.5 4l1.082 2.304l2.418.37l-1.75 1.793L9.663 11L7.5 9.804Z" />
+			</symbol>
+
+			<symbol xmlns="http://www.w3.org/2000/svg" id="star-solid" viewBox="0 0 15 15">
+		       <path fill="currentColor"
+					d="M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z" />
+			</symbol>
+		  </defs>
+	</svg>
 
 
 		<header id="header">
@@ -122,59 +135,65 @@ html {  scroll-behavior: smooth;}
 
 
 
+	<section class="bg-sand padding-medium">
+		<div class="container"> <br /><br />
+			<div class="row">
 
-<section id="craft" class="leaf-pattern-overlay">
-		<div class="corner-pattern-overlay"></div>
-		<div class="container"> <br /> <br />
-			<div class="row justify-content-center">
+				<div class="col-md-5">
+					<a href="#" class="product-image"><img src="images/prod/craft-001.png" alt="craft"></a>
+				</div>
 
-				<div class="col-md-8">
+				<div class="col-md-7 pl-5">
+					<div class="product-detail">
+						<span><small>By Salua</small></span>
+						<h1>My Crafty Things</h1>
 
-					<div class="row">
+					<div class="rating-container d-flex align-items-center text-warning mb-4">
+							<svg width="32" height="32">
+							  <use xlink:href="#star-solid"></use>
+							</svg>
+							<svg width="32" height="32">
+							  <use xlink:href="#star-solid"></use>
+							</svg>
+							<svg width="32" height="32">
+							  <use xlink:href="#star-solid"></use>
+							</svg>
+							<svg width="32" height="32">
+							  <use xlink:href="#star-outline"></use>
+							</svg>
+							<svg width="32" height="32">
+							  <use xlink:href="#star-outline"></use>
+							</svg>
+						</div> <br />
 
-						<div class="col-md-6">
-							<figure class="products-thumb">
-								<img src="images/prod/craft-001.png" alt="craft" class="single-image">
-							</figure>
-						</div>
 
-						<div class="col-md-6">
-							<div class="product-entry">
-                                                 <p ><small>By Salua </small></p>
-								<h2 class="section-title">My Crafty Things</h2>
-
-								<div class="products-content">
-
-									<div class="item-price" style="font-size:90%">€ 380.00</div> <br />
-
-									<p style="font-size:90%">Hi, my name is Salua. <br />Welcome to my craft projects 'My Crafty Things'. <br /><br />
+						
+						<p>
+							Hi, my name is Salua. <br />Welcome to my craft projects 'My Crafty Things'. <br /><br />
 Craft, diy, and handmade obsessed, I’m about to do an adult craft party! I will pick out small pieces from Etsy to make handmade items for our party. Not so much an idea, but maybe an inspiration? A painting party sounds fun.<br /> <br />
 I’ve learned that being creative simply means turning my ideas and dreams into reality, no matter how they come about, it’s almost like meditating, I can lose track of time when I’m working, I love seeing the end result. Over the years, I’ve done crafts like knitting, crocheting, 3D pictures, rock and beach glass art, <a href="the-art-of-color-mixing.html" >mixing colors</a>... They're limited only by my imagination. I love crafts, I’ve always been involved in various craft activities throughout my life, among other projects and careers. They give me a chance to stretch that creative gene, they are good for my mind, and they give me a break from screen-heavy work.<br /> <br />
 It's no secret that crafts can have a positive impact on our mood by stimulating the mind, boosting creativity and even reducing stress. The best part? Once you've finished your craft, you'll have something beautiful to either cherish or pass off to a loved one as a homemade gift, especially pieces that say I love you and show how much you care, that’s the difference between “I picked this up at the store” and “I made this for you because I know how much you love it”. 
 And for many, a creative hobby can become a profitable craft business. <br /><br />I love that so many friends have experienced the joy of crafting and were inspired to try one of my ideas. I also love that those of you who don’t craft share your enthusiasm too!  <br /><br />
-If you would like to purchase a handmade craft item from me or get a step-by-step DIY guide, just contact me.</p>
-									<div class="btn-wrap">
-										<a href="#shop" class="btn-accent-arrow">Shop <i
-												class="icon icon-ns-arrow-right"></i></a> <br />
-										<a href="#footer" class="btn-accent-arrow">Contact <i
-												class="icon icon-ns-arrow-right"></i></a>
-									</div>
+If you would like to purchase a handmade craft item from me or get a step-by-step DIY guide, just <u><a href="mailto:ji_3@outlook.com" target="_blank" style="color:gray">contact</a></u> me. <br /><br />Salua
+						</p>
 
 
-								</div>
+						<p><span class="price colored fs-4">€ 380.00</span></p>	
 
-							</div>
-						</div>
+					<div class="d-flex gap-3">
+				<input type="number" name="age" id="age" class="m-0 text-center" min="1" max="12" step="1" value="1" style="width: 18%;">
+		<button onclick="document.location='#'" type="submit" name="add-to-cart" value="27545" class="button m-0">Add to cart</button>
+						</div> 
+
+							
+
 
 					</div>
-					<!-- / row -->
-
 				</div>
 
 			</div>
 		</div>
-	</section> <br />
-
+	</section> <br /> <br />
 
 
 	<section id="shop" class="py-5 my-5">
@@ -195,7 +214,7 @@ If you would like to purchase a handmade craft item from me or get a step-by-ste
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-										<a href="#footer"><img src="images/prod/craft-01.png" alt="craft" class="product-item"></a>
+										<img src="images/prod/craft-01.png" alt="craft" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -209,7 +228,7 @@ If you would like to purchase a handmade craft item from me or get a step-by-ste
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-							<a href="#footer"><img src="images/prod/craft-02.png" alt="craft" class="product-item"></a>
+							<img src="images/prod/craft-02.png" alt="craft" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -223,7 +242,7 @@ If you would like to purchase a handmade craft item from me or get a step-by-ste
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-								<a href="#footer"><img src="images/prod/craft-03.png" alt="craft" class="product-item"></a>
+								<img src="images/prod/craft-03.png" alt="craft" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -237,7 +256,7 @@ If you would like to purchase a handmade craft item from me or get a step-by-ste
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-									<a href="#footer"><img src="images/prod/craft-03-.png" alt="craft" class="product-item"></a>
+									<img src="images/prod/craft-03-.png" alt="craft" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -257,7 +276,7 @@ If you would like to purchase a handmade craft item from me or get a step-by-ste
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-							<a href="#footer"><img src="images/prod/craft-04.png" alt="craft" class="product-item"></a>
+							<img src="images/prod/craft-04.png" alt="craft" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -271,7 +290,7 @@ If you would like to purchase a handmade craft item from me or get a step-by-ste
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-								<a href="#footer"><img src="images/prod/craft-05.png" alt="craft" class="product-item"></a>
+								<img src="images/prod/craft-05.png" alt="craft" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -285,7 +304,7 @@ If you would like to purchase a handmade craft item from me or get a step-by-ste
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-									<a href="#footer"><img src="images/prod/craft-06.png" alt="craft" class="product-item"></a>
+									<img src="images/prod/craft-06.png" alt="craft" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -299,7 +318,7 @@ If you would like to purchase a handmade craft item from me or get a step-by-ste
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-								<a href="#footer"><img src="images/prod/craft-07.png" alt="craft" class="product-item"></a>
+								<img src="images/prod/craft-07.png" alt="craft" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -318,7 +337,7 @@ If you would like to purchase a handmade craft item from me or get a step-by-ste
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-									<a href="#footer"><img src="images/prod/craft-08.png" alt="craft" class="product-item"></a>
+									<img src="images/prod/craft-08.png" alt="craft" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -332,7 +351,7 @@ If you would like to purchase a handmade craft item from me or get a step-by-ste
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-									<a href="#footer"><img src="images/prod/craft-09.png" alt="craft" class="product-item"></a>
+									<img src="images/prod/craft-09.png" alt="craft" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -346,7 +365,7 @@ If you would like to purchase a handmade craft item from me or get a step-by-ste
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-									<a href="#footer"><img src="images/prod/craft-10.png" alt="craft" class="product-item"></a>
+									<img src="images/prod/craft-10.png" alt="craft" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -360,7 +379,7 @@ If you would like to purchase a handmade craft item from me or get a step-by-ste
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-								<a href="#footer"><img src="images/prod/craft-11.png" alt="craft" class="product-item"></a>
+								<img src="images/prod/craft-11.png" alt="craft" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -378,7 +397,7 @@ If you would like to purchase a handmade craft item from me or get a step-by-ste
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-									<a href="#footer"><img src="images/prod/craft-12.png" alt="craft" class="product-item"></a>
+									<img src="images/prod/craft-12.png" alt="craft" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -392,7 +411,7 @@ If you would like to purchase a handmade craft item from me or get a step-by-ste
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-									<a href="#footer"><img src="images/prod/craft-13.png" alt="craft" class="product-item"></a>
+									<img src="images/prod/craft-13.png" alt="craft" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -406,7 +425,7 @@ If you would like to purchase a handmade craft item from me or get a step-by-ste
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-										<a href="#footer"><img src="images/prod/craft-14.png" alt="craft" class="product-item"></a>
+										<img src="images/prod/craft-14.png" alt="craft" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -420,7 +439,7 @@ If you would like to purchase a handmade craft item from me or get a step-by-ste
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-									<a href="#footer"><img src="images/prod/craft-15.png" alt="craft" class="product-item"></a>
+									<img src="images/prod/craft-15.png" alt="craft" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -439,7 +458,7 @@ If you would like to purchase a handmade craft item from me or get a step-by-ste
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-									<a href="#footer"><img src="images/prod/craft-16.png" alt="craft" class="product-item"></a>
+									<img src="images/prod/craft-16.png" alt="craft" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -453,7 +472,7 @@ If you would like to purchase a handmade craft item from me or get a step-by-ste
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-									<a href="#footer"><img src="images/prod/craft-17.png" alt="craft" class="product-item"></a>
+									<img src="images/prod/craft-17.png" alt="craft" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -467,7 +486,7 @@ If you would like to purchase a handmade craft item from me or get a step-by-ste
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-										<a href="#footer"><img src="images/prod/craft-18.png" alt="craft" class="product-item"></a>
+										<img src="images/prod/craft-18.png" alt="craft" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -481,7 +500,7 @@ If you would like to purchase a handmade craft item from me or get a step-by-ste
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-									<a href="#footer"><img src="images/prod/craft-19.png" alt="craft" class="product-item"></a>
+									<img src="images/prod/craft-19.png" alt="craft" class="product-item">
 											
 										</figure>
 										<figcaption>
@@ -504,7 +523,7 @@ If you would like to purchase a handmade craft item from me or get a step-by-ste
 
 	
 		</div>
-	</section>
+	</section> <br /><br />
 
 
 
@@ -577,7 +596,7 @@ If you would like to purchase a handmade craft item from me or get a step-by-ste
 				</div><!--inner-content-->
 			</div>
 
-			 <br /> <br /> 
+			 <br /> <br /> <br /><br />
 		</div>
 	</section>
 
