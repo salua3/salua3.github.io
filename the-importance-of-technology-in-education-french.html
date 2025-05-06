@@ -76,7 +76,20 @@ html {  scroll-behavior: smooth;}
 
 <body data-bs-spy="scroll" data-bs-target="#header" tabindex="0">
 
-	
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+		    <defs>
+				<symbol xmlns="http://www.w3.org/2000/svg" id="star-outline" viewBox="0 0 15 15">
+				<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+					d="M7.5 9.804L5.337 11l.413-2.533L4 6.674l2.418-.37L7.5 4l1.082 2.304l2.418.37l-1.75 1.793L9.663 11L7.5 9.804Z" />
+			</symbol>
+
+			<symbol xmlns="http://www.w3.org/2000/svg" id="star-solid" viewBox="0 0 15 15">
+		       <path fill="currentColor"
+					d="M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z" />
+			</symbol>
+		  </defs>
+	</svg>	
 
 
 		<header id="header">
@@ -125,56 +138,65 @@ html {  scroll-behavior: smooth;}
 
 
 
-	<section id="ebook" class="leaf-pattern-overlay">
-		<div class="corner-pattern-overlay"></div>
-		<div class="container"> <br /> <br />
-			<div class="row justify-content-center">
+	<section class="bg-sand padding-medium">
+		<div class="container"> <br /><br />
+			<div class="row">
 
-				<div class="col-md-8">
+				<div class="col-md-5">
+					<a href="#" class="product-image"><img src="images/prod/ebook-01.png" alt="book"></a>
+				</div>
 
-					<div class="row">
+				<div class="col-md-7 pl-5">
+					<div class="product-detail">
+						<span><small>Ebook by Salua</small></span>
+						<h1>The importance of technology in education</h1>
 
-						<div class="col-md-6">
-							<figure class="products-thumb">
-								<img src="images/prod/ebook-01.png" alt="book" class="single-image">
-							</figure>
-						</div>
+					<div class="rating-container d-flex align-items-center text-warning mb-4">
+							<svg width="32" height="32">
+							  <use xlink:href="#star-solid"></use>
+							</svg>
+							<svg width="32" height="32">
+							  <use xlink:href="#star-solid"></use>
+							</svg>
+							<svg width="32" height="32">
+							  <use xlink:href="#star-solid"></use>
+							</svg>
+							<svg width="32" height="32">
+							  <use xlink:href="#star-outline"></use>
+							</svg>
+							<svg width="32" height="32">
+							  <use xlink:href="#star-outline"></use>
+							</svg>
+						</div> <br />
 
-						<div class="col-md-6">
-							<div class="product-entry">
-                                                 <p ><small>Ebook</small></p>
-								<h2 class="section-title">The importance of technology in education</h2>
 
-								<div class="products-content">
-									<div class="author-name" style="font-size:90%">By Salua</div> <br /> 
-									<div class="item-price" style="font-size:90%">€ 50.00</div> <br />
-
-									<p style="font-size:90%">Hi, my name is Salua. <br />Welcome to 'The importance of technology in education' ebook (French version). <br /><br />This is my final project of computer science studies. I did it in french and it is entitled 'L'importance de la technologie dans l'éducation' which means 'The importance of technology in education'. <br /> <br />
+						
+						<p>
+							Hi, my name is Salua. <br />Welcome to 'The importance of technology in education' ebook (French version). <br /><br />This is my final project of computer science studies. I did it in french and it is entitled 'L'importance de la technologie dans l'éducation' which means 'The importance of technology in education'. <br /> <br />
 The project covers the following topics:<br /> <br />
 How is technology reconnecting with education?<br /> Do technologies have a real impact on academic success? <br /> Use of technology in education to learn and teach. <br /> New technologies at the service of education. Malala Yousafzai. <br /> How important are computers in education? <br /> <br />
-I hope you enjoy the ebook as much as I do. <br /> To purchase, please contact me. <br /> <br /> 
+I hope you enjoy the ebook as much as I do. <br /><br /> To purchase, please <u><a href="mailto:ji_3@outlook.com" target="_blank" style="color:gray">contact</a></u> me. <br /> <br /> 
 IMPORTANT:<br />
-The ebook must be downloaded on your computer first. You can then transfer the PDF file to your phone or iPad/tablet. (You may need to download an app to open the file, Adobe Reader or iBooks). You will get a PDF (888KB) file. </p>
-									<div class="btn-wrap">
-										<a href="#footer" class="btn-accent-arrow">Shop <i
-												class="icon icon-ns-arrow-right"></i></a><br />
-										<a href="#footer" class="btn-accent-arrow">Contact <i
-												class="icon icon-ns-arrow-right"></i></a>
-									</div> 
+The ebook must be downloaded on your computer first. You can then transfer the PDF file to your phone or iPad/tablet. (You may need to download an app to open the file, Adobe Reader or iBooks). You will get a PDF (888KB) file. 
+						</p>
 
-								</div>
 
-							</div>
-						</div>
+						<p><span class="price colored fs-4">€ 50.00</span></p>	
+
+					<div class="d-flex gap-3">
+				<input type="number" name="age" id="age" class="m-0 text-center" min="1" max="12" step="1" value="1" style="width: 18%;">
+		<button onclick="document.location='#'" type="submit" name="add-to-cart" value="27545" class="button m-0">Add to cart</button>
+						</div> 
+
+							
+
 
 					</div>
-					<!-- / row -->
-
 				</div>
 
 			</div>
 		</div>
-	</section> <br /><br />
+	</section> <br /> <br /><br /> 
 
 
 
@@ -246,7 +268,7 @@ The ebook must be downloaded on your computer first. You can then transfer the P
 				</div><!--inner-content-->
 			</div>
 
-			 <br /> <br /> 
+			 <br /> <br /> <br /> <br /> 
 		</div>
 	</section>
 
