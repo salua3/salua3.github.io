@@ -250,7 +250,7 @@ The ebook must be downloaded on your computer first. You can then transfer the P
 
 			</div>
 		</div>
-	</section> <br /> <br />
+	</section> <br />
 
 
 
@@ -524,6 +524,41 @@ $(document).ready(function() {
 });
 </script>
 
+
+<script>
+
+function textToSpeech()
+{
+   const speech = new SpeechSynthesisUtterance();
+    let voices = speechSynthesis.getVoices();
+  let convert = document.getElementById("text").innerHTML;
+
+    speech.text = convert;
+
+    speech.lang = 'en-US';
+   
+    speech.volume = 1;
+    speech.rate = 1;
+   
+  
+      
+    window.speechSynthesis.speak(speech);
+    speechSynthesis.speak(speech);
+}
+
+
+
+function stop()
+{
+    speechSynthesis.cancel();
+}
+
+speakBtn.addEventListener('click', textToSpeech);
+
+cancelBtn.addEventListener('click', stop);
+
+</script>
+	
 <script>
         
 const shareData = {
