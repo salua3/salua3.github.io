@@ -92,7 +92,7 @@ html {  scroll-behavior: smooth;}
 					 <a href="#" onclick="myFunction()" title="Light/Dark Mode" ><i class="fa fa-moon-o" ></i></a> &nbsp;
 								</li>								
 								<li>
-					 <a href="https://selectpdf.com/export-to-pdf/?page_size=A3&page_orientation=Landscape&pdf_name=saluadoc.pdf&" onclick="if(!this.urlAdded)href+='&url='+encodeURIComponent(location.href);this.urlAdded=1" title="Save as pdf" ><i class="fa fa-bookmark-o" ></i></a> &nbsp;
+					 <a href="https://selectpdf.com/export-to-pdf/?pdf_name=saluadoc.pdf" onclick="if(!this.urlAdded)href+='&url='+encodeURIComponent(location.href);this.urlAdded=1" title="Save as pdf" ><i class="fa fa-bookmark-o" ></i></a> &nbsp;
 								</li>
 								<li>
 					<a href="#" onclick="window.print()" title="Print"><i class="fa fa-print" ></i></a> &nbsp;
@@ -982,14 +982,7 @@ background-color: black;
     }
  }
 </style>
-<style>
-@media print { 
-@page {
-      size: A3 landscape;
-    }
 
-}
-</style>
 
 </body>
 
