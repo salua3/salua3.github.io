@@ -11,15 +11,16 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="author" content="Ji">
-	<meta name="keywords" content="about, life, woman, businesswoman">
+	<meta name="keywords" content="about, life, woman, businesswoman, author, writer, artist">
 	<meta name="description" content="My journey discovering my passion for art, science and writing, sharing insights, inspiration and maybe a few amusing anecdotes along the way.">
 
+	<meta name="color-scheme" content="dark light">
 
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico" type="image/x-icon">
 
             <!-- Favicon -->
-            <link rel="icon" href="./images/favicon/favicon.ico" >
-            <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+            <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico" >
+            <link rel="shortcut icon" type="image/x-icon" href="/images/favicon/favicon.ico" />
             <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96" />
             <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
             <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
@@ -34,7 +35,8 @@
 	<meta property="og:url" content="https://salua3.github.io/about.html"/>
 	<meta property="og:description" content="My journey discovering my passion for art, science and writing, sharing insights, inspiration and maybe a few amusing anecdotes along the way."/>
         <meta property="og:type" content="website" />
-        <meta property="article:published_time" content="2025-04-25" />
+        <meta property="og:locale" content="en-US" />
+        <meta property="og:updated_time" content="2025-04-25T12:00:00+00:00" />
 
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="About me &mdash; Salua" />
@@ -49,6 +51,8 @@
       <link rel="alternate" hreflang="en" href="https://salua3.github.io/index.html">
       <link rel="alternate" href="https://salua3.github.io/" hreflang="x-default" />
 
+	 <meta name="referrer" content="no-referrer">
+	
         <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
     <meta name="AdsBot-Google" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
     <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
@@ -170,6 +174,29 @@ html {  scroll-behavior: smooth;}
 <a href="images/prod/craft-19.png" data-fancybox="gallery" data-caption="Craft 20 - Hand painted mug - Salua" title="Craft 20 - Hand painted mug - Salua">20,</a>
 </div>
 
+	
+<div class="container" >
+            <div class="row" style="float:right;">
+                               <div class="col-sm-12" >
+                                   <div     class="tags-share-box center-box d-flex text-center justify-content-between  py-3 ">
+
+                                <span class="single-comment-o"><i class="fa fa-commm "></i> </span>
+
+                                <div class="post-share">
+                                    <span class="count-number-like"> </span>
+                                    <a class="penci-post-like single-like-button"><i class="ti-hea"></i></a>
+                                </div>
+
+                                <div class="list-posts-share" style="font-size:70%;">
+                                    <a href="#" onclick="myFunction()" title="Light/Dark Mode"><i style="color:gray;" class="fa fa-moon-o"></i></a>
+                                    <a href="#" onclick="window.print()" title="Save as pdf"><i style="color:gray;" class="fa fa-bookmark-o"></i></a>
+                                    <a href="#" onclick="window.print()" title="Print"><i style="color:gray;" class="fa fa-print"></i></a>
+                                    <a href="#" id="share-btn"  title="Share"><i style="color:gray;" class="fa fa-share-alt"></i></a>
+                                </div>
+                            </div> </div>
+                            </div> </div>
+ <br /> 
+	
     <div class="breadcrumb-wrapper">
         <div class="container">
             <div class="row">
@@ -190,25 +217,35 @@ html {  scroll-behavior: smooth;}
 
                     <div class="row">
                         <div class="col-lg-12">
-                            <img src="images/about.png" alt="about" class="img-fluid w-100">
+                            <img src="images/about.png" alt="about" class="img-fluid w-100" style="filter: drop-shadow(8px 8px 10px gray);">
                         </div>
                     </div>
 
- 
-                            <p class="mb-5"><br /><br />Hi, my name is Salua, from Tetouan MOR.  <br /> <br />
+ <p style="display:none;" id="text">
+Hi, my name is Salua, from Tetouan.
+I want to share with you more about my journey, discovering my passion for art, science and writing, sharing insights, inspiration and maybe a few amusing anecdotes along the way.
+I’ve had this desire to build a portfolio website to showcase all my various creative work for many years now.
+Join me as I explore the amazing intersection of art, science and storytelling, reconnecting with my creative passions, rebuilding my creative life, that creative spark and the milestones I achieved along the way.
+Whether you’re an artist, a designer, a writer, a business owner, or just someone looking to get back in touch with a passion you’ve lost, I hope my page will inspire you to jump-start your own creative journey.
+To purchase or ask me anything please contact me by email. </p>
 
+ <br />
+<p style="float:right; color:darkgray; "> 
+<a  onclick="textToSpeech()" id="speakBtn" title="Listen" class="btn" style=" width:25px; height: 5px; padding: 5px 5px; font-size:105%;"><i class="fa fa-play-circle-o" ></i></a> 
+<a  onclick="cancel()" id="cancelBtn" title="Stop" class="btn" style=" width:25px; height: 5px; padding: 5px 5px; font-size:105%;"><i class="fa fa-pause-circle-o" ></i></a> </p>
+			
+ <p class="mb-5"><br /><br />Hi, my name is Salua, from Tetouan MOR.  <br /> <br />
 I want to share with you more about my journey discovering my passion for art, science and writing, sharing insights, inspiration and maybe a few amusing anecdotes along the way. <br /> <br />
-
-I’ve had this desire to build a portfolio website to showcase all my various creative work for many years now: <a href="#gallery-1" class="fa" > &#xf04b; </a> <br /> <br />
-
+I’ve had this desire to build a portfolio website to showcase all my various creative work for many years now: <a href="#gallery-1" class="fa" title="View gallery"> &#xf04b; </a> <br /> <br />
 Join me as I explore the amazing intersection of art, science and storytelling, reconnecting with my creative passions, rebuilding my creative life, that creative spark and the milestones I achieved along the way. <br /> <br />
-
-Whether you’re an artist, a designer, a writer, a business owner, or just someone looking to get back in touch with a passion you’ve lost, I hope my page will inspire you to jump-start your own creative journey. <br /> <br /> To purchase or ask me anything please <u><a href="mailto:ji_3@outlook.com" target="_blank">contact</a></u> me by email. <br /><br /> Salua</p> <br /> 
+Whether you’re an artist, a designer, a writer, a business owner, or just someone looking to get back in touch with a passion you’ve lost, I hope my page will inspire you to jump-start your own creative journey. <br /> <br /> 
+To purchase or ask me anything please <u><a href="mailto:ji_3@outlook.com" target="_blank" rel="external nofollow noopener noreferrer">contact</a></u> me by email. <br /><br />
+<em>Sally</em> </p> <br /> 
 
 
                   <div class="post-author d-flex my-5">
                         <div class="author-img">
-                            <img alt="author" src="images/author.jpg" class="avatar avatar-100 photo" width="100" height="100">
+                            <img alt="author" src="images/author.jpg" class="avatar avatar-100 photo" width="100" height="100" title="Sally">
                         </div>
 
 
@@ -231,8 +268,9 @@ Whether you’re an artist, a designer, a writer, a business owner, or just some
 						<h5 class="widget-title text-uppercase letter-spacing-2 mb-4">About me</h5>
                                                <div style="position: relative; text-align: center;">
 						<img src="images/about.png" alt="about" class="img-fluid" style="filter: drop-shadow(8px 8px 10px gray);">
-<p style="position: absolute;  top: 50%;  left: 50%;  transform: translate(-50%, -50%);   text-align: center;  font-size: 38px;  color:white; text-shadow:2px 2px 4px #000000;" class="fa"><a href="#gallery-1" style="color:white; " > &#xf04b; </a></p> </div>
-						<p class="mt-4">Hi, my name is Salua. To purchase or ask me anything please contact me by email. &nbsp <a href="mailto:ji_3@outlook.com" target="_blank"><i style="font-size:18px;color:gray" class="fa">&#xf0e0;</i></a> &nbsp <a href="https://t.me/z1kp_7" target="_blank"><i style="font-size:18px;color:gray" class="fa">&#xf2c6;</i></a> </p>
+<p style="position: absolute;  top: 50%;  left: 50%;  transform: translate(-50%, -50%);   text-align: center;  font-size: 38px;  color:white; text-shadow:2px 2px 4px #000000;" class="fa"><a href="#gallery-1" style="color:white;" title="View gallery" > &#xf04b; </a></p> </div>
+						<p class="mt-4">Hi, my name is Salua. To purchase or ask me anything please contact me by email.&nbsp;<a href="mailto:ji_3@outlook.com" target="_blank" rel="external nofollow noopener noreferrer" title="Contact"><i style="color:darkgray" class="fa fa-envelope"></i></a>&nbsp;&nbsp;
+							<a href="https://t.me/z1kp_7" target="_blank" rel="external nofollow noopener noreferrer" title="Send message"><i style="color:darkgray" class="fa fa-telegram"></i></a> </p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
@@ -262,22 +300,22 @@ Whether you’re an artist, a designer, a writer, a business owner, or just some
 
 						<div class="row no-gutters">
 							<div class="col-lg-4 col-md-6 col-sm-6 col-6">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-01.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-01.png" alt="art" title="Art"/></a>
 							</div>
 							<div class="col-lg-4 col-md-6 col-sm-6  col-6">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-02.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-02.png" alt="art" title="Art"/></a>
 							</div>
 							<div class="col-lg-4 col-md-6 col-sm-6  col-6">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-03.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-03.png" alt="art" title="Art"/></a>
 							</div>
 							<div class="col-lg-4 col-md-6 col-sm-6  col-6">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-04.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-04.png" alt="art" title="Art"/></a>
 							</div>
 							<div class="col-lg-4 col-md-6 col-sm-6  col-6">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-05.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-05.png" alt="art" title="Art"/></a>
 							</div>
 							<div class="col-lg-4 col-md-6 col-sm-6  col-6">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-06.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-06.png" alt="art" title="Art"/></a>
 							</div>
 						</div>
 					</div>
@@ -297,7 +335,7 @@ Whether you’re an artist, a designer, a writer, a business owner, or just some
 							<li class="list-inline-item"><a href="blog.html">Blog</a></li>
 							<li class="list-inline-item"><a href="#">About</a></li>
 							<li class="list-inline-item"><a href="contact.html">Contact</a></li>
-							<li class="list-inline-item"><a href="feed.xml" rel="external nofollow noopener noreferrer" target="_blank"><i style="font-size:14px;color:black" class="fa">&#xf09e;</i></a></li>
+							<li class="list-inline-item"><a href="feed.xml" rel="external nofollow noopener noreferrer" target="_blank" title="RSS feed"><i style="color:black" class="fa fa-rss"></i></a></li>
              
 						</ul>
 					</div>
@@ -434,7 +472,106 @@ $(document).ready(function() {
 });
 </script>
 
+<script>
 
+function textToSpeech()
+{
+   const speech = new SpeechSynthesisUtterance();
+    let voices = speechSynthesis.getVoices();
+  let convert = document.getElementById("text").innerHTML;
+
+    speech.text = convert;
+
+    speech.lang = 'en-US';
+   
+    speech.volume = 1;
+    speech.rate = 1;
+   
+  
+      
+    window.speechSynthesis.speak(speech);
+    speechSynthesis.speak(speech);
+}
+
+
+
+function stop()
+{
+    speechSynthesis.cancel();
+}
+
+speakBtn.addEventListener('click', textToSpeech);
+
+cancelBtn.addEventListener('click', stop);
+
+
+</script>
+
+
+<script>
+        
+const shareData = {
+  title: "About me - Salua",
+  text: "About me - Ebook by Salua",
+   url: "https://salua3.github.io/about.html",
+};
+
+const shareBtn = document.getElementById("share-btn");
+
+shareBtn.addEventListener("click", async () => {
+
+  if (navigator.share) {
+
+    try {
+      await navigator.share(shareData);
+      console.log("Data shared successfully");
+    } catch (err) {
+
+      console.error("Error while sharing:", err);
+    }
+  } else {
+
+    console.log("Web Share API not supported");
+  }
+});
+    </script>
+
+
+
+
+<script>
+
+function myFunction() {
+   var element = document.body; 
+   element.classList.toggle("dark-mode");
+}
+
+</script>
+
+
+<style>
+.dark-mode { 
+background-color: black;
+    color: gray;
+       opacity: 80%;
+    h1, h2, h3, h4, h5, h6, p, a, div, input, span, header  {color: gray; }
+   color: rgb(128, 128, 128) !important;
+   -webkit-text-fill-color: rgb(128, 128, 128) !important;
+    }
+
+ @media (prefers-color-scheme: dark) {
+      body {
+        background-color: black;
+    color: gray;
+   opacity: 80%;
+   h1, h2, h3, h4, h5, h6, p, a, div, input, span, header  {color: gray; }
+   color: rgb(128, 128, 128) !important;
+  -webkit-text-fill-color: rgb(128, 128, 128) !important;
+    
+    }
+
+
+</style>
 
 </body>
 
