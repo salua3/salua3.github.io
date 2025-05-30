@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Blog &mdash; Salua</title>
+    <title>Blog - Salua</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -13,12 +13,13 @@
 	<meta name="keywords" content="blog, article, post, story, storytelling, life, writing, writer, woman, businesswoman">
 	<meta name="description" content="What a difference a year makes! I’ve spent the last one thinking a lot about the world and my place in it. It’s given me a new appreciation for the art of connection.">
 
+	<meta name="color-scheme" content="dark light">
 
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico" >
 
             <!-- Favicon -->
-            <link rel="icon" href="./images/favicon/favicon.ico" >
-            <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+            <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico" >
+            <link rel="shortcut icon" type="image/x-icon" href="/images/favicon/favicon.ico" />
             <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96" />
             <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
             <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
@@ -28,15 +29,16 @@
             <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
 
        <!-- Open Graph and Twitter Card data -->
-	<meta property="og:title" content="Blog &mdash; Salua"/>
+	<meta property="og:title" content="Blog - Salua"/>
 	<meta property="og:image" content="https://salua3.github.io/images/about.png"/>
 	<meta property="og:url" content="https://salua3.github.io/blog.html"/>
 	<meta property="og:description" content="What a difference a year makes! I’ve spent the last one thinking a lot about the world and my place in it. It’s given me a new appreciation for the art of connection."/>
         <meta property="og:type" content="website" />
-        <meta property="article:published_time" content="2025-04-25" />
+        <meta property="og:locale" content="en-US" />
+        <meta property="og:updated_time" content="2025-04-25T12:00:00+00:00" />
 
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Blog &mdash; Salua" />
+	<meta name="twitter:title" content="Blog - Salua" />
 	<meta name="twitter:image" content="https://salua3.github.io/images/about.png" />
 	<meta name="twitter:site" content="https://salua3.github.io/blog.html" />
 	<meta name="twitter:description" content="What a difference a year makes! I’ve spent the last one thinking a lot about the world and my place in it. It’s given me a new appreciation for the art of connection." />
@@ -48,6 +50,8 @@
       <link rel="alternate" hreflang="en" href="https://salua3.github.io/index.html">
       <link rel="alternate" href="https://salua3.github.io/" hreflang="x-default" />
 
+	<meta name="referrer" content="no-referrer">
+	
         <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
     <meta name="AdsBot-Google" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
     <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
@@ -121,6 +125,29 @@ html {  scroll-behavior: smooth;}
 
 	</header>
 
+<div class="container" >
+            <div class="row" style="float:right;">
+     
+                               <div class="col-sm-12" >
+                                   <div     class="tags-share-box center-box d-flex text-center justify-content-between  py-3 ">
+
+                                <span class="single-comment-o"><i class="fa fa-commm "></i> </span>
+
+                                <div class="post-share">
+                                    <span class="count-number-like"> </span>
+                                    <a class="penci-post-like single-like-button"><i class="ti-hea"></i></a>
+                                </div>
+
+                                <div class="list-posts-share" style="font-size:70%;">
+                                    <a href="#" onclick="myFunction()" title="Light/Dark Mode"><i style="color:gray;" class="fa fa-moon-o"></i></a>
+                                    <a href="#" onclick="window.print()" title="Save as pdf"><i style="color:gray;" class="fa fa-bookmark-o"></i></a>
+                                    <a href="#" onclick="window.print()" title="Print"><i style="color:gray;" class="fa fa-print"></i></a>
+                                    <a href="#" id="share-btn"  title="Share"><i style="color:gray;" class="fa fa-share-alt"></i></a>
+                                </div>
+                            </div> </div>
+                            </div> </div> 
+ <br /> 
+	
 
     <div class="breadcrumb-wrapper">
         <div class="container">
@@ -128,6 +155,10 @@ html {  scroll-behavior: smooth;}
                 <div class="col-sm-12">
                     <div class="text-center">
                         <h2 class="lg-title">Blog</h2>
+			    
+<a  onclick="textToSpeech()" id="speakBtn" title="Listen" class="btn" style=" float:left; color:lightgray; width:35px; height: 5px; padding: 5px 5px; font-size:60%;"><i class="fa fa-play" ></i></a> 
+<a  onclick="cancel()" id="cancelBtn" title="Stop" class="btn" style=" float:left; color:lightgray; width:35px; height: 5px; padding: 5px 5px; font-size:60%;"><i class="fa fa-pause" ></i></a> 
+			    
                     </div>
                 </div>
             </div>
@@ -137,7 +168,14 @@ html {  scroll-behavior: smooth;}
     <section class="site-section" >
         <div class="container" >  <br />
 
-       <p>What a difference a year makes! I’ve spent the last one thinking a lot about the world and my place in it. It’s given me a new appreciation for the art of connection, how we express ourselves, how we keep in touch with people, how we tell our own stories... To find a way forward, I began by looking back, and gained a new perspective. I’m excited to share it with you in ways that reflect the real me. Cheers to new beginnings. <br /> <br /> Salua xx</p>
+<p style="display:none;" id="text">
+What a difference a year makes. I’ve spent the last one thinking a lot about the world and my place in it. It’s given me a new appreciation for the art of connection, how we express ourselves, how we keep in touch with people, how we tell our own stories. 
+To find a way forward, I began by looking back, and gained a new perspective. I’m excited to share it with you in ways that reflect the real me. Cheers to new beginnings. Salua. </p>
+		
+<p>What a difference a year makes! I’ve spent the last one thinking a lot about the world and my place in it. It’s given me a new appreciation for the art of connection, how we express ourselves, how we keep in touch with people, how we tell our own stories... 
+To find a way forward, I began by looking back, and gained a new perspective. I’m excited to share it with you in ways that reflect the real me. Cheers to new beginnings. <br /> <br /> 
+Salua xx</p>
+		
       </div>
       </section>
 
@@ -150,7 +188,7 @@ html {  scroll-behavior: smooth;}
 						<div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="why-i-love-tetouan.html">
-									<img src="images/news/blog-01.png" alt="article" class="img-fluid w-100">
+									<img src="images/news/blog-01.png" alt="article" class="img-fluid w-100" style="filter: drop-shadow(8px 8px 10px gray);">
 								</a>
 								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
 								<h3 class="post-title mt-1"><a href="why-i-love-tetouan.html">Why I love Tetouan</a></h3>
@@ -166,7 +204,7 @@ html {  scroll-behavior: smooth;}
 						<div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="a-walk-to-remember-in-bouanane.html">
-									<img src="images/news/blog-02.png" alt="article" class="img-fluid w-100">
+									<img src="images/news/blog-02.png" alt="article" class="img-fluid w-100" style="filter: drop-shadow(8px 8px 10px gray);">
 								</a>
 								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
 						<h3 class="post-title mt-1"><a href="a-walk-to-remember-in-bouanane.html">A walk to remember in Bouanane</a></h3>
@@ -182,7 +220,7 @@ html {  scroll-behavior: smooth;}
 						<div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="paris-is-always-a-good-idea.html">
-									<img src="images/news/blog-03.png" alt="article" class="img-fluid w-100">
+									<img src="images/news/blog-03.png" alt="article" class="img-fluid w-100" style="filter: drop-shadow(8px 8px 10px gray);">
 								</a>
 								<span class=" cat-name text-color font-sm font-extra text-uppercase letter-spacing">Travel</span>
 						<h3 class="post-title mt-1"><a href="paris-is-always-a-good-idea.html">Paris is always a good idea</a></h3>
@@ -199,7 +237,7 @@ html {  scroll-behavior: smooth;}
 						<div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="happy-birthday-sis.html">
-									<img src="images/news/blog-04.png" alt="article" class="img-fluid w-100">
+									<img src="images/news/blog-04.png" alt="article" class="img-fluid w-100" style="filter: drop-shadow(8px 8px 10px gray);">
 								</a>
 								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Lifestyle</span>
 								<h3 class="post-title mt-1"><a href="happy-birthday-sis.html">Happy birthday sis</a></h3>
@@ -217,7 +255,7 @@ html {  scroll-behavior: smooth;}
 						<div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="what-s-it-like-to-work-with-your-sister.html">
-									<img src="images/news/blog-05.png" alt="article" class="img-fluid w-100">
+									<img src="images/news/blog-05.png" alt="article" class="img-fluid w-100" style="filter: drop-shadow(8px 8px 10px gray);">
 								</a>
 								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Interview</span>
 			<h3 class="post-title mt-1"><a href="what-s-it-like-to-work-with-your-sister.html">What’s it like to work with your sister?</a></h3>
@@ -234,7 +272,7 @@ html {  scroll-behavior: smooth;}
 						<div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="my-experience-in-granada.html">
-									<img src="images/news/blog-06.png" alt="article" class="img-fluid w-100">
+									<img src="images/news/blog-06.png" alt="article" class="img-fluid w-100" style="filter: drop-shadow(8px 8px 10px gray);">
 								</a>
 								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Interview</span>
 								<h3 class="post-title mt-1"><a href="my-experience-in-granada.html">My experience in Granada</a></h3>
@@ -251,7 +289,7 @@ html {  scroll-behavior: smooth;}
 						<div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="what-s-it-like-to-work-at-a-big-tech-company.html">
-									<img src="images/news/blog-07.png" alt="article" class="img-fluid w-100">
+									<img src="images/news/blog-07.png" alt="article" class="img-fluid w-100" style="filter: drop-shadow(8px 8px 10px gray);">
 								</a>
 								<span class=" cat-name text-color font-sm font-extra text-uppercase letter-spacing">Interview</span>
 			<h3 class="post-title mt-1"><a href="what-s-it-like-to-work-at-a-big-tech-company.html">What’s it like to work at a big tech company?</a></h3>
@@ -268,7 +306,7 @@ html {  scroll-behavior: smooth;}
 						<div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="tall-girl.html">
-									<img src="images/news/blog-08.png" alt="article" class="img-fluid w-100">
+									<img src="images/news/blog-08.png" alt="article" class="img-fluid w-100" style="filter: drop-shadow(8px 8px 10px gray);">
 								</a>
 								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Interview</span>
 								<h3 class="post-title mt-1"><a href="tall-girl.html">Tall girl</a></h3>
@@ -285,7 +323,7 @@ html {  scroll-behavior: smooth;}
 						<div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="the-ramadhan-experience.html">
-									<img src="images/news/blog-09.png" alt="article" class="img-fluid w-100">
+									<img src="images/news/blog-09.png" alt="article" class="img-fluid w-100" style="filter: drop-shadow(8px 8px 10px gray);">
 								</a>
 								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Fasting</span>
 								<h3 class="post-title mt-1"><a href="the-ramadhan-experience.html">The ramadan experience</a></h3>
@@ -302,7 +340,7 @@ html {  scroll-behavior: smooth;}
 						<div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="mamma-mia.html">
-									<img src="images/news/blog-10.png" alt="article" class="img-fluid w-100">
+									<img src="images/news/blog-10.png" alt="article" class="img-fluid w-100" style="filter: drop-shadow(8px 8px 10px gray);">
 								</a>
 								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Experience</span>
 								<h3 class="post-title mt-1"><a href="mamma-mia.html">Mamma mia</a></h3>
@@ -320,7 +358,7 @@ html {  scroll-behavior: smooth;}
 						<div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="open-letter-to-my-dad-in-heaven.html">
-									<img src="images/news/blog-11.png" alt="article" class="img-fluid w-100">
+									<img src="images/news/blog-11.png" alt="article" class="img-fluid w-100" style="filter: drop-shadow(8px 8px 10px gray);">
 								</a>
 								<span class="cat-name text-color font-sm font-extra text-uppercase letter-spacing">Experience</span>
 					<h3 class="post-title mt-1"><a href="open-letter-to-my-dad-in-heaven.html">Open letter to my dad in heaven</a></h3>
@@ -337,7 +375,7 @@ html {  scroll-behavior: smooth;}
 						<div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="happy-new-year.html">
-									<img src="images/news/blog-12.png" alt="article" class="img-fluid w-100">
+									<img src="images/news/blog-12.png" alt="article" class="img-fluid w-100" style="filter: drop-shadow(8px 8px 10px gray);">
 								</a>
 								<span class=" cat-name text-color font-sm font-extra text-uppercase letter-spacing">Holiday</span>
 								<h3 class="post-title mt-1"><a href="happy-new-year.html">Happy new year 2025</a></h3>
@@ -355,7 +393,7 @@ html {  scroll-behavior: smooth;}
 						<div class="col-lg-3 col-md-6">
 							<article class="post-grid mb-5">
 								<a class="post-thumb mb-4 d-block" href="the-art-of-color-mixing.html">
-									<img src="images/news/blog-13.png" alt="article" class="img-fluid w-100">
+									<img src="images/news/blog-13.png" alt="article" class="img-fluid w-100" style="filter: drop-shadow(8px 8px 10px gray);">
 								</a>
 								<span class=" cat-name text-color font-sm font-extra text-uppercase letter-spacing">Painting</span>
 								<h3 class="post-title mt-1"><a href="the-art-of-color-mixing.html">The art of color mixing</a></h3>
@@ -389,8 +427,8 @@ html {  scroll-behavior: smooth;}
 				<div class="col-lg-4 col-md-6">
 					<div class="widget footer-widget mb-5 mb-lg-0">
 						<h5 class="widget-title text-uppercase letter-spacing-2 mb-4">About me</h5>
-						<img src="images/about.png" alt="about" class="img-fluid" style="filter: drop-shadow(8px 8px 10px gray);">
-						<p class="mt-4">Hi, my name is Salua.  I recently discovered my passion for writing and fell in love… &nbsp <a href="mailto:ji_3@outlook.com" target="_blank"><i style="font-size:18px;color:gray" class="fa">&#xf0e0;</i></a></p>
+						<img src="images/about.png" alt="about" class="img-fluid" title="Sally" style="filter: drop-shadow(8px 8px 10px gray);">
+						<p class="mt-4">Hi, my name is Salua.  I recently discovered my passion for writing and fell in love…&nbsp;<a href="mailto:ji_3@outlook.com" title="Contact" target="_blank" rel="external nofollow noopener noreferrer"><i style="color:darkgray" class="fa fa-envelope"></i></a></p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
@@ -420,22 +458,22 @@ html {  scroll-behavior: smooth;}
 
 						<div class="row no-gutters">
 							<div class="col-lg-4 col-md-6 col-sm-6 col-6">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-01.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-01.png" alt="art" title="Art"/></a>
 							</div>
 							<div class="col-lg-4 col-md-6 col-sm-6  col-6">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-02.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-02.png" alt="art" title="Art"/></a>
 							</div>
 							<div class="col-lg-4 col-md-6 col-sm-6  col-6">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-03.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-03.png" alt="art" title="Art"/></a>
 							</div>
 							<div class="col-lg-4 col-md-6 col-sm-6  col-6">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-04.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-04.png" alt="art" title="Art"/></a>
 							</div>
 							<div class="col-lg-4 col-md-6 col-sm-6  col-6">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-05.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-05.png" alt="art" title="Art"/></a>
 							</div>
 							<div class="col-lg-4 col-md-6 col-sm-6  col-6">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-06.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-06.png" alt="art" title="Art"/></a>
 							</div>
 						</div>
 					</div>
@@ -455,7 +493,7 @@ html {  scroll-behavior: smooth;}
 							<li class="list-inline-item"><a href="#">Blog</a></li>
 							<li class="list-inline-item"><a href="about.html">About</a></li>
 							<li class="list-inline-item"><a href="contact.html">Contact</a></li>
-							<li class="list-inline-item"><a href="feed.xml" rel="external nofollow noopener noreferrer" target="_blank"><i style="font-size:14px;color:black" class="fa">&#xf09e;</i></a></li>
+							<li class="list-inline-item"><a href="feed.xml" rel="external nofollow noopener noreferrer" target="_blank" title="Rss feed"><i style="color:black" class="fa fa-rss"></i></a></li>
              
 						</ul>
 					</div>
@@ -582,7 +620,108 @@ $(document).ready(function() {
 });
 </script>
 
+<script>
 
+function textToSpeech()
+{
+   const speech = new SpeechSynthesisUtterance();
+    let voices = speechSynthesis.getVoices();
+  let convert = document.getElementById("text").innerHTML;
+
+    speech.text = convert;
+
+    speech.lang = 'en-US';
+   
+    speech.volume = 1;
+    speech.rate = 1;
+   
+  
+      
+    window.speechSynthesis.speak(speech);
+    speechSynthesis.speak(speech);
+}
+
+
+
+
+
+function stop()
+{
+    speechSynthesis.cancel();
+}
+
+speakBtn.addEventListener('click', textToSpeech);
+
+cancelBtn.addEventListener('click', stop);
+
+
+</script>
+
+
+<script>
+        
+const shareData = {
+  title: "Blog - Salua",
+  text: "Blog - Ebook by Salua",
+   url: "https://salua3.github.io/blog.html",
+};
+
+const shareBtn = document.getElementById("share-btn");
+
+shareBtn.addEventListener("click", async () => {
+
+  if (navigator.share) {
+
+    try {
+      await navigator.share(shareData);
+      console.log("Data shared successfully");
+    } catch (err) {
+
+      console.error("Error while sharing:", err);
+    }
+  } else {
+
+    console.log("Web Share API not supported");
+  }
+});
+    </script>
+
+
+
+
+<script>
+
+function myFunction() {
+   var element = document.body; 
+   element.classList.toggle("dark-mode");
+}
+
+</script>
+
+
+<style>
+.dark-mode { 
+background-color: black;
+    color: gray;
+       opacity: 80%;
+    h1, h2, h3, h4, h5, h6, p, a, div, input, span, header  {color: gray; }
+   color: rgb(128, 128, 128) !important;
+   -webkit-text-fill-color: rgb(128, 128, 128) !important;
+    }
+
+ @media (prefers-color-scheme: dark) {
+      body {
+        background-color: black;
+    color: gray;
+   opacity: 80%;
+   h1, h2, h3, h4, h5, h6, p, a, div, input, span, header  {color: gray; }
+   color: rgb(128, 128, 128) !important;
+  -webkit-text-fill-color: rgb(128, 128, 128) !important;
+    
+    }
+
+
+</style>
 
 </body>
 
