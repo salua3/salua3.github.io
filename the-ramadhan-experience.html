@@ -12,14 +12,15 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="author" content="Ji">
 	<meta name="keywords" content="blog, ramadan, ramadhan, fasting, writing, writer, woman, businesswoman">
-	<meta name="description" content="As a practitioner who has fasted during Ramadan for as long as I can remember,  it is a time I hold close to my heart, it shows me the beauty of taking life… ">
+	<meta name="description" content="As a practitioner who has fasted during Ramadan for as long as I can remember, it is a time I hold close to my heart, it shows me the beauty of taking life… ">
 
-
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+        <meta name="color-scheme" content="dark light">
+	
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico" >
 
             <!-- Favicon -->
-            <link rel="icon" href="./images/favicon/favicon.ico" >
-            <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+            <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico" >
+            <link rel="shortcut icon" type="image/x-icon" href="/images/favicon/favicon.ico" />
             <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96" />
             <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
             <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
@@ -32,15 +33,18 @@
 	<meta property="og:title" content="The ramadan experience - Blog - Salua"/>
 	<meta property="og:image" content="https://salua3.github.io/images/blog/blog-29.png"/>
 	<meta property="og:url" content="https://salua3.github.io/the-ramadhan-experience.html"/>
-	<meta property="og:description" content="As a practitioner who has fasted during Ramadan for as long as I can remember,  it is a time I hold close to my heart, it shows me the beauty of taking life… "/>
-        <meta property="og:type" content="website" />
-        <meta property="article:published_time" content="2025-04-25" />
+	<meta property="og:description" content="As a practitioner who has fasted during Ramadan for as long as I can remember, it is a time I hold close to my heart, it shows me the beauty of taking life… "/>
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="en-US" />
+        <meta property="og:updated_time" content="2025-04-25T12:00:00+00:00" />
+        <meta property="article:published_time" content="2025-04-25T12:00:00+00:00" />
+        <meta property="article:modified_time" content="2025-04-25T12:00:00+00:00" />
 
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="The ramadan experience - Blog - Salua" />
 	<meta name="twitter:image" content="https://salua3.github.io/images/blog/blog-29.png" />
 	<meta name="twitter:site" content="https://salua3.github.io/the-ramadhan-experience.html" />
-	<meta name="twitter:description" content="As a practitioner who has fasted during Ramadan for as long as I can remember,  it is a time I hold close to my heart, it shows me the beauty of taking life… " />
+	<meta name="twitter:description" content="As a practitioner who has fasted during Ramadan for as long as I can remember, it is a time I hold close to my heart, it shows me the beauty of taking life… " />
 
 
              <link rel="canonical" href="https://salua3.github.io/the-ramadhan-experience.html" />
@@ -49,6 +53,8 @@
       <link rel="alternate" hreflang="en" href="https://salua3.github.io/index.html">
       <link rel="alternate" href="https://salua3.github.io/" hreflang="x-default" />
 
+	<meta name="referrer" content="no-referrer">
+	
         <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
     <meta name="AdsBot-Google" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
     <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
@@ -123,6 +129,27 @@ html {  scroll-behavior: smooth;}
 
 	</header>
 
+            <div class="container" >
+            <div class="row" >
+     
+                               <div class="col-sm-12" >
+                                   <div     class="tags-share-box center-box d-flex text-center justify-content-between  py-3 ">
+
+                                <span class="single-comment-o"><i class="fa fa-commm "></i> </span>
+
+                                <div class="post-share">
+                                    <span class="count-number-like"> </span>
+                                    <a class="penci-post-like single-like-button"><i class="ti-hea"></i></a>
+                                </div>
+
+                                <div class="list-posts-share" style="font-size:70%;">
+                                    <a href="#" onclick="myFunction()" title="Light/Dark Mode"><i style="color:gray;" class="fa fa-moon-o"></i></a>
+                                    <a href="#" onclick="window.print()" title="Save as pdf"><i style="color:gray;" class="fa fa-bookmark-o"></i></a>
+                                    <a href="#" onclick="window.print()" title="Print"><i style="color:gray;" class="fa fa-print"></i></a>
+                                    <a href="#" id="share-btn"  title="Share"><i style="color:gray;" class="fa fa-share-alt"></i></a>
+                                </div>
+                            </div> </div>
+                            </div> </div> 
 
     <section class="single-block-wrapper section-padding">
         <div class="container">
@@ -147,60 +174,63 @@ html {  scroll-behavior: smooth;}
                             </div>
                            
                             <div class="post-featured-image mt-5">
-                                <img src="images/blog/blog-29.png" class="img-fluid w-100" alt="featured-image">
+                                <img src="images/blog/blog-29.png" class="img-fluid w-100" alt="featured-image" style="filter: drop-shadow(8px 8px 10px gray);">
                             </div>
+
+<br />
+<a  onclick="textToSpeech()" id="speakBtn" title="Listen" class="btn" style="  color:darkgray; width:25px; height: 5px; padding: 5px 5px; font-size:105%;"><i class="fa fa-play-circle-o" ></i></a> 
+<a  onclick="cancel()" id="cancelBtn" title="Stop" class="btn" style=" color:darkgray;  width:25px; height: 5px; padding: 5px 5px; font-size:105%;"><i class="fa fa-pause-circle-o" ></i></a> 
+				
                         </div>
 
 
-
-
                         <div class="post-body">
-                            <div class="entry-content"> <br /><br />
-                                <p>  As a practitioner who has fasted during Ramadan for as long as I can remember,  it is a time I hold close to my heart, it shows me the beauty of taking life back to the basics and being grateful for what I have. <br /><br />
+                            <div class="entry-content"> 
 
-Ramadan is almost here and sometimes we all struggle to power through the holy month, thinking of how to fast easily and go through the month smoothly. Those days are quite hard, especially when the weather gets warm.  <br /><br />
-
-During Ramadan, I have an early start every day, waking up at 2am to prepare for my fast (Suhoor) and to get ready for my prayer. This year, the month of fasting began on the evening of March 1. <br /><br />
-
+<p style="display:none;" id="text">
+The ramadan experience. As a practitioner who has fasted during Ramadan for as long as I can remember,  it is a time I hold close to my heart, it shows me the beauty of taking life back to the basics and being grateful for what I have.
+Ramadan is almost here and sometimes we all struggle to power through the holy month, thinking of how to fast easily and go through the month smoothly. Those days are quite hard, especially when the weather gets warm. 
+During Ramadan, I have an early start every day, waking up at 2 am to prepare for my fast, Suhoor, and to get ready for my prayer. This year, the month of fasting began on the evening of March 1.
 Ramadan is celebrated on the ninth month of the islamic lunar calendar when the Angel Gabriel commenced revelations of the Quran to the prophet Muhammad. 
+Fasting consists of not consuming any food or liquids and abstaining from any desires during daylight hours. The pre-dawn meal is known as Suhoor and the evening meal is called Iftar. Both meals take place before and after daylight hours, the time for each changes slightly each day.
+The holy month is a special month of the year, fasting is a ritual shared by nearly all muslims around the world to observe if they are healthy and able to do so. A month of fasting brings both challenges and rewards, it provides the reward of self-growth and the opportunity to learn more about ourselves. These spiritual rewards require hard work and dedication.
+The month often begins with an optimistic energy, and practitioners may set many spiritual goals. However, it can be easy to falter as you try to maintain your health while fasting and balancing your regular day-to-day responsibilities.
+One of the best ways to fast with ease is by keeping yourself busy. It keeps your mind off things and makes the time go by quickly as well.
+Keep moving, though fasting can be physically exhausting, try not to be completely sedentary. If you typically work out during the morning, see how your body feels if you switch exercise to the evening after breaking your fast. Strenuous exercise is not a good idea during the day because you can quickly become dehydrated, think small, short easy walks, to classes or doing errands, or a few stretches can go a long way in keeping your energy up during the day.
+Manage constipation with adequate hydration and fiber.
+Stay hydrated, don't skip suhoor, pre-dawn meal, don't overeat during Iftar, the evening meal after sunset, avoid eating fried foods, salty foods and high-sugar foods.
+Eat carbs, it turns into sugar slowly and will give you energy for the next morning. Eat foul or fava beans for Suhoor, it’s a meal that will keep you feeling full. You can check some delicious & healthy recipes from my plant-based ebook, a digital guide to plant-based nutrition that I published in the spring of 2019 after completing my pharmacy and nutrition studies in Granada.
+I break my fast always with dates and water, followed by a light soup or salad before moving on to a balanced main meal. Harira soup is what I like the most. I prefer natural juices and fruits rather than tea and coffee during Ramadan to avoid dehydration.
+Ramadan is a great opportunity to decrease your intake of cigarettes, maybe even quit, and to avoid eating lots of sweets and desserts! Just have some, but keep things in moderation so you don’t increase the thirst the next day. Try to be positive and enjoy everything about it, it will make you celebrate the great spirit.
+Now, I wish you all happy Eid Mubarak, a blessed end of fasting. Salua. </p>
+				    
+<p> As a practitioner who has fasted during Ramadan for as long as I can remember, it is a time I hold close to my heart, it shows me the beauty of taking life back to the basics and being grateful for what I have. <br /><br />
+Ramadan is almost here and sometimes we all struggle to power through the holy month, thinking of how to fast easily and go through the month smoothly. Those days are quite hard, especially when the weather gets warm.  <br /><br />
+During Ramadan, I have an early start every day, waking up at 2am to prepare for my fast (Suhoor) and to get ready for my prayer. This year, the month of fasting began on the evening of March 1. <br /><br />
+Ramadan is celebrated on the ninth month of the islamic lunar calendar when the Angel Gabriel commenced revelations of the Quran to the prophet Muhammad. <br />
 Fasting consists of not consuming any food or liquids and abstaining from any desires during daylight hours. The pre-dawn meal is known as Suhoor and the evening meal is called Iftar. Both meals take place before and after daylight hours, the time for each changes slightly each day. <br /><br />
-
 The holy month is a special month of the year, fasting is a ritual shared by nearly all muslims around the world to observe if they are healthy and able to do so. A month of fasting brings both challenges and rewards, it provides the reward of self-growth and the opportunity to learn more about ourselves. These spiritual rewards require hard work and dedication. <br /><br />
-
 The month often begins with an optimistic energy, and practitioners may set many spiritual goals. However, it can be easy to falter as you try to maintain your health while fasting and balancing your regular day-to-day responsibilities. <br /><br />
-
 One of the best ways to fast with ease is by keeping yourself busy. It keeps your mind off things and makes the time go by quickly as well. <br /><br />
-
 Keep moving, though fasting can be physically exhausting, try not to be completely sedentary. If you typically work out during the morning, see how your body feels if you switch exercise to the evening after breaking your fast. Strenuous exercise is not a good idea during the day because you can quickly become dehydrated, think small, short easy walks (to classes or doing errands) or a few stretches can go a long way in keeping your energy up during the day. <br /><br />
-
 Manage constipation with adequate hydration and fiber. <br /><br />
-
 Stay hydrated, don't skip suhoor (pre-dawn meal), don't overeat during Iftar (the evening meal after sunset), avoid eating fried foods, salty foods and high-sugar foods. <br /><br />
-
-Eat carbs, it turns into sugar slowly and will give you energy for the next morning. Eat foul or fava beans for Suhoor, it’s a meal that will keep you feeling full. You can check some delicious & healthy recipes from my <u><a href="plant-based-recipes.html">plant based</a></u> ebook, a digital nutrition guide that I released in spring 2019 after finishing my pharmacy & nutrition studies in Granada. <br /><br />
-
+Eat carbs, it turns into sugar slowly and will give you energy for the next morning. Eat foul or fava beans for Suhoor, it’s a meal that will keep you feeling full. You can check some delicious & healthy recipes from my <u><a href="plant-based-recipes.html">plant-based</a></u> ebook, a digital guide to plant-based nutrition that I published in the spring of 2019 after completing my pharmacy and nutrition studies in Granada. <br /><br />
 I break my fast always with dates and water, followed by a light soup or salad before moving on to a balanced main meal. Harira soup is what I like the most. I prefer natural juices and fruits rather than tea and coffee during Ramadan to avoid dehydration. <br /><br />
-
 Ramadan is a great opportunity to decrease your intake of cigarettes, maybe even quit, and to avoid eating lots of sweets and desserts! Just have some, but keep things in moderation so you don’t increase the thirst the next day. Try to be positive and enjoy everything about it, it will make you celebrate the great spirit. <br /><br />
-
 Now, I wish you all happy Eid Mubarak, a blessed end of fasting.  <br /><br />
-
 Salua
 
-
-
 </p>
-                               
-
+                              
                             </div> <br /><br />
 
                             
 
 
-
                     <div class="post-author d-flex my-5">
                         <div class="author-img">
-                            <img alt="author" src="images/author.jpg" class="avatar avatar-100 photo" width="100"   height="100">
+                            <img alt="author" src="images/author.jpg" class="avatar avatar-100 photo" width="100" height="100" title="Sally">
                         </div>
 
                         <div class="author-content pl-4">
@@ -313,8 +343,8 @@ Salua
 				<div class="col-lg-4 col-md-6">
 					<div class="widget footer-widget mb-5 mb-lg-0">
 						<h5 class="widget-title text-uppercase letter-spacing-2 mb-4">About me</h5>
-						<img src="images/about.png" alt="about" class="img-fluid">
-						<p class="mt-4">I recently discovered my passion for writing and fell in love… Salua &nbsp <a href="mailto:ji_3@outlook.com" target="_blank"><i style="font-size:18px;color:gray" class="fa">&#xf0e0;</i></a></p>
+						<img src="images/about.png" alt="about" class="img-fluid" title="Sally" style="filter: drop-shadow(8px 8px 10px gray);">
+						<p class="mt-4">I recently discovered my passion for writing and fell in love… Salua.&nbsp;<a href="mailto:ji_3@outlook.com" target="_blank" rel="external nofollow noopener noreferrer" title="Contact"><i style="color:darkgray" class="fa fa-envelope"></i></a></p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
@@ -344,22 +374,22 @@ Salua
 
 						<div class="row no-gutters">
 							<div class="col-lg-4 col-md-6 col-sm-6 col-6">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-01.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-01.png" alt="art" title="Art"/></a>
 							</div>
 							<div class="col-lg-4 col-md-6 col-sm-6  col-6">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-02.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-02.png" alt="art" title="Art"/></a>
 							</div>
 							<div class="col-lg-4 col-md-6 col-sm-6  col-6">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-03.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-03.png" alt="art" title="Art"/></a>
 							</div>
 							<div class="col-lg-4 col-md-6 col-sm-6  col-6">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-04.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-04.png" alt="art" title="Art"/></a>
 							</div>
 							<div class="col-lg-4 col-md-6 col-sm-6  col-6">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-05.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-05.png" alt="art" title="Art"/></a>
 							</div>
 							<div class="col-lg-4 col-md-6 col-sm-6  col-6">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-06.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-06.png" alt="art" title="Art"/></a>
 							</div>
 						</div>
 					</div>
@@ -379,7 +409,7 @@ Salua
 							<li class="list-inline-item"><a href="blog.html">Blog</a></li>
 							<li class="list-inline-item"><a href="about.html">About</a></li>
 							<li class="list-inline-item"><a href="contact.html">Contact</a></li>
-							<li class="list-inline-item"><a href="feed.xml" rel="external nofollow noopener noreferrer" target="_blank"><i style="font-size:14px;color:black" class="fa">&#xf09e;</i></a></li>
+							<li class="list-inline-item"><a href="feed.xml" rel="external nofollow noopener noreferrer" target="_blank" title="Rss feed"><i style="color:black" class="fa fa-rss"></i></a></li>
              
 						</ul>
 					</div>
@@ -506,7 +536,107 @@ $(document).ready(function() {
 });
 </script>
 
+<script>
 
+function textToSpeech()
+{
+   const speech = new SpeechSynthesisUtterance();
+    let voices = speechSynthesis.getVoices();
+  let convert = document.getElementById("text").innerHTML;
+
+    speech.text = convert;
+
+    speech.lang = 'en-US';
+   
+    speech.volume = 1;
+    speech.rate = 1;
+   
+  
+      
+    window.speechSynthesis.speak(speech);
+    speechSynthesis.speak(speech);
+}
+
+
+
+
+function stop()
+{
+    speechSynthesis.cancel();
+}
+
+speakBtn.addEventListener('click', textToSpeech);
+
+cancelBtn.addEventListener('click', stop);
+
+
+</script>
+
+
+<script>
+        
+const shareData = {
+  title: "The ramadan experience - Salua",
+  text: "The ramadan experience - Salua",
+   url: "https://salua3.github.io/the-ramadhan-experience.html",
+};
+
+const shareBtn = document.getElementById("share-btn");
+
+shareBtn.addEventListener("click", async () => {
+
+  if (navigator.share) {
+
+    try {
+      await navigator.share(shareData);
+      console.log("Data shared successfully");
+    } catch (err) {
+
+      console.error("Error while sharing:", err);
+    }
+  } else {
+
+    console.log("Web Share API not supported");
+  }
+});
+    </script>
+
+
+
+
+<script>
+
+function myFunction() {
+   var element = document.body; 
+   element.classList.toggle("dark-mode");
+}
+
+</script>
+
+
+<style>
+.dark-mode { 
+background-color: black;
+    color: gray;
+       opacity: 80%;
+    h1, h2, h3, h4, h5, h6, p, a, div, input, span, header  {color: gray; }
+   color: rgb(128, 128, 128) !important;
+   -webkit-text-fill-color: rgb(128, 128, 128) !important;
+    }
+
+ @media (prefers-color-scheme: dark) {
+      body {
+        background-color: black;
+    color: gray;
+   opacity: 80%;
+   h1, h2, h3, h4, h5, h6, p, a, div, input, span, header  {color: gray; }
+   color: rgb(128, 128, 128) !important;
+  -webkit-text-fill-color: rgb(128, 128, 128) !important;
+    
+    }
+
+
+</style>
 
 </body>
 
