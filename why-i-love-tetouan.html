@@ -14,12 +14,13 @@
 	<meta name="keywords" content="blog, travel, tetouan, morocco, life, writing, writer, woman, businesswoman">
 	<meta name="description" content="If I had to describe why I love Tetouan in one word, it would be “overwhelming”… but I mean that in a positive way.">
 
+	<meta name="color-scheme" content="dark light">
 
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico" >
 
             <!-- Favicon -->
-            <link rel="icon" href="./images/favicon/favicon.ico" >
-            <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+            <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico" >
+            <link rel="shortcut icon" type="image/x-icon" href="/images/favicon/favicon.ico" />
             <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96" />
             <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
             <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
@@ -33,8 +34,11 @@
 	<meta property="og:image" content="https://salua3.github.io/images/blog/blog-01.png"/>
 	<meta property="og:url" content="https://salua3.github.io/why-i-love-tetouan.html"/>
 	<meta property="og:description" content="If I had to describe why I love Tetouan in one word, it would be “overwhelming”… but I mean that in a positive way."/>
-        <meta property="og:type" content="website" />
-        <meta property="article:published_time" content="2025-04-25" />
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="en-US" />
+        <meta property="og:updated_time" content="2025-04-25T12:00:00+00:00" />
+        <meta property="article:published_time" content="2025-04-25T12:00:00+00:00" />
+        <meta property="article:modified_time" content="2025-04-25T12:00:00+00:00" />
 
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Why I love Tetouan - Blog - Salua" />
@@ -49,6 +53,8 @@
       <link rel="alternate" hreflang="en" href="https://salua3.github.io/index.html">
       <link rel="alternate" href="https://salua3.github.io/" hreflang="x-default" />
 
+	<meta name="referrer" content="no-referrer">
+	
         <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
     <meta name="AdsBot-Google" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
     <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
@@ -123,6 +129,27 @@ html {  scroll-behavior: smooth;}
 
 	</header>
 
+	<div class="container" >
+            <div class="row" >
+     
+                               <div class="col-sm-12" >
+                                   <div     class="tags-share-box center-box d-flex text-center justify-content-between  py-3 ">
+
+                                <span class="single-comment-o"><i class="fa fa-commm "></i> </span>
+
+                                <div class="post-share">
+                                    <span class="count-number-like"> </span>
+                                    <a class="penci-post-like single-like-button"><i class="ti-hea"></i></a>
+                                </div>
+
+                                <div class="list-posts-share" style="font-size:70%;">
+                                    <a href="#" onclick="myFunction()" title="Light/Dark Mode"><i style="color:gray;" class="fa fa-moon-o"></i></a>
+                                    <a href="#" onclick="window.print()" title="Save as pdf"><i style="color:gray;" class="fa fa-bookmark-o"></i></a>
+                                    <a href="#" onclick="window.print()" title="Print"><i style="color:gray;" class="fa fa-print"></i></a>
+                                    <a href="#" id="share-btn"  title="Share"><i style="color:gray;" class="fa fa-share-alt"></i></a>
+                                </div>
+                            </div> </div>
+                            </div> </div> 
 
     <section class="single-block-wrapper section-padding">
         <div class="container">
@@ -151,7 +178,7 @@ html {  scroll-behavior: smooth;}
 
                                 <!--post gallery start-->
                                 <div class="post-img mb-4">
-                                    <div class="post_gallery owl-carousel owl-theme">
+                                    <div class="post_gallery owl-carousel owl-theme" style="filter: drop-shadow(8px 8px 10px gray);">
                                         <div class="item">
                                             <a href="#"><img class="img-fluid" src="images/blog/blog-01.png"
                                                     alt="featured-image" /></a>
@@ -201,37 +228,43 @@ html {  scroll-behavior: smooth;}
                                                     alt="featured-image" /></a>
                                         </div>
                                     </div>
+<br />
+<center> <a  onclick="textToSpeech()" id="speakBtn" title="Listen" class="btn" style="  color:darkgray; width:25px; height: 5px; padding: 5px 5px; font-size:105%;"><i class="fa fa-play-circle-o" ></i></a> 
+<a  onclick="cancel()" id="cancelBtn" title="Stop" class="btn" style=" color:darkgray;  width:25px; height: 5px; padding: 5px 5px; font-size:105%;"><i class="fa fa-pause-circle-o" ></i></a>  
+</center>
                                 </div>
                                 <!--post gallery end-->
 
 
                         <div class="post-body">
-                            <div class="entry-content"> <br /><br />
+                            <div class="entry-content"> <br />
 
-                                <p> If I had to describe why I love Tetouan in one word, it would be “overwhelming”… but I mean that in a positive way. I was born and raised in Tetouan, also nicknamed “Granada’s Daughter”, “The White Dove” and “The Little Jerusalem”. I love my hometown. <br /><br />
-
+<p style="display:none;" id="text">
+Why I love Tetwan. If I had to describe why I love Tetouan in one word, it would be overwhelming, but I mean that in a positive way. I was born and raised in Tetouan, also nicknamed Granada’s Daughter, The White Dove, and The Little Jerusalem. I love my hometown.
+The city of Tetouan is wonderfully vibrant. In spite of the mountain of whitewashed walls that dominate the city, once you step foot in the old medina, the old walled city, you’ll notice right away that it’s really quite colorful. It surprises visitors that the medina is actually filled with deliciously interesting aromas and lots of commotion.
+Even though I’m a Moroccan and have lived my whole life in Morocco, I was exposed to new sights and a whole different way of life in this city. I found the true beauty of Tetouan once I gave myself time to get used to it and process what I was experiencing at that time. And since then my favorite pastime activity is wandering the narrow streets of the medina.
+When I started walking around in the old medina of Tetouan for the first time, I got quite confused and lost, even though it is considered small compared to the vast labyrinths of Fes or Marrakech. This was probably because my direction skills are poor. As I made my way through the narrow winding maze-like alleys, I got frustrated with my inability to find my way out.
+The street that most captures my heart is Trankat Street, where people go to find all kinds of kitchen wares and other odd items. Some locals even call it Google, because you never know what treasures you might come across there. Finding hidden places like this where you could find what you are looking for is really fun.
+My other favorite thing to do in Tetouan is the Hammam experience, and hanging out in one of Medina's traditional cafes for a glass of Moroccan mint tea or a bowl of bisar. Tetouan is known for this locally famous comfort soup made from fava beans and or split peas with olive oil, garlic and cumin. Both recipes are included in my plant-based ebook. 
+Unlike other cities in Morocco where Moroccan mint tea is usually served in a metal teapot, in Tetouan, and in the north of Morocco in general, they serve it in a tall glass with some fresh mint stuffed in the top.
+The hammam it’s a very different heat bath from the sauna, which is based on dry heat. The hammam is hot and humid, rather than steamy, for a relaxing exfoliation. Trust me, you’ve never felt as clean as you will after a hammam!
+There are several schools in Tetouan that are keeping traditional arts alive. The city is known for its Royal Artisan School, Dar Sanaa, for children wanting to learn traditional Andalusian craftsmanship, and also the National Institute of Fine Arts, the only one in the country. I studied there for 2 years and created my own art collection and other craft projects. If you are an art-lover like me, Tetouan is, without a doubt, the city you must visit. While you can enjoy the works of modern and contemporary artists at the Modern Art Museum and the Archeological Museum, on the other hand, you will also discover treasures from Morocco’s long and fascinating prehistoric and pre-Islamic history.
+I like the fact that Tetouan still embodies the feel of its past in its architecture, arts and hospitality, and is still not as overrun by tourists as Morocco’s other big cities. If you get to spend some time here someday, or already have, you will probably agree with me, the city of Tetouan has a way of overwhelming you, that makes you want more. 
+Salua. </p>
+				    
+<p> If I had to describe why I love Tetouan in one word, it would be “overwhelming”… but I mean that in a positive way. I was born and raised in Tetouan, also nicknamed “Granada’s Daughter”, “The White Dove” and “The Little Jerusalem”. I love my hometown. <br /><br />
 The city of Tetouan is wonderfully vibrant. In spite of the mountain of whitewashed walls that dominate the city, once you step foot in the old medina (the old walled city) you’ll notice right away that it’s really quite colorful. It surprises visitors that the medina is actually filled with deliciously interesting aromas and lots of commotion. <br /><br />
-
 Even though I’m a Moroccan and have lived my whole life in Morocco, I was exposed to new sights and a whole different way of life in this city. I found the true beauty of Tetouan once I gave myself time to get used to it and process what I was experiencing at that time. And since then my favorite pastime activity is wandering the narrow streets of the medina. <br /><br />
-
-When I started walking around in the old medina of Tetouan for the first time, I got quite confused and… lost… even though it is considered “small” compared to the vast labyrinths of Fes or Marrakech. This was probably because my direction skills are poor. As I made my way through the narrow winding maze-like alleys, I got frustrated with my inability to find my way out. <br /><br />
-
+When I started walking around in the old medina of Tetouan for the first time, I got quite confused and lost, even though it is considered “small” compared to the vast labyrinths of Fes or Marrakech. This was probably because my direction skills are poor. As I made my way through the narrow winding maze-like alleys, I got frustrated with my inability to find my way out. <br /><br />
 The street that most captures my heart is Trankat Street, where people go to find all kinds of kitchen wares and other odd items. Some locals even call it “Google” because you never know what treasures you might come across there. Finding hidden places like this where you could find what you are looking for is really fun. <br /><br />
-
 My other favorite thing to do in Tetouan is the “Hammam” experience, and hanging out in one of Medina's traditional cafes for a glass of Moroccan mint tea or a bowl of bisar. Tetouan is known for this locally famous “comfort” soup made from fava beans and/or split peas with olive oil, garlic and cumin. Both recipes are included in my <u><a href="plant-based-recipes.html" >plant based</a></u> ebook. <br /><br />
-
 Unlike other cities in Morocco where Moroccan mint tea is usually served in a metal teapot, in Tetouan (and in the north of Morocco in general) they serve it in a tall glass with some fresh mint stuffed in the top. <br /><br />
+The hammam it’s a very different heat bath from the sauna, which is based on dry heat. The hammam is hot and humid, rather than steamy, for a relaxing exfoliation. Trust me, you’ve never felt as clean as you will after a hammam! <br /><br />
+There are several schools in Tetouan that are keeping traditional arts alive. The city is known for its Royal Artisan School (Dar S’naa) for children wanting to learn traditional Andalusian craftsmanship and also the National Institute of Fine Arts (the only one in the country!). I studied there for 2 years and created my own <u><a href="art.html" >art collection</a></u> and other <u><a href="craft.html" >craft</a></u> projects. If you are an art-lover like me, Tetouan is, without a doubt, the city you must visit. While you can enjoy the works of modern and contemporary artists at the Modern Art Museum and the Archeological Museum, on the other hand, you will also discover treasures from Morocco’s long and fascinating prehistoric and pre-Islamic history. <br /><br />
+I like the fact that Tetouan still embodies the feel of its past in its architecture, arts and hospitality, and is still not as overrun by tourists as Morocco’s other big cities. If you get to spend some time here someday, or already have, you will probably agree with me, the city of Tetouan has a way of overwhelming you, that makes you want more…  <br /><br />
 
-The hammam it’s a very different heat bath from the sauna, which is based on dry heat, the hammam is hot and humid, rather than steamy, for a relaxing exfoliation. Trust me, you’ve never felt as clean as you will after a hammam! <br /><br />
-
-There are several schools in Tetouan that are keeping traditional arts alive. The city is known for its Royal Artisan School (Dar S’naa) for children wanting to learn traditional Andalusian craftsmanship and also the National Institute of Fine Arts (the only one in the country!). I studied there for 2 years and created my own <u><a href="art.html" >art collection</a></u> and other <u><a href="craft.html" >craft</a></u> projects. If you are an art-lover like me, Tetouan is, without a doubt, the city you must visit. While you can enjoy the works of modern and contemporary artists at the Modern Art Museum & the Archeological Museum, on the other hand, you will also discover treasures from Morocco’s long and fascinating prehistoric and pre-Islamic history. <br /><br />
-
-I like the fact that Tetouan still embodies the feel of its past in its architecture, arts and hospitality, and is still not as overrun by tourists as Morocco’s other big cities. If you get to spend some time here someday, or already have, you will probably agree with me, the city of Tetouan has a way of overwhelming you… that makes you want more…  <br /><br />
-
-Salua
-</p>
+Salua </p>
                                
-
                             </div> <br /><br />
 
                             
@@ -240,7 +273,7 @@ Salua
 
                     <div class="post-author d-flex my-5">
                         <div class="author-img">
-                            <img alt="author" src="images/author.jpg" class="avatar avatar-100 photo" width="100"   height="100">
+                            <img alt="author" src="images/author.jpg" class="avatar avatar-100 photo" width="100" height="100" title="Sally">
                         </div>
 
                         <div class="author-content pl-4">
@@ -278,7 +311,7 @@ Salua
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="post-block-wrapper mb-4 mb-lg-0">
                                     <a href="why-i-love-tetouan.html">
-                                        <img class="img-fluid" src="images/news/blog-001.png" alt="post-thumbnail" />
+                                        <img class="img-fluid" src="images/news/blog-001.png" alt="post-thumbnail" style="filter: drop-shadow(8px 8px 10px gray);"/>
                                     </a>
                                     <div class="post-content mt-3">
                                         <h5>
@@ -290,7 +323,7 @@ Salua
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="post-block-wrapper mb-4 mb-lg-0">
                                     <a href="a-walk-to-remember-in-bouanane.html">
-                                        <img class="img-fluid" src="images/news/blog-002.png" alt="post-thumbnail" />
+                                        <img class="img-fluid" src="images/news/blog-002.png" alt="post-thumbnail" style="filter: drop-shadow(8px 8px 10px gray);"/>
                                     </a>
                                     <div class="post-content mt-3">
                                         <h5>
@@ -302,7 +335,7 @@ Salua
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="post-block-wrapper">
                                     <a href="paris-is-always-a-good-idea.html">
-                                        <img class="img-fluid" src="images/news/blog-003.png" alt="post-thumbnail" />
+                                        <img class="img-fluid" src="images/news/blog-003.png" alt="post-thumbnail" style="filter: drop-shadow(8px 8px 10px gray);"/>
                                     </a>
                                     <div class="post-content mt-3">
                                         <h5>
@@ -352,8 +385,8 @@ Salua
 				<div class="col-lg-4 col-md-6">
 					<div class="widget footer-widget mb-5 mb-lg-0">
 						<h5 class="widget-title text-uppercase letter-spacing-2 mb-4">About me</h5>
-						<img src="images/about.png" alt="about" class="img-fluid">
-						<p class="mt-4">I recently discovered my passion for writing and fell in love… Salua &nbsp <a href="mailto:ji_3@outlook.com" target="_blank"><i style="font-size:18px;color:gray" class="fa">&#xf0e0;</i></a></p>
+						<img src="images/about.png" alt="about" class="img-fluid" title="Sally" style="filter: drop-shadow(8px 8px 10px gray);">
+						<p class="mt-4">I recently discovered my passion for writing and fell in love… Salua.&nbsp;<a href="mailto:ji_3@outlook.com" target="_blank" rel="external nofollow noopener noreferrer" title="Contact"><i style="color:darkgray" class="fa fa-envelope"></i></a></p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
@@ -383,22 +416,22 @@ Salua
 
 						<div class="row no-gutters">
 							<div class="col-lg-4 col-md-6 col-sm-6 col-6">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-01.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-01.png" alt="art" title="Art"/></a>
 							</div>
 							<div class="col-lg-4 col-md-6 col-sm-6  col-6">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-02.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-02.png" alt="art" title="Art"/></a>
 							</div>
 							<div class="col-lg-4 col-md-6 col-sm-6  col-6">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-03.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-03.png" alt="art" title="Art"/></a>
 							</div>
 							<div class="col-lg-4 col-md-6 col-sm-6  col-6">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-04.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-04.png" alt="art" title="Art"/></a>
 							</div>
 							<div class="col-lg-4 col-md-6 col-sm-6  col-6">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-05.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-05.png" alt="art" title="Art"/></a>
 							</div>
 							<div class="col-lg-4 col-md-6 col-sm-6  col-6">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-06.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-06.png" alt="art" title="Art"/></a>
 							</div>
 						</div>
 					</div>
@@ -418,7 +451,7 @@ Salua
 							<li class="list-inline-item"><a href="blog.html">Blog</a></li>
 							<li class="list-inline-item"><a href="about.html">About</a></li>
 							<li class="list-inline-item"><a href="contact.html">Contact</a></li>
-							<li class="list-inline-item"><a href="feed.xml" rel="external nofollow noopener noreferrer" target="_blank"><i style="font-size:14px;color:black" class="fa">&#xf09e;</i></a></li>
+							<li class="list-inline-item"><a href="feed.xml" rel="external nofollow noopener noreferrer" target="_blank" title="Rss feed"><i style="color:black" class="fa fa-rss"></i></a></li>
              
 						</ul>
 					</div>
@@ -545,7 +578,107 @@ $(document).ready(function() {
 });
 </script>
 
+<script>
 
+function textToSpeech()
+{
+   const speech = new SpeechSynthesisUtterance();
+    let voices = speechSynthesis.getVoices();
+  let convert = document.getElementById("text").innerHTML;
+
+    speech.text = convert;
+
+    speech.lang = 'en-US';
+   
+    speech.volume = 1;
+    speech.rate = 1;
+   
+  
+      
+    window.speechSynthesis.speak(speech);
+    speechSynthesis.speak(speech);
+}
+
+
+
+
+function stop()
+{
+    speechSynthesis.cancel();
+}
+
+speakBtn.addEventListener('click', textToSpeech);
+
+cancelBtn.addEventListener('click', stop);
+
+
+</script>
+
+
+<script>
+        
+const shareData = {
+  title: "Why I love Tetouan - Salua",
+  text: "Why I love Tetouan - Salua",
+   url: "https://salua3.github.io/why-i-love-tetouan.html",
+};
+
+const shareBtn = document.getElementById("share-btn");
+
+shareBtn.addEventListener("click", async () => {
+
+  if (navigator.share) {
+
+    try {
+      await navigator.share(shareData);
+      console.log("Data shared successfully");
+    } catch (err) {
+
+      console.error("Error while sharing:", err);
+    }
+  } else {
+
+    console.log("Web Share API not supported");
+  }
+});
+    </script>
+
+
+
+
+<script>
+
+function myFunction() {
+   var element = document.body; 
+   element.classList.toggle("dark-mode");
+}
+
+</script>
+
+
+<style>
+.dark-mode { 
+background-color: black;
+    color: gray;
+       opacity: 80%;
+    h1, h2, h3, h4, h5, h6, p, a, div, input, span, header  {color: gray; }
+   color: rgb(128, 128, 128) !important;
+   -webkit-text-fill-color: rgb(128, 128, 128) !important;
+    }
+
+ @media (prefers-color-scheme: dark) {
+      body {
+        background-color: black;
+    color: gray;
+   opacity: 80%;
+   h1, h2, h3, h4, h5, h6, p, a, div, input, span, header  {color: gray; }
+   color: rgb(128, 128, 128) !important;
+  -webkit-text-fill-color: rgb(128, 128, 128) !important;
+    
+    }
+
+
+</style>
 
 </body>
 
