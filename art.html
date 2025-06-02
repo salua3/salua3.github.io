@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Sally's arty stuff &mdash; Salua</title>
+	<title>Sally's arty stuff - Salua</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +10,13 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="author" content="Ji">
 	<meta name="keywords" content="painting, art, draw, drawing, woman, businesswoman">
-	<meta name="description" content="Welcome to my digital art collection, here are some minimalist drawings made by me after finishing my art & design studies and can be printed as big as A4.">
+	<meta name="description" content="Welcome to my art gallery, I figured it was time for me to be brave and start sharing my art more publicly. I hope you will love and enjoy this journey. ">
 
+	<meta name="color-scheme" content="dark light">
 
             <!-- Favicon -->
-            <link rel="icon" href="./images/favicon/favicon.ico" >
-            <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+            <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico" >
+            <link rel="shortcut icon" type="image/x-icon" href="/images/favicon/favicon.ico" />
             <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96" />
             <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
             <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
@@ -25,18 +26,19 @@
             <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
 
        <!-- Open Graph and Twitter Card data -->
-	<meta property="og:title" content="Sally's arty stuff &mdash; Salua"/>
+	<meta property="og:title" content="Sally's arty stuff - Salua"/>
 	<meta property="og:image" content="https://salua3.github.io/images/prod/design-01.png"/>
 	<meta property="og:url" content="https://salua3.github.io/art.html"/>
-	<meta property="og:description" content="Welcome to my digital art collection, here are some minimalist drawings made by me after finishing my art & design studies and can be printed as big as A4."/>
+	<meta property="og:description" content="Welcome to my art gallery, I figured it was time for me to be brave and start sharing my art more publicly. I hope you will love and enjoy this journey. "/>
         <meta property="og:type" content="website" />
-        <meta property="article:published_time" content="2025-04-25" />
+        <meta property="og:locale" content="en-US" />
+        <meta property="og:updated_time" content="2025-04-25T12:00:00+00:00" />
 
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Sally's arty stuff &mdash; Salua" />
+	<meta name="twitter:title" content="Sally's arty stuff - Salua" />
 	<meta name="twitter:image" content="https://salua3.github.io/images/prod/design-01.png" />
 	<meta name="twitter:site" content="https://salua3.github.io/art.html" />
-	<meta name="twitter:description" content="Welcome to my digital art collection, here are some minimalist drawings made by me after finishing my art & design studies and can be printed as big as A4." />
+	<meta name="twitter:description" content="Welcome to my art gallery, I figured it was time for me to be brave and start sharing my art more publicly. I hope you will love and enjoy this journey. " />
 
 
              <link rel="canonical" href="https://salua3.github.io/art.html" />
@@ -45,6 +47,8 @@
       <link rel="alternate" hreflang="en" href="https://salua3.github.io/index.html">
       <link rel="alternate" href="https://salua3.github.io/" hreflang="x-default" />
 
+	<meta name="referrer" content="no-referrer">
+	
         <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
     <meta name="AdsBot-Google" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
     <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
@@ -73,6 +77,41 @@ html {  scroll-behavior: smooth;}
 
 <body data-bs-spy="scroll" data-bs-target="#header" tabindex="0">
 
+	<div id="header-wrap"  >
+		<div class="top-content">
+			<div class="container-fluid">
+				<div class="row" > 
+					<div class="col-md-6">
+						
+
+					</div>
+
+                                           <div class="col-md-6">
+						
+                                          <div class="social-links" style="float:right;">
+							<ul>
+								<li>
+					 <a href="#" onclick="myFunction()" title="Light/Dark Mode" ><i class="fa fa-moon-o" ></i></a> &nbsp;
+								</li>
+                                                                <li>
+					 <a href="#" onclick="window.print()" title="Save as pdf" ><i class="fa fa-bookmark-o" ></i></a> &nbsp;
+								</li>
+                                                                 <li>
+					<a href="#" onclick="window.print()" title="Print"><i class="fa fa-print" ></i></a> &nbsp;
+								</li>
+                                                                   <li>
+					<a href="#" id="share-btn"  title="Share"><i class="fa fa-share-alt" ></i></a> &nbsp;
+								</li>
+
+							</ul>
+						</div>
+
+						</div>
+                                     </div>
+
+				</div>
+			</div>
+		</div> 
 	
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
 
@@ -158,12 +197,16 @@ html {  scroll-behavior: smooth;}
 			<div class="row">
 
 				<div class="col-md-5">
-					<a href="#gallery-1" class="product-image"><img src="images/prod/design-001.png" alt="art" style="filter: drop-shadow(8px 8px 10px gray);"></a>
+					<a href="#gallery-1" class="product-image"><img src="images/prod/design-001.png" alt="art" title="View gallery" style="filter: drop-shadow(8px 8px 10px gray);"></a>
 				</div>
 
 				<div class="col-md-7 pl-5">
 					<div class="product-detail">
 						<span><small>By Salua</small></span>
+
+	 <button onclick="cancel()" id="cancelBtn" title="Stop"  class="fa " style=" height: 5px; padding: 5px 5px; border:none; background:transparent; float:right; color:darkgray; ">&#xf28c;</button> 
+<button onclick="textToSpeech()" id="speakBtn" title="Listen" class="fa "  style=" height: 5px; padding: 5px 5px; border:none; background:transparent; float:right; color:darkgray; ">&#xf01d; &nbsp;</button> 
+						
 						<h1>Sally's Arty Stuff</h1>
 
 					<div class="rating-container d-flex align-items-center text-warning mb-4">
@@ -183,13 +226,29 @@ html {  scroll-behavior: smooth;}
 							  <use xlink:href="#star-outline"></use>
 							</svg>
 						</div> <br />
-
+<p style="display:none;" id="text">
+Sally's arty stuff. Hi, my name is Salua. 
+Welcome to my art gallery, I figured it was time for me to be brave and start sharing my art more publicly. I hope you will love and enjoy this journey. View gallery.
+I have been painting for more than 10 years. During my art school days, I used to draw a welcome page on all my drawing files. My love for the beauty of nature and color is what truly inspires me. 
+What is more important, the process or the result? I used to believe for a long time it was the result, but now I don't care. I'm painting for fun, and whatever happens, happens. Painting isn’t just about starting a business, I love the vibe it gives, it's also a great way to de-stress and create unique gifts for friends and family.
+The first series of artworks I created is dedicated to the theme of nature: illustrations of atmospheric landscapes, animals, plants, and the change of seasons. 
+Traces of the unspoken is my latest acrylic glass painting, a super colorful palette with floral, abstract, and landscape designs, on the challenging material of glass. Sometimes I like doing these more minimalist paintings, as I think they add a certain level of dreaminess.
+These works of art are perfect for those who appreciate clean lines, vibrant colors, simplicity, and fun seasonal decor using natural materials. Originals and prints are available.
+Learn more about how I make my own color palette. To purchase, please contact me. </p>
 
 						
-						<p>
-							Hi, my name is Salua. <br />Welcome to my digital art collection 'Sally's Arty Stuff'. <br />View gallery: <a href="#gallery-1" style="color:black;" class="fa"> &#xf04b; </a> <br /><br />Here are some minimalist drawings made by me after finishing my art & design studies, and can be printed as big as A4. My digital downloads are for private, non-commercial use only, and come as a pdf file that will be sent to you via email. <br /><br /> Learn more about how I make my own <u><a href="the-art-of-color-mixing.html" style="color:black">color palette</a></u>. <br /> <br /> To purchase, please <u><a href="mailto:ji_3@outlook.com" target="_blank" style="color:black">contact</a></u> me. <br /><br /> 
-IMPORTANT: <br />  The PDF file must be downloaded on your computer first. You can then transfer it to your phone or iPad/tablet. (You may need to download an app to open the file, Adobe Reader or iBooks). You will get a PDF (39KB) file.
-						</p>
+<p> Hi, my name is Salua. <br />Welcome to my art gallery, I figured it was time for me to be brave and start sharing my art more publicly. I hope you will love and enjoy this journey.  <br />
+View gallery: <a href="#gallery-1" title="View gallery" style="color:black;" class="fa"> &#xf04b; </a> 
+<br /><br />
+I have been painting for more than 10 years. During my art school days, I used to draw a welcome page on all my drawing files. My love for the beauty of nature and color is what truly inspires me. What is more important, the process or the result? I used to believe for a long time it was the result, but now I don't care. I'm painting for fun, and whatever happens, happens. Painting isn’t just about starting a business, I love the vibe it gives, it's also a great way to de-stress and create unique gifts for friends and family.
+<br /><br /> 
+The first series of artworks I created is dedicated to the theme of nature: illustrations of atmospheric landscapes, animals, plants, and the change of seasons. 'Traces of the unspoken' is my latest acrylic glass painting, a super colorful palette with floral, abstract, and landscape designs, on the challenging material of glass. Sometimes I like doing these more minimalist paintings, as I think they add a certain level of dreaminess.
+<br /><br /> 
+These works of art are perfect for those who appreciate clean lines, vibrant colors, simplicity, and fun seasonal decor using natural materials. Originals and prints are available.
+<br /><br /> 
+Learn more about how I make my own <u><a href="the-art-of-color-mixing.html" style="color:black">color palette</a></u>. <br /> <br /> 
+To purchase, please <u><a href="mailto:ji_3@outlook.com" target="_blank" rel="external nofollow noopener noreferrer" style="color:black">contact</a></u> me. <br /><br /> 
+Salua </p>
 
 
 						<p><span class="price colored fs-4">€ 180.00</span></p>	
@@ -498,7 +557,7 @@ IMPORTANT: <br />  The PDF file must be downloaded on your computer first. You c
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-				<a href="the-importance-of-technology-in-education-french.html"><img src="images/prod/ebook-1.png" alt="Book" class="product-item"></a>
+				<a href="the-importance-of-technology-in-education-french.html"><img src="images/prod/ebook-1.png" alt="Book" title="The importance of technology in education" class="product-item"></a>
 										
 									</figure>
 									<figcaption>
@@ -512,11 +571,11 @@ IMPORTANT: <br />  The PDF file must be downloaded on your computer first. You c
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-							<a href="plant-based-recipes.html"><img src="images/prod/ebook-2.png" alt="Book" class="product-item"></a>
+							<a href="plant-based-recipes.html"><img src="images/prod/ebook-2.png" alt="Book" title="Plant-based recipes" class="product-item"></a>
 										
 									</figure>
 									<figcaption>
-										<h3>Plant based recipes</h3>
+										<h3>Plant-based recipes</h3>
 										<span>Salua</span>
 										<div class="item-price">€ 50.00</div>
 									</figcaption>
@@ -527,7 +586,7 @@ IMPORTANT: <br />  The PDF file must be downloaded on your computer first. You c
 							<div class="col-md-3">
 								<div class="product-item">
 									<figure class="product-style">
-							<a href="craft.html"><img src="images/prod/craft-01.png" alt="craft" class="product-item"></a>
+							<a href="craft.html"><img src="images/prod/craft-01.png" alt="craft" title="My crafty things" class="product-item"></a>
 										
 									</figure>
 									<figcaption>
@@ -563,8 +622,9 @@ IMPORTANT: <br />  The PDF file must be downloaded on your computer first. You c
 				<div class="col-lg-4 col-md-6">
 					<div class="widget footer-widget mb-5 mb-lg-0">
 						<h5 class="widget-title text-uppercase letter-spacing-2 mb-4">About me</h5>
-						<img src="images/about.png" alt="about" class="img-fluid" style="filter: drop-shadow(8px 8px 10px gray);">
-						<small><p class="mt-4">Hi, my name is Salua. To purchase, please contact me. &nbsp <a href="mailto:ji_3@outlook.com" target="_blank"><i style="font-size:18px;color:gray" class="fa">&#xf0e0;</i></a> &nbsp <a href="https://t.me/z1kp_7" target="_blank"><i style="font-size:18px;color:gray" class="fa">&#xf2c6;</i></a> </p></small>  
+						<img src="images/about.png" alt="about" title="Sally" class="img-fluid" style="filter: drop-shadow(8px 8px 10px gray);">
+						<small><p class="mt-4">Hi, my name is Salua. To purchase, please contact me.&nbsp;<a href="mailto:ji_3@outlook.com" target="_blank" rel="external nofollow noopener noreferrer" title="Contact"><i style="color:darkgray" class="fa fa-envelope"></i></a>&nbsp;&nbsp;
+							<a href="https://t.me/z1kp_7" target="_blank" rel="external nofollow noopener noreferrer" title="Send message"><i style="color:darkgray" class="fa fa-telegram"></i></a></p></small>  
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
@@ -594,22 +654,22 @@ IMPORTANT: <br />  The PDF file must be downloaded on your computer first. You c
 
 						<div class="row no-gutters" >
 							<div class="col-lg-4 col-md-6 col-sm-6 col-6"  style="padding:2px" style="width:20%">
-								<a href="art.html"><img class="img-fluid"  src="images/news/news-01.png" alt="art"  /></a>
+								<a href="art.html"><img class="img-fluid"  src="images/news/news-01.png" alt="art"  title="Art"/></a>
 							</div>
 							<div class="col-lg-4 col-md-6 col-sm-6  col-6"  style="padding:2px" style="width:20%">
-								<a href="art.html"><img class="img-fluid"  src="images/news/news-02.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid"  src="images/news/news-02.png" alt="art" title="Art"/></a>
 							</div>
 							<div class="col-lg-4 col-md-6 col-sm-6  col-6" style="padding:2px" style="width:20%">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-03.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-03.png" alt="art" title="Art"/></a>
 							</div>
 							<div class="col-lg-4 col-md-6 col-sm-6  col-6" style="padding:2px" style="width:20%">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-04.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-04.png" alt="art" title="Art"/></a>
 							</div>
 							<div class="col-lg-4 col-md-6 col-sm-6  col-6" style="padding:2px" style="width:20%">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-05.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-05.png" alt="art" title="Art"/></a>
 							</div>
 							<div class="col-lg-4 col-md-6 col-sm-6  col-6" style="padding:2px" style="width:20%">
-								<a href="art.html"><img class="img-fluid" src="images/news/news-06.png" alt="art" /></a>
+								<a href="art.html"><img class="img-fluid" src="images/news/news-06.png" alt="art" title="Art"/></a>
 							</div>
 						</div>
 					</div>
@@ -619,15 +679,15 @@ IMPORTANT: <br />  The PDF file must be downloaded on your computer first. You c
 				<div class="row">
 					<div class="col-lg-12" >
 						<small><ul class="list-inline footer-socials-2 text-center">
-							<li class="list-inline-item"><a href="index.html" style="color:black">Home</a></li>
-							<li class="list-inline-item"><a href="index.html" style="color:black">Shop</a></li>
-							<li class="list-inline-item"><a href="craft.html" style="color:black">Craft</a></li>
-							<li class="list-inline-item"><a href="#" style="color:black">Art</a></li>
-					<li class="list-inline-item"><a href="plant-based-recipes.html" style="color:black">Ebook</a></li>
-							<li class="list-inline-item"><a href="blog.html" style="color:black">Blog</a></li>
-							<li class="list-inline-item"><a href="about.html" style="color:black">About</a></li>
-							<li class="list-inline-item"><a href="contact.html" style="color:black">Contact</a></li>
-							<li class="list-inline-item"><a href="feed.xml" rel="external nofollow noopener noreferrer" target="_blank"><i style="font-size:12px; color:black" class="fa">&#xf09e;</i></a></li>
+							<li class="list-inline-item"><a href="index.html" style="color:gray">HOME</a></li> &nbsp;
+							<li class="list-inline-item"><a href="index.html" style="color:gray">SHOP</a></li> &nbsp;
+							<li class="list-inline-item"><a href="craft.html" style="color:gray">CRAFT</a></li> &nbsp;
+							<li class="list-inline-item"><a href="#" style="color:gray">ART</a></li> &nbsp;
+					<li class="list-inline-item"><a href="plant-based-recipes.html" style="color:gray">EBOOK</a></li> &nbsp;
+							<li class="list-inline-item"><a href="blog.html" style="color:gray">BLOG</a></li> &nbsp;
+							<li class="list-inline-item"><a href="about.html" style="color:gray">ABOUT</a></li> &nbsp;
+							<li class="list-inline-item"><a href="contact.html" style="color:gray">CONTACT</a></li> &nbsp;
+							<li class="list-inline-item"><a href="feed.xml" rel="external nofollow noopener noreferrer" target="_blank" title="Rss feed"><i style=" color:gray" class="fa fa-rss"></i></a></li>
                
 						</ul> </small>
                      
@@ -755,7 +815,110 @@ $(document).ready(function() {
 });
 </script>
 
+<script>
 
+function textToSpeech()
+{
+   const speech = new SpeechSynthesisUtterance();
+    let voices = speechSynthesis.getVoices();
+  let convert = document.getElementById("text").innerHTML;
+
+    speech.text = convert;
+
+    speech.lang = 'en-US';
+   
+    speech.volume = 1;
+    speech.rate = 1;
+   
+  
+      
+    window.speechSynthesis.speak(speech);
+    speechSynthesis.speak(speech);
+}
+
+
+
+
+
+function stop()
+{
+    speechSynthesis.cancel();
+}
+
+speakBtn.addEventListener('click', textToSpeech);
+
+cancelBtn.addEventListener('click', stop);
+
+
+</script>
+
+
+<script>
+        
+const shareData = {
+  title: "Sally's arty stuff - Salua",
+  text: "Sally's arty stuff - Salua",
+   url: "https://salua3.github.io/art.html",
+};
+
+const shareBtn = document.getElementById("share-btn");
+
+shareBtn.addEventListener("click", async () => {
+
+  if (navigator.share) {
+
+    try {
+      await navigator.share(shareData);
+      console.log("Data shared successfully");
+    } catch (err) {
+
+      console.error("Error while sharing:", err);
+    }
+  } else {
+
+    console.log("Web Share API not supported");
+  }
+});
+    </script>
+
+
+
+
+<script>
+
+function myFunction() {
+   var element = document.body; 
+   element.classList.toggle("dark-mode");
+}
+
+</script>
+
+
+<style>
+.dark-mode { 
+background-color: black;
+    color: gray;
+       opacity: 80%;
+    h1, h2, h3, h4, h5, h6, p, a, div, input, span, header  {color: gray; }
+   color: rgb(128, 128, 128) !important;
+   -webkit-text-fill-color: rgb(128, 128, 128) !important;
+    }
+
+ @media (prefers-color-scheme: dark) {
+      body {
+        background-color: black;
+    color: gray;
+   opacity: 80%;
+   h1, h2, h3, h4, h5, h6, p, a, div, input, span, header  {color: gray; }
+   color: rgb(128, 128, 128) !important;
+  -webkit-text-fill-color: rgb(128, 128, 128) !important;
+    
+    }
+ }
+
+
+
+</style>
 
 
 </body>
