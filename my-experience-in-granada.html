@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>My experience in Granada - Interview - Salua</title>
+    <title>My experience in Granada - Salua</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -14,12 +14,13 @@
 	<meta name="keywords" content="blog, university, school, higher education, master, bachelor, graduation, study abroad, studies, pharmacy, granada, travel, interview, writing, writer, woman, businesswoman">
 	<meta name="description" content="In the first few weeks of my university studies, I was surprised by how quickly I felt at home in Granada, even with the challenges of meeting new people, learning my way around... Interview. ">
 
-
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+       <meta name="color-scheme" content="dark light">
+	
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico" >
 
             <!-- Favicon -->
-            <link rel="icon" href="./images/favicon/favicon.ico" >
-            <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+            <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico" >
+            <link rel="shortcut icon" type="image/x-icon" href="/images/favicon/favicon.ico" />
             <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96" />
             <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
             <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
@@ -29,15 +30,18 @@
             <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
 
        <!-- Open Graph and Twitter Card data -->
-	<meta property="og:title" content="My experience in Granada - Interview - Salua"/>
+	<meta property="og:title" content="My experience in Granada - Salua"/>
 	<meta property="og:image" content="https://salua3.github.io/images/blog/blog-25.png"/>
 	<meta property="og:url" content="https://salua3.github.io/my-experience-in-granada.html"/>
 	<meta property="og:description" content="In the first few weeks of my university studies, I was surprised by how quickly I felt at home in Granada, even with the challenges of meeting new people, learning my way around... Interview. "/>
-        <meta property="og:type" content="website" />
-        <meta property="article:published_time" content="2025-04-25" />
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="en-US" />
+        <meta property="og:updated_time" content="2025-04-25T12:00:00+00:00" />
+        <meta property="article:published_time" content="2025-04-25T12:00:00+00:00" />
+        <meta property="article:modified_time" content="2025-04-25T12:00:00+00:00" />
 
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="My experience in Granada - Interview - Salua" />
+	<meta name="twitter:title" content="My experience in Granada - Salua" />
 	<meta name="twitter:image" content="https://salua3.github.io/images/blog/blog-25.png" />
 	<meta name="twitter:site" content="https://salua3.github.io/my-experience-in-granada.html" />
 	<meta name="twitter:description" content="In the first few weeks of my university studies, I was surprised by how quickly I felt at home in Granada, even with the challenges of meeting new people, learning my way around... Interview. " />
@@ -49,6 +53,8 @@
       <link rel="alternate" hreflang="en" href="https://salua3.github.io/index.html">
       <link rel="alternate" href="https://salua3.github.io/" hreflang="x-default" />
 
+	<meta name="referrer" content="no-referrer">
+	
         <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
     <meta name="AdsBot-Google" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
     <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
@@ -123,6 +129,28 @@ html {  scroll-behavior: smooth;}
 
 	</header>
 
+	<div class="container" >
+            <div class="row" >
+     
+                               <div class="col-sm-12" >
+                                   <div     class="tags-share-box center-box d-flex text-center justify-content-between  py-3 ">
+
+                                <span class="single-comment-o"><i class="fa fa-commm "></i> </span>
+
+                                <div class="post-share">
+                                    <span class="count-number-like"> </span>
+                                    <a class="penci-post-like single-like-button"><i class="ti-hea"></i></a>
+                                </div>
+
+                                <div class="list-posts-share" style="font-size:70%;">
+                                    <a href="#" onclick="myFunction()" title="Light/Dark Mode"><i style="color:gray;" class="fa fa-moon-o"></i></a>
+                                    <a href="#" onclick="window.print()" title="Save as pdf"><i style="color:gray;" class="fa fa-bookmark-o"></i></a>
+                                    <a href="#" onclick="window.print()" title="Print"><i style="color:gray;" class="fa fa-print"></i></a>
+                                    <a href="#" id="share-btn"  title="Share"><i style="color:gray;" class="fa fa-share-alt"></i></a>
+                                </div>
+                            </div> </div>
+                            </div> </div> 
+	
 
     <section class="single-block-wrapper section-padding">
         <div class="container">
@@ -147,89 +175,77 @@ html {  scroll-behavior: smooth;}
                             </div>
                            
                             <div class="post-featured-image mt-5">
-                                <img src="images/blog/blog-25.png" class="img-fluid w-100" alt="featured-image">
+                                <img src="images/blog/blog-25.png" class="img-fluid w-100" alt="featured-image" style="filter: drop-shadow(8px 8px 10px gray);">
                             </div>
+
+<br />
+<a  onclick="textToSpeech()" id="speakBtn" title="Listen" class="btn" style="  color:darkgray; width:25px; height: 5px; padding: 5px 5px; font-size:105%;"><i class="fa fa-play-circle-o" ></i></a> 
+<a  onclick="cancel()" id="cancelBtn" title="Stop" class="btn" style=" color:darkgray;  width:25px; height: 5px; padding: 5px 5px; font-size:105%;"><i class="fa fa-pause-circle-o" ></i></a> 
+				
                         </div>
 
 
 
-
                         <div class="post-body">
-                            <div class="entry-content"> <br /><br />
-                                <p>  <b> Hi Salua and Jiji, why did you choose to go to study in Granada, Spain? </b> <br /><br />
+                            <div class="entry-content"> 
 
+<p style="display:none;" id="text">
+My experience in Granada.
+Hi Salua and Jiji, why did you choose to go to study in Granada, Spain?
+Salua. I made the choice which I believed to be the best place to go to for my pharmacy studies. Granada has a long and interesting story and is close to my hometown Tetouan, also nicknamed Granada’s daughter. Being able to go to Granada was a godsend for my university studies and research. The libraries are one of the best to study, contain unpublished Arabic sources, and surrounded by cultural treasures.
+Jiji. I made the choice which I believed to be the best place to go to for my physics and architecture studies.
+What did you gain learn from your experience abroad? Was it worthwhile?
+Salua. I learned so much about myself and had the opportunity to travel more than I ever have been able to. Yes, I was frustrated with the Spanish language sometimes and anxious about being around so many moroccans and erasmus students, but overall it was an amazing experience to live/learn in such a beautiful country and such a beautiful University.
+Jiji. I met fantastic people. The only thing I will say is that sometimes I felt that our group was too big, there were more than 200 students per class from different cultures and nationalities.
+How long was your stay? What financial aid did you receive?
+Salua. Such good memories. Hugs and kind regards to all the staff, teachers and friends and especially to everyone from Granada. I love Granada. Just like Jiji I was awarded an international students scholarship based on academic merit, offered by the Spanish government. The small scholarship was really helpful, 1500 euro per year, free meals at university canteens, and payment of the university’s annual fees.
+We’ve been in Granada for eight years from 2000 2008 and I’ve never felt that the University makes life easier for Moroccan students, quite the contrary: when they can put stones in the way, they will. A huge bureaucracy, which in most cases is not even telematic, as in other places, in which you always find obstacles, delays and other problems. Departments full of last names, in which the chairs of certain faculties are inherited by lineage. Professors Desponados, who are allowed, quite often, the luxury of not answering an email, accustomed to the francoist education in which the student is a subordinate. At the research level, the UGR is usually well spoken. I can not comment here. But of course, what I am sure of is that if this university has a national reputation, it is because it is located in a wonderful city that will always be attractive for foreign students who decide to come, and for its Andalusian-Arab history and origin.
+What’s the student vibe like in Granada?
+Salua. The student atmosphere in Granada is excellent. Of course, when you first get there you take a little time to adapt and get used to it all, and you might feel lonely at the start, but hey, I was always with my dear sister Jiji who also studied in Granada at the same time as me. But with time and as you get better at the city and you speak more with the locals, you see that the locals are happy to listen to you and that they’ll do their best to help you.
+Jiji. With regards to the Moroccan students, it’s a party atmosphere and there’s a real focus on sharing and getting to know other people’s cultures. We regularly go out to visit the city and the surrounding areas but above all, we have really great nights out in tapas bars, Moroccan mint tea and belly dance in the Teterias.
+Would you recommend the city or university to other students?
+Jiji. Yes definitely, the city is sublime. It’s an ideal location to study, when the weather isn’t playing up.
+Salua. I was part of the pharmacy department on Cartuja campus, which also overlooks the city. The university is big, bright and well organized. The libraries for all the departments are very well documented, rich with an abundance of books, where you can study quietly.
+</p>
+
+<p> <b> Hi Salua and Jiji, why did you choose to go to study in Granada, Spain? </b> <br /><br />
 <b>Salua</b>: I made the choice which I believed to be the best place to go to for my pharmacy studies. Granada has a long and interesting story and is close to my hometown Tetouan, also nicknamed “Granada’s daughter”. Being able to go to Granada was a godsend for my university studies and research. The libraries are one of the best to study, contain unpublished Arabic sources, and surrounded by cultural treasures. <br /><br />
-
 <b>Jiji</b>: I made the choice which I believed to be the best place to go to for my physics and architecture studies. <br /><br />
-
 <b>What did you gain/learn from your experience abroad? Was it worthwhile? </b> <br /><br />
-
 <b>Salua</b>: I learned so much about myself and had the opportunity to travel more than I ever have been able to. Yes, I was frustrated with the Spanish language sometimes and anxious about being around so many moroccans and erasmus students, but overall it was an amazing experience to live/learn in such a beautiful country and such a beautiful University. <br /><br />
-
 <b>Jiji</b>: I met fantastic people! The only thing I will say is that sometimes I felt that our group was too big, there were more than 200 students per class from different cultures and nationalities.  <br /><br />
-
 <b>How long was your stay? What financial aid did you receive? </b> <br /><br />
-
-<b>Salua</b>: Such good memories. Hugs & kind regards to all the staff, teachers and friends and especially to everyone from Granada. I love Granada.
+<b>Salua</b>: Such good memories. Hugs and kind regards to all the staff, teachers and friends and especially to everyone from Granada. I love Granada.
 Just like Jiji I was awarded an international students scholarship based on academic merit, offered by the Spanish government. The small scholarship was really helpful, €1500 per year, free meals at university canteens, and payment of the university’s annual fees. <br /><br />
-
 We’ve been in Granada for eight years from 2000–2008 and I’ve never felt that the University makes life easier for Moroccan students, quite the contrary: when they can put stones in the way, they will. A huge bureaucracy, which in most cases is not even telematic (as in other places), in which you always find obstacles, delays and other problems. Departments full of last names, in which the chairs of certain faculties are inherited by lineage. Professors desponados, who are allowed, quite often, the luxury of not answering an email, accustomed to the francoist education in which the student is a subordinate. At the research level, the UGR is usually well spoken. I can not comment here. But of course, what I am sure of is that if this university has a national reputation, it is because it is located in a wonderful city that will always be attractive for foreign students who decide to come, and for its Andalusian-Arab history and origin. <br /><br />
-
 <b>What’s the student vibe like in Granada? </b> <br /><br />
-
 <b>Salua</b>: The student atmosphere in Granada is excellent. Of course, when you first get there you take a little time to adapt and get used to it all, and you might feel lonely at the start, but hey, I was always with my dear sister Jiji who also studied in Granada at the same time as me. But with time and as you get better at the city and you speak more with the locals, you see that the locals are happy to listen to you and that they’ll do their best to help you. <br /><br />
-
 <b>Jiji</b>: With regards to the Moroccan students, it’s a party atmosphere and there’s a real focus on sharing and getting to know other people’s cultures. We regularly go out to visit the city and the surrounding areas but above all, we have really great nights out in tapas bars, Moroccan mint tea and belly dance in the Teterias. <br /><br />
-
 <b>Would you recommend the city or university to other students?</b> <br /><br />
-
 <b>Jiji</b>: Yes definitely, the city is sublime! It’s an ideal location to study (when the weather isn’t playing up). <br /><br />
-
 <b>Salua</b>: I was part of the pharmacy department on Cartuja campus, which also overlooks the city. The university is big, bright and well organized. The libraries for all the departments are very well documented, rich with an abundance of books, where you can study quietly and relax with a coffee made in Spain. <br /><br />
-
 <b>What’s Spain’s food like? </b> <br /><br />
-
 <b>Salua</b>: I fell under the charm of Spanish gastronomy, especially the famous tapas bars. Whether you order an alcoholic or non-alcoholic drink, you are offered a plate of food or tapas, and you get different dishes depending on the number of people in your group. It can be seafood, kebabs, burgers, meats, salad etc. The food in general is normally fruit or vegetable based, for example gazpacho, salads and even spanish omelet. However there are all of the typical dishes for the meat lovers too like chicken fillets, paella and meat skewers. Granada has lots of tapas bars and restaurants to satisfy all gastronomical needs. <br /><br />
-
 <b>Was it hard to find accommodation in Granada?</b> <br /><br />
-
 <b>Jiji</b>: At the start, yes, but it was because I wasn’t in Granada to be able to do any local research nor visit any potential accommodation to find and like. I turned to the internet and by searching ‘alquiler piso granada’ or ‘compartir piso granada’ I came across lots of adverts which let me find cheap and well-located accommodation. <br />
 When you’re there in person you can see all the posters throughout the city, especially near to the university, that advertise people looking for accommodation. All you have to do is give them a call if you’re interested. <br /><br />
-
 <b>Salua</b>: In the first 2 years I was always looking for flats to share with Jiji and other students, generally 4 rooms, in the Plaza de Toros Avenue, which is close to the faculty. And then when my two brothers arrived, we were finally reunited and we rented a whole house. My parents visited us often in Granada, and we were traveling to Tetouan on every holiday. <br /><br />
-
 <b>What are living costs like in Granada? </b> <br /><br />
-
 <b>Salua</b>: The cost of living varies depending on the individual. For example, the price will probably be extortionate for those who want to live in a big apartment by themselves, not only due to rent but also due to electricity, water, and gas bills. However, if you share your accommodation, the costs are divided and the price, depending on your neighborhood, can be a lot cheaper. Concerning food, evenings out, and buying things in general, the price remains quite affordable in Granada and lets you live your life at a reasonable price. <br /><br />
-
 <b>What’s it like learning the language there? Did you take part in a language course organised by the university?</b> <br /><br />
-
 <b>Salua</b>: I didn’t take any language courses in Granada. At that time I already spoke the Spanish language perfectly. I am bilingual in Arabic and Spanish, and fluent in French and English. I know that Spanish is a difficult language for foreigners to understand first time round because the locals there speak quickly and with an accent. However, in Granada there are several courses organized by the university to learn the Spanish language, for example the famous school called Carfax, to improve your spanish. <br /><br />
-
 <b>What’s the most economical way to get to Granada from your hometown?</b> <br /><br />
-
 <b>Salua</b>: From Tetouan, the most economical way for me to get to Granada is by ferry Ceuta-Algeciras + bus, or by plane Tetouan-Málaga + bus or  Blablacar to Granada.  <br /><br />
-
 <b>Where do you recommend to go out in Granada?</b> <br /><br />
-
 <b>Jiji</b>: There’s nothing better than Calle Pedro Antonio where most of the pubs are. Moroccan students like to go to Teterias too. There’s also Calle Elvira, well known for its tapas. There’s a number of different night clubs like Camborio, the excellent erasmus nightclub where they put on lots of themed nights. <br /><br />
-
 <b>And to eat in Granada? What are your favorite places?</b> <br /><br />
-
 <b>Salua</b>: I really liked going to tapas bars to eat, like Babel who did really nice, cheap food. Also, in front of Babel, is a Pakistani kebab shop which does really good shawarmas. There’s also McDonald’s, Burger King and Subway for fast-foodies. <br /><br />
-
 <b>And what cultural places do you recommend going to see?</b> <br /><br />
-
 <b>Salua</b>: In Granada, it’s simply not heard of to not have visited the Alhambra palace, a thousand and one nights, an arabic fairytale in the middle of Spain, the big Palatine military building that requires an entire morning to visit as it’s just so big. The name Alhambra has its origins in an Arabic word meaning “red castle or vermilion”, it contains a magnificent medieval Arabic structure and history which leaves you mesmerised. <br /><br />
-
 <b>Jiji</b>: Granada is Spain’s Arab past and arabic influences. There’s also museums and well-hidden picturesque areas of the city that make the Albaycin quarter, which holds true Arabic architectural treasures, just so charming. <br /><br />
-
 <b>Any advice for future students going to Granada?</b> <br /><br />
-
 <b>Salua</b>: I have lots of advice! Be careful with the climate as Granada is situated in the south of Spain near an arid region, however la Sierra Nevada mountain just at the side can also quickly block out that warm sunshine. It can get really cold just as easily as it can become really hot; the temperature changes are quite brutal during certain times of the year and the weather can go from sun, to rain, to even snow in a minute, so pay attention to the clothes you’re wearing and look at the weather forecast before you go out. <br /><br />
-
 <b>Jiji</b>: My other advice is about legal administration. When you arrive, you’re asked to fill out the mobility-related documents. Most of the time the university can’t help you. Go to the International Relations office to obtain your student card, visa or residency permit. The higher education school (international postgraduate school) only serves Master’s students. If you’re an undergraduate Bachelor student, the university usually takes care of you.
-
 
 </p>
                                
@@ -242,7 +258,7 @@ When you’re there in person you can see all the posters throughout the city, e
 
                     <div class="post-author d-flex my-5">
                         <div class="author-img">
-                            <img alt="author" src="images/author.jpg" class="avatar avatar-100 photo" width="100"   height="100">
+                            <img alt="author" src="images/author.jpg" class="avatar avatar-100 photo" width="100" height="100" title="Sally">
                         </div>
 
                         <div class="author-content pl-4">
@@ -281,7 +297,7 @@ When you’re there in person you can see all the posters throughout the city, e
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="post-block-wrapper mb-4 mb-lg-0">
                                     <a href="why-i-love-tetouan.html">
-                                        <img class="img-fluid" src="images/news/blog-001.png" alt="post-thumbnail" />
+                                        <img class="img-fluid" src="images/news/blog-001.png" alt="post-thumbnail" style="filter: drop-shadow(8px 8px 10px gray);"/>
                                     </a>
                                     <div class="post-content mt-3">
                                         <h5>
@@ -293,7 +309,7 @@ When you’re there in person you can see all the posters throughout the city, e
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="post-block-wrapper mb-4 mb-lg-0">
                                     <a href="a-walk-to-remember-in-bouanane.html">
-                                        <img class="img-fluid" src="images/news/blog-002.png" alt="post-thumbnail" />
+                                        <img class="img-fluid" src="images/news/blog-002.png" alt="post-thumbnail" style="filter: drop-shadow(8px 8px 10px gray);"/>
                                     </a>
                                     <div class="post-content mt-3">
                                         <h5>
@@ -305,7 +321,7 @@ When you’re there in person you can see all the posters throughout the city, e
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="post-block-wrapper">
                                     <a href="paris-is-always-a-good-idea.html">
-                                        <img class="img-fluid" src="images/news/blog-003.png" alt="post-thumbnail" />
+                                        <img class="img-fluid" src="images/news/blog-003.png" alt="post-thumbnail" style="filter: drop-shadow(8px 8px 10px gray);"/>
                                     </a>
                                     <div class="post-content mt-3">
                                         <h5>
@@ -355,8 +371,8 @@ When you’re there in person you can see all the posters throughout the city, e
 				<div class="col-lg-4 col-md-6">
 					<div class="widget footer-widget mb-5 mb-lg-0">
 						<h5 class="widget-title text-uppercase letter-spacing-2 mb-4">About me</h5>
-						<img src="images/about.png" alt="about" class="img-fluid">
-						<p class="mt-4">I recently discovered my passion for writing and fell in love… Salua &nbsp <a href="mailto:ji_3@outlook.com" target="_blank"><i style="font-size:18px;color:gray" class="fa">&#xf0e0;</i></a></p>
+						<img src="images/about.png" alt="about" class="img-fluid" title="Sally" style="filter: drop-shadow(8px 8px 10px gray);">
+						<p class="mt-4">I recently discovered my passion for writing and fell in love… Salua.&nbsp;<a href="mailto:ji_3@outlook.com" target="_blank" rel="external nofollow noopener noreferrer" title="Contact"><i style="color:darkgray" class="fa fa-envelope"></i></a></p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
@@ -421,7 +437,7 @@ When you’re there in person you can see all the posters throughout the city, e
 							<li class="list-inline-item"><a href="blog.html">Blog</a></li>
 							<li class="list-inline-item"><a href="about.html">About</a></li>
 							<li class="list-inline-item"><a href="contact.html">Contact</a></li>
-							<li class="list-inline-item"><a href="feed.xml" rel="external nofollow noopener noreferrer" target="_blank"><i style="font-size:14px;color:black" class="fa">&#xf09e;</i></a></li>
+							<li class="list-inline-item"><a href="feed.xml" rel="external nofollow noopener noreferrer" target="_blank" title="Rss feed"><i style="color:black" class="fa fa-rss"></i></a></li>
              
 						</ul>
 					</div>
@@ -548,7 +564,107 @@ $(document).ready(function() {
 });
 </script>
 
+<script>
 
+function textToSpeech()
+{
+   const speech = new SpeechSynthesisUtterance();
+    let voices = speechSynthesis.getVoices();
+  let convert = document.getElementById("text").innerHTML;
+
+    speech.text = convert;
+
+    speech.lang = 'en-US';
+   
+    speech.volume = 1;
+    speech.rate = 1;
+   
+  
+      
+    window.speechSynthesis.speak(speech);
+    speechSynthesis.speak(speech);
+}
+
+
+
+
+function stop()
+{
+    speechSynthesis.cancel();
+}
+
+speakBtn.addEventListener('click', textToSpeech);
+
+cancelBtn.addEventListener('click', stop);
+
+
+</script>
+
+
+<script>
+        
+const shareData = {
+  title: "My experience in Granada - Salua",
+  text: "My experience in Granada - Salua",
+   url: "https://salua3.github.io/my-experience-in-granada.html",
+};
+
+const shareBtn = document.getElementById("share-btn");
+
+shareBtn.addEventListener("click", async () => {
+
+  if (navigator.share) {
+
+    try {
+      await navigator.share(shareData);
+      console.log("Data shared successfully");
+    } catch (err) {
+
+      console.error("Error while sharing:", err);
+    }
+  } else {
+
+    console.log("Web Share API not supported");
+  }
+});
+    </script>
+
+
+
+
+<script>
+
+function myFunction() {
+   var element = document.body; 
+   element.classList.toggle("dark-mode");
+}
+
+</script>
+
+
+<style>
+.dark-mode { 
+background-color: black;
+    color: gray;
+       opacity: 80%;
+    h1, h2, h3, h4, h5, h6, p, a, div, input, span, header  {color: gray; }
+   color: rgb(128, 128, 128) !important;
+   -webkit-text-fill-color: rgb(128, 128, 128) !important;
+    }
+
+ @media (prefers-color-scheme: dark) {
+      body {
+        background-color: black;
+    color: gray;
+   opacity: 80%;
+   h1, h2, h3, h4, h5, h6, p, a, div, input, span, header  {color: gray; }
+   color: rgb(128, 128, 128) !important;
+  -webkit-text-fill-color: rgb(128, 128, 128) !important;
+    
+    }
+
+
+</style>
 
 </body>
 
