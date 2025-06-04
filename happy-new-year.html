@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Happy new year - Blog - Salua</title>
+    <title>Happy new year - Salua</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -14,12 +14,13 @@
 	<meta name="keywords" content="blog, holiday, happy new year, writing, writer, woman, businesswoman">
 	<meta name="description" content="Wishing you a year full of love, laughter, and success, may every moment of 2025 bring you closer to your dreams, happy new year! ">
 
-
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+       <meta name="color-scheme" content="dark light">
+	
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico" >
 
             <!-- Favicon -->
-            <link rel="icon" href="./images/favicon/favicon.ico" >
-            <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+            <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico" >
+            <link rel="shortcut icon" type="image/x-icon" href="/images/favicon/favicon.ico" />
             <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96" />
             <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
             <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
@@ -29,15 +30,18 @@
             <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
 
        <!-- Open Graph and Twitter Card data -->
-	<meta property="og:title" content="Happy new year - Blog - Salua"/>
+	<meta property="og:title" content="Happy new year - Salua"/>
 	<meta property="og:image" content="https://salua3.github.io/images/blog/blog-33.png"/>
 	<meta property="og:url" content="https://salua3.github.io/happy-new-year.html"/>
 	<meta property="og:description" content="Wishing you a year full of love, laughter, and success, may every moment of 2025 bring you closer to your dreams, happy new year! "/>
-        <meta property="og:type" content="website" />
-        <meta property="article:published_time" content="2025-01-01" />
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="en-US" />
+        <meta property="og:updated_time" content="2025-01-01T12:00:00+00:00" />
+        <meta property="article:published_time" content="2025-01-01T12:00:00+00:00" />
+        <meta property="article:modified_time" content="2025-01-01T12:00:00+00:00" />
 
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Happy new year - Blog - Salua" />
+	<meta name="twitter:title" content="Happy new year - Salua" />
 	<meta name="twitter:image" content="https://salua3.github.io/images/blog/blog-33.png" />
 	<meta name="twitter:site" content="https://salua3.github.io/happy-new-year.html" />
 	<meta name="twitter:description" content="Wishing you a year full of love, laughter, and success, may every moment of 2025 bring you closer to your dreams, happy new year! " />
@@ -49,6 +53,8 @@
       <link rel="alternate" hreflang="en" href="https://salua3.github.io/index.html">
       <link rel="alternate" href="https://salua3.github.io/" hreflang="x-default" />
 
+	<meta name="referrer" content="no-referrer">
+	
         <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
     <meta name="AdsBot-Google" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
     <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
@@ -123,6 +129,28 @@ html {  scroll-behavior: smooth;}
 
 	</header>
 
+	<div class="container" >
+            <div class="row" >
+     
+                               <div class="col-sm-12" >
+                                   <div     class="tags-share-box center-box d-flex text-center justify-content-between  py-3 ">
+
+                                <span class="single-comment-o"><i class="fa fa-commm "></i> </span>
+
+                                <div class="post-share">
+                                    <span class="count-number-like"> </span>
+                                    <a class="penci-post-like single-like-button"><i class="ti-hea"></i></a>
+                                </div>
+
+                                <div class="list-posts-share" style="font-size:70%;">
+                                    <a href="#" onclick="myFunction()" title="Light/Dark Mode"><i style="color:gray;" class="fa fa-moon-o"></i></a>
+                                    <a href="#" onclick="window.print()" title="Save as pdf"><i style="color:gray;" class="fa fa-bookmark-o"></i></a>
+                                    <a href="#" onclick="window.print()" title="Print"><i style="color:gray;" class="fa fa-print"></i></a>
+                                    <a href="#" id="share-btn"  title="Share"><i style="color:gray;" class="fa fa-share-alt"></i></a>
+                                </div>
+                            </div> </div>
+                            </div> </div> 
+	
 
     <section class="single-block-wrapper section-padding">
         <div class="container">
@@ -147,32 +175,42 @@ html {  scroll-behavior: smooth;}
                             </div>
                            
                             <div class="post-featured-image mt-5">
-                                <img src="images/blog/blog-33.png" class="img-fluid w-100" alt="featured-image">
+                                <img src="images/blog/blog-33.png" class="img-fluid w-100" alt="featured-image" style="filter: drop-shadow(8px 8px 10px gray);">
                             </div>
+
+<br />
+<a  onclick="textToSpeech()" id="speakBtn" title="Listen" class="btn" style="  color:darkgray; width:25px; height: 5px; padding: 5px 5px; font-size:105%;"><i class="fa fa-play-circle-o" ></i></a> 
+<a  onclick="cancel()" id="cancelBtn" title="Stop" class="btn" style=" color:darkgray;  width:25px; height: 5px; padding: 5px 5px; font-size:105%;"><i class="fa fa-pause-circle-o" ></i></a> 
+				
                         </div>
 
 
 
 
                         <div class="post-body">
-                            <div class="entry-content"> <br /><br />
-                                <p>  Wishing you a year full of love, laughter, and success, may every moment of 2025 bring you closer to your dreams, happy new year! <br /><br />
+                            <div class="entry-content"> 
 
-Today is not just another “today” but the first of the clean pages of a whole year waiting for what we will write into our lives and what greatness we’ll pull from within. Here’s the thing. No matter how you enter this year, whether you’re running into a bright season, whether you’re limping across the finish line or crawling your way out of a tough calendar, you are enough. If you weren’t to add one title to your name or accolade to your resume, you’re enough. <br /><br />
-
-What YOU choose to do with your one wild and precious life is the cherry on top of who you already are. So what is it you’re saying over yourself and this coming year? What words are you writing into those blank pages before you? What big dreams do you have that will be plastered on the vision board of your walls? Maybe even dreams long forgotten, but beginning to seep into your memories, stirring a passion even as you read these words on the screen? What grace will you show yourself in this next season? <br /><br />
-
-I love watching kids grow, those first steps where we hold our breath in anticipation of how far they’ll go, in celebratory cheer over the smallest of strides. Like anything new, they didn’t start in a run. First steps aren’t sprints. And just like a new year, a new season of life, though we may feel like it or want to keep up pace with those already seasoned, our first steps aren’t usually the biggest ones we take. Many times those early steps look more like a tip-toe as we do it afraid. Too often first-times mean a fall or a tumble, and hopefully it also means we step out again, usually to the cheers on the sideline. <br /><br />
-
-This year, there will be steps to celebrate and moments of fear, moments of tumbling, moments of learning by failure. But in each, I want to be present, I want to rise, bruised, stronger. For you, for me, we will celebrate each stride. I want to allow myself to be me, to reside in grace, and to be happy in where I am and who I am. <br /><br />
-
-And I want that for you too. Be brilliant. Be you. You are enough. Happy new year 2025 <br /><br />
-
-Salua
-
-
-
-</p>
+<p style="display:none;" id="text">
+Happy new year. Wishing you a year full of love, laughter, and success, may every moment of 2025 bring you closer to your dreams, happy new year!
+Today is not just another “today” but the first of the clean pages of a whole year waiting for what we will write into our lives and what greatness we’ll pull from within. Here’s the thing. No matter how you enter this year, whether you’re running into a bright season, whether you’re limping across the finish line or crawling your way out of a tough calendar, you are enough. If you weren’t to add one title to your name or accolade to your resume, you’re enough.
+What You choose to do with your one wild and precious life is the cherry on top of who you already are. So what is it you’re saying over yourself and this coming year? What words are you writing into those blank pages before you? What big dreams do you have that will be plastered on the vision board of your walls? Maybe even dreams long forgotten, but beginning to seep into your memories, stirring a passion even as you read these words on the screen? What grace will you show yourself in this next season?
+I love watching kids grow, those first steps where we hold our breath in anticipation of how far they’ll go, in celebratory cheer over the smallest of strides. Like anything new, they didn’t start in a run. First steps aren’t sprints. And just like a new year, a new season of life, though we may feel like it or want to keep up pace with those already seasoned, our first steps aren’t usually the biggest ones we take. Many times those early steps look more like a tip-toe as we do it afraid. Too often first-times mean a fall or a tumble, and hopefully it also means we step out again, usually to the cheers on the sideline.
+This year, there will be steps to celebrate and moments of fear, moments of tumbling, moments of learning by failure. But in each, I want to be present, I want to rise, bruised, stronger. For you, for me, we will celebrate each stride. I want to allow myself to be me, to reside in grace, and to be happy in where I am and who I am.
+And I want that for you too. Be brilliant. Be you. You are enough. Happy new year 2025.
+Salua. </p>
+				    
+<p>  Wishing you a year full of love, laughter, and success, may every moment of 2025 bring you closer to your dreams, happy new year! 
+<br /><br />
+Today is not just another “today” but the first of the clean pages of a whole year waiting for what we will write into our lives and what greatness we’ll pull from within. Here’s the thing. No matter how you enter this year, whether you’re running into a bright season, whether you’re limping across the finish line or crawling your way out of a tough calendar, you are enough. If you weren’t to add one title to your name or accolade to your resume, you’re enough. 
+<br /><br />
+What YOU choose to do with your one wild and precious life is the cherry on top of who you already are. So what is it you’re saying over yourself and this coming year? What words are you writing into those blank pages before you? What big dreams do you have that will be plastered on the vision board of your walls? Maybe even dreams long forgotten, but beginning to seep into your memories, stirring a passion even as you read these words on the screen? What grace will you show yourself in this next season? 
+<br /><br />
+I love watching kids grow, those first steps where we hold our breath in anticipation of how far they’ll go, in celebratory cheer over the smallest of strides. Like anything new, they didn’t start in a run. First steps aren’t sprints. And just like a new year, a new season of life, though we may feel like it or want to keep up pace with those already seasoned, our first steps aren’t usually the biggest ones we take. Many times those early steps look more like a tip-toe as we do it afraid. Too often first-times mean a fall or a tumble, and hopefully it also means we step out again, usually to the cheers on the sideline. 
+<br /><br />
+This year, there will be steps to celebrate and moments of fear, moments of tumbling, moments of learning by failure. But in each, I want to be present, I want to rise, bruised, stronger. For you, for me, we will celebrate each stride. I want to allow myself to be me, to reside in grace, and to be happy in where I am and who I am. 
+<br /><br />
+And I want that for you too. Be brilliant. Be you. You are enough. Happy new year 2025.
+<br /><br /> Salua   </p>
                                
 
                             </div> <br /><br />
@@ -183,7 +221,7 @@ Salua
 
                     <div class="post-author d-flex my-5">
                         <div class="author-img">
-                            <img alt="author" src="images/author.jpg" class="avatar avatar-100 photo" width="100"   height="100">
+                            <img alt="author" src="images/author.jpg" class="avatar avatar-100 photo" width="100" height="100" title="Sally">
                         </div>
 
                         <div class="author-content pl-4">
@@ -222,7 +260,7 @@ Salua
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="post-block-wrapper mb-4 mb-lg-0">
                                     <a href="why-i-love-tetouan.html">
-                                        <img class="img-fluid" src="images/news/blog-001.png" alt="post-thumbnail" />
+                                        <img class="img-fluid" src="images/news/blog-001.png" alt="post-thumbnail" style="filter: drop-shadow(8px 8px 10px gray);"/>
                                     </a>
                                     <div class="post-content mt-3">
                                         <h5>
@@ -234,7 +272,7 @@ Salua
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="post-block-wrapper mb-4 mb-lg-0">
                                     <a href="a-walk-to-remember-in-bouanane.html">
-                                        <img class="img-fluid" src="images/news/blog-002.png" alt="post-thumbnail" />
+                                        <img class="img-fluid" src="images/news/blog-002.png" alt="post-thumbnail" style="filter: drop-shadow(8px 8px 10px gray);"/>
                                     </a>
                                     <div class="post-content mt-3">
                                         <h5>
@@ -246,7 +284,7 @@ Salua
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="post-block-wrapper">
                                     <a href="paris-is-always-a-good-idea.html">
-                                        <img class="img-fluid" src="images/news/blog-003.png" alt="post-thumbnail" />
+                                        <img class="img-fluid" src="images/news/blog-003.png" alt="post-thumbnail" style="filter: drop-shadow(8px 8px 10px gray);"/>
                                     </a>
                                     <div class="post-content mt-3">
                                         <h5>
@@ -296,8 +334,8 @@ Salua
 				<div class="col-lg-4 col-md-6">
 					<div class="widget footer-widget mb-5 mb-lg-0">
 						<h5 class="widget-title text-uppercase letter-spacing-2 mb-4">About me</h5>
-						<img src="images/about.png" alt="about" class="img-fluid">
-						<p class="mt-4">I recently discovered my passion for writing and fell in love… Salua &nbsp <a href="mailto:ji_3@outlook.com" target="_blank"><i style="font-size:18px;color:gray" class="fa">&#xf0e0;</i></a></p>
+						<img src="images/about.png" alt="about" class="img-fluid" title="Sally" style="filter: drop-shadow(8px 8px 10px gray);">
+						<p class="mt-4">I recently discovered my passion for writing and fell in love… Salua.&nbsp;<a href="mailto:ji_3@outlook.com" target="_blank" rel="external nofollow noopener noreferrer" title="Contact"><i style="color:darkgray" class="fa fa-envelope"></i></a></p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
@@ -362,7 +400,7 @@ Salua
 							<li class="list-inline-item"><a href="blog.html">Blog</a></li>
 							<li class="list-inline-item"><a href="about.html">About</a></li>
 							<li class="list-inline-item"><a href="contact.html">Contact</a></li>
-							<li class="list-inline-item"><a href="feed.xml" rel="external nofollow noopener noreferrer" target="_blank"><i style="font-size:14px;color:black" class="fa">&#xf09e;</i></a></li>
+							<li class="list-inline-item"><a href="feed.xml" rel="external nofollow noopener noreferrer" target="_blank" title="Rss feed"><i style="color:black" class="fa fa-rss"></i></a></li>
              
 						</ul>
 					</div>
@@ -489,7 +527,107 @@ $(document).ready(function() {
 });
 </script>
 
+<script>
 
+function textToSpeech()
+{
+   const speech = new SpeechSynthesisUtterance();
+    let voices = speechSynthesis.getVoices();
+  let convert = document.getElementById("text").innerHTML;
+
+    speech.text = convert;
+
+    speech.lang = 'en-US';
+   
+    speech.volume = 1;
+    speech.rate = 1;
+   
+  
+      
+    window.speechSynthesis.speak(speech);
+    speechSynthesis.speak(speech);
+}
+
+
+
+
+function stop()
+{
+    speechSynthesis.cancel();
+}
+
+speakBtn.addEventListener('click', textToSpeech);
+
+cancelBtn.addEventListener('click', stop);
+
+
+</script>
+
+
+<script>
+        
+const shareData = {
+  title: "Happy new year - Salua",
+  text: "Happy new year - Salua",
+   url: "https://salua3.github.io/happy-new-year.html",
+};
+
+const shareBtn = document.getElementById("share-btn");
+
+shareBtn.addEventListener("click", async () => {
+
+  if (navigator.share) {
+
+    try {
+      await navigator.share(shareData);
+      console.log("Data shared successfully");
+    } catch (err) {
+
+      console.error("Error while sharing:", err);
+    }
+  } else {
+
+    console.log("Web Share API not supported");
+  }
+});
+    </script>
+
+
+
+
+<script>
+
+function myFunction() {
+   var element = document.body; 
+   element.classList.toggle("dark-mode");
+}
+
+</script>
+
+
+<style>
+.dark-mode { 
+background-color: black;
+    color: gray;
+       opacity: 80%;
+    h1, h2, h3, h4, h5, h6, p, a, div, input, span, header  {color: gray; }
+   color: rgb(128, 128, 128) !important;
+   -webkit-text-fill-color: rgb(128, 128, 128) !important;
+    }
+
+ @media (prefers-color-scheme: dark) {
+      body {
+        background-color: black;
+    color: gray;
+   opacity: 80%;
+   h1, h2, h3, h4, h5, h6, p, a, div, input, span, header  {color: gray; }
+   color: rgb(128, 128, 128) !important;
+  -webkit-text-fill-color: rgb(128, 128, 128) !important;
+    
+    }
+
+
+</style>
 
 </body>
 
