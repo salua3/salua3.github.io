@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Open letter to my dad in heaven - Blog - Salua</title>
+    <title>Open letter to my dad in heaven - Salua</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -14,12 +14,13 @@
 	<meta name="keywords" content="blog, father, dad, heaven, writing, writer, woman, businesswoman">
 	<meta name="description" content="I wish I could hug my dad one more time, to have just one more interaction, one more laugh, one more anything with him. I never said good-bye. ">
 
+	<meta name="color-scheme" content="dark light">
 
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico" >
 
             <!-- Favicon -->
-            <link rel="icon" href="./images/favicon/favicon.ico" >
-            <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+            <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico" >
+            <link rel="shortcut icon" type="image/x-icon" href="/images/favicon/favicon.ico" />
             <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96" />
             <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
             <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
@@ -29,15 +30,18 @@
             <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
 
        <!-- Open Graph and Twitter Card data -->
-	<meta property="og:title" content="Open letter to my dad in heaven - Blog - Salua"/>
+	<meta property="og:title" content="Open letter to my dad in heaven - Salua"/>
 	<meta property="og:image" content="https://salua3.github.io/images/blog/blog-32-.png"/>
 	<meta property="og:url" content="https://salua3.github.io/open-letter-to-my-dad-in-heaven.html"/>
 	<meta property="og:description" content="I wish I could hug my dad one more time, to have just one more interaction, one more laugh, one more anything with him. I never said good-bye. "/>
-        <meta property="og:type" content="website" />
-        <meta property="article:published_time" content="2025-04-25" />
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="en-US" />
+        <meta property="og:updated_time" content="2025-04-25T12:00:00+00:00" />
+        <meta property="article:published_time" content="2025-04-25T12:00:00+00:00" />
+        <meta property="article:modified_time" content="2025-04-25T12:00:00+00:00" />
 
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Open letter to my dad in heaven - Blog - Salua" />
+	<meta name="twitter:title" content="Open letter to my dad in heaven - Salua" />
 	<meta name="twitter:image" content="https://salua3.github.io/images/blog/blog-32-.png" />
 	<meta name="twitter:site" content="https://salua3.github.io/open-letter-to-my-dad-in-heaven.html" />
 	<meta name="twitter:description" content="I wish I could hug my dad one more time, to have just one more interaction, one more laugh, one more anything with him. I never said good-bye. " />
@@ -49,6 +53,8 @@
       <link rel="alternate" hreflang="en" href="https://salua3.github.io/index.html">
       <link rel="alternate" href="https://salua3.github.io/" hreflang="x-default" />
 
+	<meta name="referrer" content="no-referrer">
+	
         <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
     <meta name="AdsBot-Google" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
     <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
@@ -123,6 +129,27 @@ html {  scroll-behavior: smooth;}
 
 	</header>
 
+	<div class="container" >
+            <div class="row" >
+     
+                               <div class="col-sm-12" >
+                                   <div     class="tags-share-box center-box d-flex text-center justify-content-between  py-3 ">
+
+                                <span class="single-comment-o"><i class="fa fa-commm "></i> </span>
+
+                                <div class="post-share">
+                                    <span class="count-number-like"> </span>
+                                    <a class="penci-post-like single-like-button"><i class="ti-hea"></i></a>
+                                </div>
+
+                                <div class="list-posts-share" style="font-size:70%;">
+                                    <a href="#" onclick="myFunction()" title="Light/Dark Mode"><i style="color:gray;" class="fa fa-moon-o"></i></a>
+                                    <a href="#" onclick="window.print()" title="Save as pdf"><i style="color:gray;" class="fa fa-bookmark-o"></i></a>
+                                    <a href="#" onclick="window.print()" title="Print"><i style="color:gray;" class="fa fa-print"></i></a>
+                                    <a href="#" id="share-btn"  title="Share"><i style="color:gray;" class="fa fa-share-alt"></i></a>
+                                </div>
+                            </div> </div>
+                            </div> </div> 
 
     <section class="single-block-wrapper section-padding">
         <div class="container">
@@ -147,40 +174,52 @@ html {  scroll-behavior: smooth;}
                             </div>
                            
                             <div class="post-featured-image mt-5">
-                                <img src="images/blog/blog-32-.png" class="img-fluid w-100" alt="featured-image">
+                                <img src="images/blog/blog-32-.png" class="img-fluid w-100" alt="featured-image" style="filter: drop-shadow(8px 8px 10px gray);">
                             </div>
+
+<br />
+<a  onclick="textToSpeech()" id="speakBtn" title="Listen" class="btn" style="  color:darkgray; width:25px; height: 5px; padding: 5px 5px; font-size:105%;"><i class="fa fa-play-circle-o" ></i></a> 
+<a  onclick="cancel()" id="cancelBtn" title="Stop" class="btn" style=" color:darkgray;  width:25px; height: 5px; padding: 5px 5px; font-size:105%;"><i class="fa fa-pause-circle-o" ></i></a> 
+				
                         </div>
 
 
 
 
                         <div class="post-body">
-                            <div class="entry-content"> <br /><br />
-                                <p>  I wish I could hug my dad one more time, to have just one more interaction, one more laugh, one more anything with him. I never said good-bye. <br /><br />
+                            <div class="entry-content"> 
 
-People will tell you that it’ll get easier, that the pain won’t be as bad as right now, but they lied… <br /><br />
+				    
+<p style="display:none;" id="text">
+Open letter to my dad in heaven.
+I wish I could hug my dad one more time, to have just one more interaction, one more laugh, one more anything with him. I never said good-bye.
+People will tell you that it’ll get easier, that the pain won’t be as bad as right now, but they lied.
+You never think it’ll happen to you. That the day would never come when you get a call. A call that would flip your entire world upside down and change your life forever. Since that call, your life will forever be different and a hole in your heart will forever be left empty. People will tell you that it’ll get easier, that the pain won’t be as bad as right now, but they lied. It doesn’t get easier and the pain remains the same; we are just forced to live with that aching, gut-wrenching pain for the rest of our lives. A life missing. A life that no matter how much you pray, cry, and scream, will never come back. You’ll ask God why. You’ll get so angry at Him for taking such a beautiful, kind soul from you. For taking the only person that could ever cheer you up on a rainy day or the only one who would actually listen. The one who put everything into perspective and told you exactly how it is. He took the person you loved the most and you’ll spend the rest of your life wondering why. Why it wasn’t you instead. Why was it him? But you’ll never know.
+You used to tell me to look at the stars because I never knew when it’d be the last time looking at them together. I wish I would’ve taken you seriously when you said that and not just shrugged it off as if you were invincible. But you were invincible to me. You always told me how you were okay, that you weren’t going anywhere. You promised to walk me down the aisle and be there for me every step of the way. You had my back and protected me when no one else did. You always made sure I was okay and if I wasn’t, you were right there. I was always reminded that I would see you again, but I never knew that the last time I saw you would be the last time I saw you for eternity. And had I known that, Dad, I would have hugged you harder and I wouldn’t have let you go. I would’ve told you how much I love you, over and over again. I even would’ve told you how sorry I am for causing you so much hell as a child. How terrible I felt every time I talked back and made you feel so angry at me. I would’ve done anything to save you and keep you here with me because now I’m a fatherless girl who has no idea what to do when things go wrong. I don’t know who to turn to when my life doesn’t make sense or who to run to when I just need to get away. I constantly find myself ready to send you a text, but I remember that I won’t get a response. I keep waiting to wake up from this bad dream, but you’re really gone and there’s nothing in the world that can change that. My nightmare turned into my reality and my biggest fear came true.
+I remember losing you like it was yesterday. The way my whole world stood still and I couldn’t breathe. I couldn’t feel it. My whole body was numb. My heart was numb. I couldn’t process losing you. Watching you lay there, lifeless. You never wanted me to see you like that, but I did and I’m so sorry that it had to end that way. But the thing is, Dad, I couldn’t feel you. I wanted so desperately to feel you wrap your arms around me or show me that everything would be okay. You didn’t. You were just gone and I didn’t have the chance to say goodbye. Since that day, my world hasn’t been the same. I haven’t been the same. How could I be the same person I was before I lost half of my heart? Of course I’m not the only one that’s lost a parent, but no one warned me about all the pain and suffering that comes with it. Or how it doesn’t end. It keeps going on and on forever and ever. One second I think I’m doing okay, then I remember everything and I break down all over again. It’s a never ending cycle. Some days it’s bearable and others I scream at the top of my lungs begging for you back. Death changes you. It changes your life. It changes everything. And there’s never coming back.
+</p>
 
-You never think it’ll happen to you. That the day would never come when you get a call. A call that would flip your entire world upside down and change your life forever. Since that call, your life will forever be different and a hole in your heart will forever be left empty. People will tell you that it’ll get easier, that the pain won’t be as bad as right now, but they lied. It doesn’t get easier and the pain remains the same; we are just forced to live with that aching, gut-wrenching pain for the rest of our lives. A life missing. A life that no matter how much you pray, cry, and scream, will never come back. You’ll ask God why. You’ll get so angry at Him for taking such a beautiful, kind soul from you. For taking the only person that could ever cheer you up on a rainy day or the only one who would actually listen. The one who put everything into perspective and told you exactly how it is. He took the person you loved the most and you’ll spend the rest of your life wondering why. Why it wasn’t you instead. Why was it him. But you’ll never know. <br /><br />
-
-You used to tell me to look at the stars because I never knew when it’d be the last time looking at them together. I wish I would’ve taken you seriously when you said that and not just shrugged it off as if you were invincible. But you were invincible to me. You always told me how you were okay, that you weren’t going anywhere. You promised to walk me down the aisle and be there for me every step of the way. You had my back and protected me when no one else did. You always made sure I was okay and if I wasn’t, you were right there. I was always reminded that I would see you again, but I never knew that the last time I saw you would be the last time I saw you for eternity. And had I known that, Dad, I would have hugged you harder and I wouldn’t have let you go. I would’ve told you how much I love you, over and over again. I even would’ve told you how sorry I am for causing you so much hell as a child. How terrible I felt every time I talked back and made you feel so angry at me. I would’ve done anything to save you and keep you here with me because now I’m a fatherless girl who has no idea what to do when things go wrong. I don’t know who to turn to when my life doesn’t make sense or who to run to when I just need to get away. I constantly find myself ready to send you a text, but I remember that I won’t get a response. I keep waiting to wake up from this bad dream, but you’re really gone and there’s nothing in the world that can change that. My nightmare turned into my reality and my biggest fear came true. <br /><br />
-
-I remember losing you like it was yesterday. The way my whole world stood still and I couldn’t breathe. I couldn’t feel it. My whole body was numb. My heart was numb. I couldn’t process losing you. Watching you lay there, lifeless. You never wanted me to see you like that, but I did and I’m so sorry that it had to end that way. But the thing is, Dad, I couldn’t feel you. I wanted so desperately to feel you wrap your arms around me or show me that everything would be okay. You didn’t. You were just gone and I didn’t have the chance to say goodbye. Since that day, my world hasn’t been the same. I haven’t been the same. How could I be the same person I was before I lost half of my heart? Of course I’m not the only one that’s lost a parent, but no one warned me about all the pain and suffering that comes with it. Or how it doesn’t end. It keeps going on and on forever and ever. One second I think I’m doing okay, then I remember everything and I break down all over again. It’s a never ending cycle. Some days it’s bearable and others I scream at the top of my lungs begging for you back. Death changes you. It changes your life. It changes everything. And there’s never coming back from that. <br /><br />
-
-Then, everything changed. I changed. I somehow took 20 steps backwards and 30 steps forward. As crazy as it sounds, I actually became a stronger, better me, Dad. Someone you would actually be proud of. Without you I’ve lost myself, but grown as a person. I’m not sure how that will ever make sense, but even without you physically here, you’re still teaching me things along the way. I’m finally at peace with myself, God, and everything in between. I’m finally content and happy. The pain, oh it’s never ending, but somehow I bear with it and keep moving forward. The only reason why is because of you. Because you push me harder and harder everyday. Even if I fall, you’re right there to catch me and pick me up again. You remind me of the life I was blessed with and the places I still have yet to go. You remind me to keep going and to not give up. I’ve tried giving up and you won’t let me. The toughest year of my life has been the biggest learning experience and luckily, I’m never alone. You’ve made sure of that. I might never understand why, but I know you’re right next to me every step of the way. And I can’t thank you enough for that. <br /><br />
-
-The good memories outweigh the bad. The positive outweighs the negative. Where I lost hope, I gained it back again. You see, it was far from easy. It was an everyday challenge. I would stay in bed for hours each day and not have motivation to move, but somehow you got me to pick myself up and go on. I would lay in bed and stare at your picture and just cry, for hours. Asking God why. I didn’t get why it had to be you. Or why it had to be so soon. I didn’t know how to handle the death of such a loved one. It broke me and tore me apart. It made me go crazy, insane even. It felt like my world was done and over with, but you gave me hope again. You gave me the strength I needed to live. You showed me why I have to be here and why you have to be there. I’m finally okay with that. I’m finally accepting the loss of you. <br /><br />
-
-You taught me everything I know. You took me under your wing and made me your whole world. From teaching me to drive, to throwing out a line; you were the guidance I needed. Without you, I wouldn’t of had anyone. My life would be a whole different story. Luckily, God blessed me with you. Even though time was cut far too short, I was still lucky enough to have had you and all the lessons you taught me. And for that alone, I couldn’t be more thankful. You see Dad, from losing you, I’ve learned how precious time is. How you never know if you’re going to wake up tomorrow or if your life will be taken from you. I live everyday like it's my last, now. I leave no words unspoken. I don’t leave things on bad terms with anyone. You have shown me first hand what it's like to lose someone without expectation. Without knowing it was coming. And that alone, was enough to change my outlook on life. The hardest time of my life turned into the greatest lesson I’ve ever learned. <br /><br />
-
-Here’s to the lowest time of my life to the highest. The hardest and the easiest. Here’s to you. For not being seen or heard, but being present and listening. Somehow you have let me move on and push through the pain, tears, and suffering. I’m no longer numb and I’m no longer afraid to cry. Or to hurt. Because it’s all a part of the process. It just shows how much you meant to me and how much of an impact you left on my life. You were so loved and so special to me. Luckily, your memory carries on through me. Even though you won’t walk me down the aisle or see the kids I have some day, I know you’ll be watching from heaven, smiling down, reminding me to not worry about you, but to worry about me. I know you’ll protect us and be so proud of the person I’m becoming and the person I will be. I know you’ll always be right there, just as if you were alive. I live my life for me, but I live it for you too, Dad. To the dreams you weren’t able to accomplish, I’m here to do that for you. Even when I fall, I know you’ll catch me and pick me up again. There will always be hard days, but I’ll never be alone. <br /><br />
-
-Thank you for giving me the best life I could ask for and for being the best Dad. For cheering me on and always being my biggest fan. For supporting my decisions, even if they weren’t the best and for loving me unconditionally. I’ll always miss you and I’ll never ever forget you. Days, months, and years will come and go, but you’ll live on forever. You will always have a piece of my heart that I’ll never get back, until we meet again. I love you. <br /><br />
-
-Salua
-
-
-
-
+				    
+<p>I wish I could hug my dad one more time, to have just one more interaction, one more laugh, one more anything with him. I never said good-bye. 
+<br /><br />
+People will tell you that it’ll get easier, that the pain won’t be as bad as right now, but they lied… 
+<br /><br />
+You never think it’ll happen to you. That the day would never come when you get a call. A call that would flip your entire world upside down and change your life forever. Since that call, your life will forever be different and a hole in your heart will forever be left empty. People will tell you that it’ll get easier, that the pain won’t be as bad as right now, but they lied. It doesn’t get easier and the pain remains the same; we are just forced to live with that aching, gut-wrenching pain for the rest of our lives. A life missing. A life that no matter how much you pray, cry, and scream, will never come back. You’ll ask God why. You’ll get so angry at Him for taking such a beautiful, kind soul from you. For taking the only person that could ever cheer you up on a rainy day or the only one who would actually listen. The one who put everything into perspective and told you exactly how it is. He took the person you loved the most and you’ll spend the rest of your life wondering why. Why it wasn’t you instead. Why was it him? But you’ll never know. 
+<br /><br />
+You used to tell me to look at the stars because I never knew when it’d be the last time looking at them together. I wish I would’ve taken you seriously when you said that and not just shrugged it off as if you were invincible. But you were invincible to me. You always told me how you were okay, that you weren’t going anywhere. You promised to walk me down the aisle and be there for me every step of the way. You had my back and protected me when no one else did. You always made sure I was okay and if I wasn’t, you were right there. I was always reminded that I would see you again, but I never knew that the last time I saw you would be the last time I saw you for eternity. And had I known that, Dad, I would have hugged you harder and I wouldn’t have let you go. I would’ve told you how much I love you, over and over again. I even would’ve told you how sorry I am for causing you so much hell as a child. How terrible I felt every time I talked back and made you feel so angry at me. I would’ve done anything to save you and keep you here with me because now I’m a fatherless girl who has no idea what to do when things go wrong. I don’t know who to turn to when my life doesn’t make sense or who to run to when I just need to get away. I constantly find myself ready to send you a text, but I remember that I won’t get a response. I keep waiting to wake up from this bad dream, but you’re really gone and there’s nothing in the world that can change that. My nightmare turned into my reality and my biggest fear came true. 
+<br /><br />
+I remember losing you like it was yesterday. The way my whole world stood still and I couldn’t breathe. I couldn’t feel it. My whole body was numb. My heart was numb. I couldn’t process losing you. Watching you lay there, lifeless. You never wanted me to see you like that, but I did and I’m so sorry that it had to end that way. But the thing is, Dad, I couldn’t feel you. I wanted so desperately to feel you wrap your arms around me or show me that everything would be okay. You didn’t. You were just gone and I didn’t have the chance to say goodbye. Since that day, my world hasn’t been the same. I haven’t been the same. How could I be the same person I was before I lost half of my heart? Of course I’m not the only one that’s lost a parent, but no one warned me about all the pain and suffering that comes with it. Or how it doesn’t end. It keeps going on and on forever and ever. One second I think I’m doing okay, then I remember everything and I break down all over again. It’s a never ending cycle. Some days it’s bearable and others I scream at the top of my lungs begging for you back. Death changes you. It changes your life. It changes everything. And there’s never coming back from that. 
+<br /><br />
+Then, everything changed. I changed. I somehow took 20 steps backwards and 30 steps forward. As crazy as it sounds, I actually became a stronger, better me, Dad. Someone you would actually be proud of. Without you I’ve lost myself, but grown as a person. I’m not sure how that will ever make sense, but even without you physically here, you’re still teaching me things along the way. I’m finally at peace with myself, God, and everything in between. I’m finally content and happy. The pain, oh it’s never ending, but somehow I bear with it and keep moving forward. The only reason why is because of you. Because you push me harder and harder everyday. Even if I fall, you’re right there to catch me and pick me up again. You remind me of the life I was blessed with and the places I still have yet to go. You remind me to keep going and to not give up. I’ve tried giving up and you won’t let me. The toughest year of my life has been the biggest learning experience and luckily, I’m never alone. You’ve made sure of that. I might never understand why, but I know you’re right next to me every step of the way. And I can’t thank you enough for that. 
+<br /><br />
+The good memories outweigh the bad. The positive outweighs the negative. Where I lost hope, I gained it back again. You see, it was far from easy. It was an everyday challenge. I would stay in bed for hours each day and not have motivation to move, but somehow you got me to pick myself up and go on. I would lay in bed and stare at your picture and just cry, for hours. Asking God why. I didn’t get why it had to be you. Or why it had to be so soon. I didn’t know how to handle the death of such a loved one. It broke me and tore me apart. It made me go crazy, insane even. It felt like my world was done and over with, but you gave me hope again. You gave me the strength I needed to live. You showed me why I have to be here and why you have to be there. I’m finally okay with that. I’m finally accepting the loss of you. 
+<br /><br />
+You taught me everything I know. You took me under your wing and made me your whole world. From teaching me to drive, to throwing out a line; you were the guidance I needed. Without you, I wouldn’t have had anyone. My life would be a whole different story. Luckily, God blessed me with you. Even though time was cut far too short, I was still lucky enough to have had you and all the lessons you taught me. And for that alone, I couldn’t be more thankful. You see Dad, from losing you, I’ve learned how precious time is. How you never know if you’re going to wake up tomorrow or if your life will be taken from you. I live everyday like it's my last, now. I leave no words unspoken. I don’t leave things on bad terms with anyone. You have shown me first hand what it's like to lose someone without expectation. Without knowing it was coming. And that alone, was enough to change my outlook on life. The hardest time of my life turned into the greatest lesson I’ve ever learned. 
+<br /><br />
+Here’s to the lowest time of my life to the highest. The hardest and the easiest. Here’s to you. For not being seen or heard, but being present and listening. Somehow you have let me move on and push through the pain, tears, and suffering. I’m no longer numb and I’m no longer afraid to cry. Or to hurt. Because it’s all a part of the process. It just shows how much you meant to me and how much of an impact you left on my life. You were so loved and so special to me. Luckily, your memory carries on through me. Even though you won’t walk me down the aisle or see the kids I have some day, I know you’ll be watching from heaven, smiling down, reminding me to not worry about you, but to worry about me. I know you’ll protect us and be so proud of the person I’m becoming and the person I will be. I know you’ll always be right there, just as if you were alive. I live my life for me, but I live it for you too, Dad. To the dreams you weren’t able to accomplish, I’m here to do that for you. Even when I fall, I know you’ll catch me and pick me up again. There will always be hard days, but I’ll never be alone. 
+<br /><br />
+Thank you for giving me the best life I could ask for and for being the best Dad. For cheering me on and always being my biggest fan. For supporting my decisions, even if they weren’t the best and for loving me unconditionally. I’ll always miss you and I’ll never ever forget you. Days, months, and years will come and go, but you’ll live on forever. You will always have a piece of my heart that I’ll never get back, until we meet again. I love you. 
+<br /><br />Salua
 </p>
                                
 
@@ -192,7 +231,7 @@ Salua
 
                     <div class="post-author d-flex my-5">
                         <div class="author-img">
-                            <img alt="author" src="images/author.jpg" class="avatar avatar-100 photo" width="100"   height="100">
+                            <img alt="author" src="images/author.jpg" class="avatar avatar-100 photo" width="100" height="100" title="Sally">
                         </div>
 
                         <div class="author-content pl-4">
@@ -231,7 +270,7 @@ Salua
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="post-block-wrapper mb-4 mb-lg-0">
                                     <a href="why-i-love-tetouan.html">
-                                        <img class="img-fluid" src="images/news/blog-001.png" alt="post-thumbnail" />
+                                        <img class="img-fluid" src="images/news/blog-001.png" alt="post-thumbnail" style="filter: drop-shadow(8px 8px 10px gray);"/>
                                     </a>
                                     <div class="post-content mt-3">
                                         <h5>
@@ -243,7 +282,7 @@ Salua
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="post-block-wrapper mb-4 mb-lg-0">
                                     <a href="a-walk-to-remember-in-bouanane.html">
-                                        <img class="img-fluid" src="images/news/blog-002.png" alt="post-thumbnail" />
+                                        <img class="img-fluid" src="images/news/blog-002.png" alt="post-thumbnail" style="filter: drop-shadow(8px 8px 10px gray);"/>
                                     </a>
                                     <div class="post-content mt-3">
                                         <h5>
@@ -255,7 +294,7 @@ Salua
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="post-block-wrapper">
                                     <a href="paris-is-always-a-good-idea.html">
-                                        <img class="img-fluid" src="images/news/blog-003.png" alt="post-thumbnail" />
+                                        <img class="img-fluid" src="images/news/blog-003.png" alt="post-thumbnail" style="filter: drop-shadow(8px 8px 10px gray);"/>
                                     </a>
                                     <div class="post-content mt-3">
                                         <h5>
@@ -305,8 +344,8 @@ Salua
 				<div class="col-lg-4 col-md-6">
 					<div class="widget footer-widget mb-5 mb-lg-0">
 						<h5 class="widget-title text-uppercase letter-spacing-2 mb-4">About me</h5>
-						<img src="images/about.png" alt="about" class="img-fluid">
-						<p class="mt-4">I recently discovered my passion for writing and fell in love… Salua &nbsp <a href="mailto:ji_3@outlook.com" target="_blank"><i style="font-size:18px;color:gray" class="fa">&#xf0e0;</i></a></p>
+						<img src="images/about.png" alt="about" title="Sally" class="img-fluid" style="filter: drop-shadow(8px 8px 10px gray);">
+						<p class="mt-4">I recently discovered my passion for writing and fell in love… Salua.&nbsp;<a href="mailto:ji_3@outlook.com" target="_blank" rel="external nofollow noopener noreferrer" title="Contact"><i style="color:darkgray" class="fa fa-envelope"></i></a></p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
@@ -371,7 +410,7 @@ Salua
 							<li class="list-inline-item"><a href="blog.html">Blog</a></li>
 							<li class="list-inline-item"><a href="about.html">About</a></li>
 							<li class="list-inline-item"><a href="contact.html">Contact</a></li>
-							<li class="list-inline-item"><a href="feed.xml" rel="external nofollow noopener noreferrer" target="_blank"><i style="font-size:14px;color:black" class="fa">&#xf09e;</i></a></li>
+							<li class="list-inline-item"><a href="feed.xml" rel="external nofollow noopener noreferrer" target="_blank" title="Rss feed"><i style="color:black" class="fa fa-rss"></i></a></li>
              
 						</ul>
 					</div>
@@ -498,7 +537,107 @@ $(document).ready(function() {
 });
 </script>
 
+<script>
 
+function textToSpeech()
+{
+   const speech = new SpeechSynthesisUtterance();
+    let voices = speechSynthesis.getVoices();
+  let convert = document.getElementById("text").innerHTML;
+
+    speech.text = convert;
+
+    speech.lang = 'en-US';
+   
+    speech.volume = 1;
+    speech.rate = 1;
+   
+  
+      
+    window.speechSynthesis.speak(speech);
+    speechSynthesis.speak(speech);
+}
+
+
+
+
+function stop()
+{
+    speechSynthesis.cancel();
+}
+
+speakBtn.addEventListener('click', textToSpeech);
+
+cancelBtn.addEventListener('click', stop);
+
+
+</script>
+
+
+<script>
+        
+const shareData = {
+  title: "Open letter to my dad in heaven - Salua",
+  text: "Open letter to my dad in heaven - Salua",
+   url: "https://salua3.github.io/open-letter-to-my-dad-in-heaven.html",
+};
+
+const shareBtn = document.getElementById("share-btn");
+
+shareBtn.addEventListener("click", async () => {
+
+  if (navigator.share) {
+
+    try {
+      await navigator.share(shareData);
+      console.log("Data shared successfully");
+    } catch (err) {
+
+      console.error("Error while sharing:", err);
+    }
+  } else {
+
+    console.log("Web Share API not supported");
+  }
+});
+    </script>
+
+
+
+
+<script>
+
+function myFunction() {
+   var element = document.body; 
+   element.classList.toggle("dark-mode");
+}
+
+</script>
+
+
+<style>
+.dark-mode { 
+background-color: black;
+    color: gray;
+       opacity: 80%;
+    h1, h2, h3, h4, h5, h6, p, a, div, input, span, header  {color: gray; }
+   color: rgb(128, 128, 128) !important;
+   -webkit-text-fill-color: rgb(128, 128, 128) !important;
+    }
+
+ @media (prefers-color-scheme: dark) {
+      body {
+        background-color: black;
+    color: gray;
+   opacity: 80%;
+   h1, h2, h3, h4, h5, h6, p, a, div, input, span, header  {color: gray; }
+   color: rgb(128, 128, 128) !important;
+  -webkit-text-fill-color: rgb(128, 128, 128) !important;
+    
+    }
+
+
+</style>
 
 </body>
 
