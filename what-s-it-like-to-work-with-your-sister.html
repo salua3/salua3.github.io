@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>What’s it like to work with your sister? - Interview - Salua</title>
+    <title>What’s it like to work with your sister? - Salua</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -14,12 +14,13 @@
 	<meta name="keywords" content="blog, sisters, business, co-founder, interview, company, entrepreneurship, writing, writer, woman, businesswoman">
 	<meta name="description" content="Building a business with your sister is intense, hilarious, and inspiring all at once. And I wouldn't change a thing. Interview. ">
 
-
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+        <meta name="color-scheme" content="dark light">
+	
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico" >
 
             <!-- Favicon -->
-            <link rel="icon" href="./images/favicon/favicon.ico" >
-            <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+            <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico" >
+            <link rel="shortcut icon" type="image/x-icon" href="/images/favicon/favicon.ico" />
             <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96" />
             <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
             <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
@@ -29,15 +30,18 @@
             <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
 
        <!-- Open Graph and Twitter Card data -->
-	<meta property="og:title" content="What’s it like to work with your sister? - Interview - Salua"/>
+	<meta property="og:title" content="What’s it like to work with your sister? - Salua"/>
 	<meta property="og:image" content="https://salua3.github.io/images/blog/blog-24.png"/>
 	<meta property="og:url" content="https://salua3.github.io/what-s-it-like-to-work-with-your-sister.html"/>
 	<meta property="og:description" content="Building a business with your sister is intense, hilarious, and inspiring all at once. And I wouldn't change a thing. Interview. "/>
-        <meta property="og:type" content="website" />
-        <meta property="article:published_time" content="2025-04-25" />
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="en-US" />
+        <meta property="og:updated_time" content="2025-04-25T12:00:00+00:00" />
+        <meta property="article:published_time" content="2025-04-25T12:00:00+00:00" />
+        <meta property="article:modified_time" content="2025-04-25T12:00:00+00:00" />
 
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="What’s it like to work with your sister? - Interview - Salua" />
+	<meta name="twitter:title" content="What’s it like to work with your sister? - Salua" />
 	<meta name="twitter:image" content="https://salua3.github.io/images/blog/blog-24.png" />
 	<meta name="twitter:site" content="https://salua3.github.io/what-s-it-like-to-work-with-your-sister.html" />
 	<meta name="twitter:description" content="Building a business with your sister is intense, hilarious, and inspiring all at once. And I wouldn't change a thing. Interview. " />
@@ -49,6 +53,8 @@
       <link rel="alternate" hreflang="en" href="https://salua3.github.io/index.html">
       <link rel="alternate" href="https://salua3.github.io/" hreflang="x-default" />
 
+	<meta name="referrer" content="no-referrer">
+	
         <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
     <meta name="AdsBot-Google" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
     <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
@@ -123,6 +129,28 @@ html {  scroll-behavior: smooth;}
 
 	</header>
 
+	<div class="container" >
+            <div class="row" >
+     
+                               <div class="col-sm-12" >
+                                   <div     class="tags-share-box center-box d-flex text-center justify-content-between  py-3 ">
+
+                                <span class="single-comment-o"><i class="fa fa-commm "></i> </span>
+
+                                <div class="post-share">
+                                    <span class="count-number-like"> </span>
+                                    <a class="penci-post-like single-like-button"><i class="ti-hea"></i></a>
+                                </div>
+
+                                <div class="list-posts-share" style="font-size:70%;">
+                                    <a href="#" onclick="myFunction()" title="Light/Dark Mode"><i style="color:gray;" class="fa fa-moon-o"></i></a>
+                                    <a href="#" onclick="window.print()" title="Save as pdf"><i style="color:gray;" class="fa fa-bookmark-o"></i></a>
+                                    <a href="#" onclick="window.print()" title="Print"><i style="color:gray;" class="fa fa-print"></i></a>
+                                    <a href="#" id="share-btn"  title="Share"><i style="color:gray;" class="fa fa-share-alt"></i></a>
+                                </div>
+                            </div> </div>
+                            </div> </div> 
+	
 
     <section class="single-block-wrapper section-padding">
         <div class="container">
@@ -147,95 +175,89 @@ html {  scroll-behavior: smooth;}
                             </div>
                            
                             <div class="post-featured-image mt-5">
-                                <img src="images/blog/blog-24.png" class="img-fluid w-100" alt="featured-image">
+                                <img src="images/blog/blog-24.png" class="img-fluid w-100" alt="featured-image" style="filter: drop-shadow(8px 8px 10px gray);">
                             </div>
+<br />
+<a  onclick="textToSpeech()" id="speakBtn" title="Listen" class="btn" style="  color:darkgray; width:25px; height: 5px; padding: 5px 5px; font-size:105%;"><i class="fa fa-play-circle-o" ></i></a> 
+<a  onclick="cancel()" id="cancelBtn" title="Stop" class="btn" style=" color:darkgray;  width:25px; height: 5px; padding: 5px 5px; font-size:105%;"><i class="fa fa-pause-circle-o" ></i></a> 
+				
                         </div>
 
 
 
 
                         <div class="post-body">
-                            <div class="entry-content"> <br /><br />
-                                <p>  <b> Hi Salua and Jiji, tell us about your professional journey. How did you end up in your current role as entrepreneurs and what drew you to this (dual) sister's path? </b> <br /><br />
+                            <div class="entry-content"> 
 
-<b>Salua</b>: After pharmacy and design studies, I began my career working in the corporate world. It was a challenging but a valuable learning experience, I met all different kinds of people, but it was highly stressful. I did not want it to be a full-time job. Serendipitously, my sister Jiji, an ex-FAANG employee, had come to me with an idea to open a marketing business. After months of coming up with a business plan, we officially decided to partner together in 2019 in Tetouan. <br /><br />
+<p style="display:none;" id="text">
+What’s it like to work with your sister?
+Hi Salua and Jiji, tell us about your professional journey. How did you end up in your current role as entrepreneurs and what drew you to this dual sister's path?
+Salua. After pharmacy and design studies, I began my career working in the corporate world. It was a challenging but a valuable learning experience, I met all different kinds of people, but it was highly stressful. I did not want it to be a full-time job. Serendipitously, my sister Jiji, an ex-FAANG employee, had come to me with an idea to open a marketing business. After months of coming up with a business plan, we officially decided to partner together in 2019 in Tetouan.
+Jiji. I studied physics, architecture and mba. I’ve always worked in the corporate world and I have many years of experience at big tech, among other skills. Leaving behind the 9 5 grind and starting my own marketing business with my sister and co-founder Salua, when it was too late to turn back, too much time and some money invested, It kind of happened without too much planning but now it feels natural.
+Before this step, had you ever thought about starting a small business together?
+Jiji. I would occasionally come up with some random idea, bring it to Salua, and she would be like, absolutely, not. We cannot work together. This is a terrible idea. Not terrible the idea, terrible the idea of working together. So when we pitched this idea, we really took time to think about whether it made sense. We thought through what the division of labor would be and how it would look because we wanted to maintain a good sister relationship, you always hear the horror stories.
+Who is responsible for running the business?
+Salua. I am the creative, which can be a bit vague, but I was in charge of the creation of the company, the design and handling more of the client relationships.
+Jiji. You do the creative; social media and marketing, designing our website, and the decorations. I do the operations, more of the behind the scenes, like the contracts with the clients, lead prospecting, research, email communication, taxes, the boring back-office stuff.
+Salua. I’m the luckiest business partner in the world. I always tell her whenever we’re in a rut or something, this business would not exist without you. You literally make it run.
+Jiji. And I feel the same about her. This business and the reason people want to be here is because of you. I think we work really well together because we think similarly, make decisions quickly, and generally love being around each other.
+How do you separate your work and your personal life?
+Jiji. We’re still working on it.
+Salua. It comes up a lot because we have mutual friends, and our family that live in the city. We can’t avoid seeing each other socially, so we are trying to figure out how to hang out when it’s not a family-related thing and when it’s not a work-related thing.
+Jiji. We’re also trying to implement not bringing up work when we’re in family gatherings and when we’re with friends. Sometimes that’s hard to do so it’s just practice, repeat, practice, repeat.
+Would you say your relationship has changed at all?
+Salua. I think that it has. We obviously spend more time together, but I actually think that we appreciate each other more and respect each other more, just seeing how we deal with work and life. When we lived in the city but didn’t work together, we didn’t see each other that much.
+Jiji. Yeah. We lived pretty separate existences for many, many years. I think it’s also that what’s great about having Salua as a partner is obviously there are things that come up in life like personal things that are hard, that are difficult, and to have someone there who says, don’t worry about it. You take your time. You do you. I’ve got it handled, is hugely important. At various years, various times, both of us had to lean on each other for that kind of support.
+</p>
 
-<b>Jiji</b>: I studied physics, architecture & mba. I’ve always worked in the corporate world and I have many years of experience at big tech, among other skills. Leaving behind the 9–5 grind and starting my own marketing business with my sister and co-founder Salua, when it was too late to turn back, too much time and some money invested… It kind of happened without too much planning but now feels natural. <br /><br />
-
-<b>Before this step, had you ever thought about starting a small business together? </b> <br /><br />
-
-<b>Jiji</b>: I would occasionally come up with some random idea, bring it to Salua, and she would be like, “Absolutely, not. We cannot work together. This is a terrible idea.” Not terrible the idea, terrible the idea of working together. So when we pitched this idea, we really took time to think about whether it made sense. We thought through what the division of labor would be and how it would look because we wanted to maintain a good sister relationship, you always hear the horror stories… <br /><br />
-
+<p>  <b> Hi Salua and Jiji, tell us about your professional journey. How did you end up in your current role as entrepreneurs and what drew you to this (dual) sister's path? </b> 
+<br /><br />
+<b>Salua</b>: After pharmacy and design studies, I began my career working in the corporate world. It was a challenging but a valuable learning experience, I met all different kinds of people, but it was highly stressful. I did not want it to be a full-time job. Serendipitously, my sister Jiji, an ex-FAANG employee, had come to me with an idea to open a marketing business. After months of coming up with a business plan, we officially decided to partner together in 2019 in Tetouan. 
+<br /><br />
+<b>Jiji</b>: I studied physics, architecture and mba. I’ve always worked in the corporate world and I have many years of experience at big tech, among other skills. Leaving behind the 9–5 grind and starting my own marketing business with my sister and co-founder Salua, when it was too late to turn back, too much time and some money invested… It kind of happened without too much planning but now it feels natural. 
+<br /><br />
+<b>Before this step, had you ever thought about starting a small business together? </b> 
+<br /><br />
+<b>Jiji</b>: I would occasionally come up with some random idea, bring it to Salua, and she would be like, “Absolutely, not. We cannot work together. This is a terrible idea.” Not terrible the idea, terrible the idea of working together. So when we pitched this idea, we really took time to think about whether it made sense. We thought through what the division of labor would be and how it would look because we wanted to maintain a good sister relationship, you always hear the horror stories… 
+<br /><br />
 <b>Who is responsible for running the business? </b><br /><br />
-
-<b>Salua</b>: I am the creative, which can be a bit vague, but I was in charge of the creation of the company, the design and handling more of the client relationships. <br /><br />
-
-<b>Jiji</b>: You do the creative; social media and marketing, designing our website, and the decorations. I do the operations, more of the behind the scenes. like the contracts with the clients, lead prospecting, research, email communication, taxes, the boring back-office stuff. <br /><br />
-
-<b>Salua</b>: I’m the luckiest business partner in the world. I always tell her whenever we’re in a rut or something, “This business would not exist without you. You literally make it run.” <br /><br />
-
+<b>Salua</b>: I am the creative, which can be a bit vague, but I was in charge of the creation of the company, the design and handling more of the client relationships. 
+<br /><br />
+<b>Jiji</b>: You do the creative; social media and marketing, designing our website, and the decorations. I do the operations, more of the behind the scenes, like the contracts with the clients, lead prospecting, research, email communication, taxes, the boring back-office stuff. <br /><br />
+<b>Salua</b>: I’m the luckiest business partner in the world. I always tell her whenever we’re in a rut or something, “This business would not exist without you. You literally make it run.” 
+<br /><br />
 <b>Jiji</b>: And I feel the same about her. This business and the reason people want to be here is because of you. I think we work really well together because we think similarly, make decisions quickly, and generally love being around each other. <br /><br />
-
-<b>How do you separate your work and your personal life? </b><br /><br />
-
+<b>How do you separate your work and your personal life? </b>	<br /><br />
 <b>Jiji</b>: We’re still working on it. <br /><br />
-
 <b>Salua</b>: It comes up a lot because we have mutual friends, and our family that live in the city. We can’t avoid seeing each other socially, so we are trying to figure out how to hang out when it’s not a family-related thing and when it’s not a work-related thing. <br /><br />
-
-<b>Jiji</b>: We’re also trying to implement not bringing up work when we’re in family gatherings and when we’re with friends. Sometimes that’s hard to do so it’s just practice, repeat, practice, repeat. <br /><br />
-
+<b>Jiji</b>: We’re also trying to implement not bringing up work when we’re in family gatherings and when we’re with friends. Sometimes that’s hard to do so it’s just practice, repeat, practice, repeat. 
+	<br /><br />
 <b>Would you say your relationship has changed at all? </b> <br /><br />
-
 <b>Salua</b>: I think that it has. We obviously spend more time together, but I actually think that we appreciate each other more and respect each other more, just seeing how we deal with work and life. When we lived in the city but didn’t work together, we didn’t see each other that much. <br /><br />
-
 <b>Jiji</b>: Yeah. We lived pretty separate existences for many, many years. I think it’s also that what’s great about having Salua as a partner is obviously there are things that come up in life like personal things that are hard, that are difficult, and to have someone there who says, “Don’t worry about it. You take your time. You do you. I’ve got it handled,” is hugely important. At various years, various times, both of us had to lean on each other for that kind of support and it was never, “You’re not showing up to work. You’re fired,” but rather, “Take care of yourself. I get it and we’ll handle it.” I think that has been really amazing in growing this. <br /><br />
-
 <b>Walk us through a typical workday </b> <br /><br />
-
 <b>Jiji</b>: My days change based on if we have a client. If not, I work remotely, I answer emails, I do research, prospecting new leads, and just make sure everything is operating well. I wear all the hats, so I’m a lawyer, a publicist, copywriter, HR professional, etc. <br /><br />
-
 <b>Salua</b>: The beauty of my current setup is that it is fairly flexible in terms of where I do my work. On days with no clients or when my sister is working, I work from a coffee shop or home or travel and work remotely. <br /><br />
-
 <b>What do you like the most about entrepreneurship? What is the most challenging? </b> <br /><br />
-
 <b>Salua</b>: I love so many things. I have been extremely surprised (in a great way) how open and welcoming female entrepreneurs are in my city and internationally. There is a wonderful sense of community and a desire to help and nurture fellow women entrepreneurs/freelancers that is really inspiring. <br /><br />
-
 There are so many challenging aspects of being one’s own boss. There are no excuses if something doesn’t go well; it is on us to figure everything out. There are so many trials and errors. I also miss being in an office environment with a great group of coworkers. It is also incredibly challenging to balance a sister relationship with a work/partner relationship. We are constantly having to check in, listen, adjust communication styles and work on boundaries. It has been amazing to see how we’ve grown as partners and how our individual strengths compliment the other. I wouldn’t have done this with anyone else because it is a constant struggle and learning experience. <br /><br />
-
 <b>Jiji</b>: I love that I have control over my schedule: no one is telling me I have 2 weeks’ vacation a year. There is nothing like being one’s own boss. We take the clients we want and say no to those that we don’t. My sister Salua and I have developed and continue to work on having a great working partnership. We support each other’s outside interests and goals, and give each other the ability to take trips, time off or side projects. <br /><br />
-
 <b>What’s your best advice for other siblings or female entrepreneurs looking to start a small business together or who might want to pursue a similar path in entrepreneurship? </b><br /><br />
-
 <b>Salua</b>: Be very intentional in how you set it up from the get-go. Outlining your roles also is super important because if you’re both doing the same things, then you start stepping on toes. Just open communication, in any relationship, and not letting things boil under the surface. If something’s important enough to bother you, talk it out. It’s worth having the conversation now and not let it blow up later. <br /><br />
-
 <b>Jiji</b>: And trust each other; trust is huge. There’s no better time than now. Running a business takes a lot of hard work and you need to stay motivated. Passion is crucial; you have to be passionate about whatever it is that you are doing because if you don’t have the passion and the belief then it won’t work. It’s all about passion, persistence and patience. We believe that if you’ve got the passion then go for it. We had no experience in running a business before, but we knew if we didn’t give it a go we would regret it forever. Trust your gut and believe in yourself. <br /><br />
-
 <b>Salua</b>: In entrepreneurship you will never feel completely ready or prepared to take the leap, but this doesn’t mean you shouldn’t try! It’s important to talk to people in the industry of your choice, listen to both positive feedback and constructive criticism and make sure you have a solid business plan. Do the research. But at a certain point- just go for it. It’s also challenging going from a steady paycheck to uncertainty- so be sure to have your finances in order so that you feel secure in giving yourself that time to get started and not feel immediate pressure to be making money, as it takes time to get off the ground. I think choosing the right business partner is the ultimate advice I can give. That is a make or break in many cases. <br /><br />
-
 <b>According to you, what are the top skills that a marketer should possess? </b> <br /><br />
-
 <b>Jiji</b>: Writing and editing, market research, brand reputation management, strategic planning, sales and persuasion, creative problem solving, data analysis, agility and adaptability… <br /><br />
-
 <b>Salua</b>: For me organization and project management, media coordination and relations, an understanding of the customer experience, advanced social media knowledge… <br /><br />
-
 <b>Considering the industry dynamics, do you think it’s more challenging for women to become leaders in the digital ecosystem? Why/why not? </b> <br /><br />
-
 <b>Salua</b>: I do think that it is more challenging for women to become leaders in the digital industry, but I don’t think this is an issue that is isolated to just digital, it is across industries. Whilst there has been great progress, I believe that there is still a way to go before opportunities are equal. <br /><br />
-
 <b>Jiji</b>: There are so many qualities that women have that make them extremely valuable assets to any digital team. For example, a quality that has been traditionally identified as a weakness in women is empathy. However, I believe that bringing empathy and an understanding of people’s needs to a digital role is essential in creating a seamless customer experience, engaging potential customers/clients and working to understand your own company’s objectives. I also believe it is an extremely important quality in a leader, in order for your team to respect you and perform their job to the best of their ability. <br /><br />
-
 <b>What do you think will be the future of marketing? What kinds of expectations do you have in the future? </b> <br /><br />
-
 <b>Jiji</b>: I have been reading a lot of articles describing some exciting and engaging marketing technologies and tactics such as voice search, micro-influencers, automation, and of course AI. I am optimistic that our small business will have motivation and aspirations to grow. We work with companies and individuals from all over the world to improve their strong public image and brand identity. <br /><br />
-
 <b>Salua</b>: Apart from having creative and analytical minds, marketers have to always be up-to-date with the constantly changing landscape. If you run a business, you have a hard nut to crack as well. Getting across to today’s consumer is a complex process that requires adjusting your efforts to emerging trends. <br /><br />
-
 <b>What is the biggest lesson you’ve learned on your career path so far? </b> <br /><br />
-
 <b>Salua</b>: Never stop asking questions, because there is always a way! <br /><br />
-
 <b>Jiji</b>: Escape the 9-5 and just get into the game.
-
 </p>
                                
 
@@ -247,7 +269,7 @@ There are so many challenging aspects of being one’s own boss. There are no ex
 
                     <div class="post-author d-flex my-5">
                         <div class="author-img">
-                            <img alt="author" src="images/author.jpg" class="avatar avatar-100 photo" width="100"   height="100">
+                            <img alt="author" src="images/author.jpg" class="avatar avatar-100 photo" width="100" height="100" title="Sally">
                         </div>
 
                         <div class="author-content pl-4">
@@ -286,7 +308,7 @@ There are so many challenging aspects of being one’s own boss. There are no ex
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="post-block-wrapper mb-4 mb-lg-0">
                                     <a href="why-i-love-tetouan.html">
-                                        <img class="img-fluid" src="images/news/blog-001.png" alt="post-thumbnail" />
+                                        <img class="img-fluid" src="images/news/blog-001.png" alt="post-thumbnail" style="filter: drop-shadow(8px 8px 10px gray);"/>
                                     </a>
                                     <div class="post-content mt-3">
                                         <h5>
@@ -298,7 +320,7 @@ There are so many challenging aspects of being one’s own boss. There are no ex
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="post-block-wrapper mb-4 mb-lg-0">
                                     <a href="a-walk-to-remember-in-bouanane.html">
-                                        <img class="img-fluid" src="images/news/blog-002.png" alt="post-thumbnail" />
+                                        <img class="img-fluid" src="images/news/blog-002.png" alt="post-thumbnail" style="filter: drop-shadow(8px 8px 10px gray);"/>
                                     </a>
                                     <div class="post-content mt-3">
                                         <h5>
@@ -310,7 +332,7 @@ There are so many challenging aspects of being one’s own boss. There are no ex
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="post-block-wrapper">
                                     <a href="paris-is-always-a-good-idea.html">
-                                        <img class="img-fluid" src="images/news/blog-003.png" alt="post-thumbnail" />
+                                        <img class="img-fluid" src="images/news/blog-003.png" alt="post-thumbnail" style="filter: drop-shadow(8px 8px 10px gray);"/>
                                     </a>
                                     <div class="post-content mt-3">
                                         <h5>
@@ -360,8 +382,8 @@ There are so many challenging aspects of being one’s own boss. There are no ex
 				<div class="col-lg-4 col-md-6">
 					<div class="widget footer-widget mb-5 mb-lg-0">
 						<h5 class="widget-title text-uppercase letter-spacing-2 mb-4">About me</h5>
-						<img src="images/about.png" alt="about" class="img-fluid">
-						<p class="mt-4">I recently discovered my passion for writing and fell in love… Salua &nbsp <a href="mailto:ji_3@outlook.com" target="_blank"><i style="font-size:18px;color:gray" class="fa">&#xf0e0;</i></a></p>
+						<img src="images/about.png" alt="about" title="Sally" class="img-fluid" style="filter: drop-shadow(8px 8px 10px gray);">
+						<p class="mt-4">I recently discovered my passion for writing and fell in love… Salua.&nbsp;<a href="mailto:ji_3@outlook.com" target="_blank" rel="external nofollow noopener noreferrer" title="Contact"><i style="color:darkgray" class="fa fa-envelope"></i></a></p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
@@ -426,7 +448,7 @@ There are so many challenging aspects of being one’s own boss. There are no ex
 							<li class="list-inline-item"><a href="blog.html">Blog</a></li>
 							<li class="list-inline-item"><a href="about.html">About</a></li>
 							<li class="list-inline-item"><a href="contact.html">Contact</a></li>
-							<li class="list-inline-item"><a href="feed.xml" rel="external nofollow noopener noreferrer" target="_blank"><i style="font-size:14px;color:black" class="fa">&#xf09e;</i></a></li>
+							<li class="list-inline-item"><a href="feed.xml" rel="external nofollow noopener noreferrer" target="_blank" title="Rss feed"><i style="color:black" class="fa fa-rss"></i></a></li>
              
 						</ul>
 					</div>
@@ -553,7 +575,107 @@ $(document).ready(function() {
 });
 </script>
 
+<script>
 
+function textToSpeech()
+{
+   const speech = new SpeechSynthesisUtterance();
+    let voices = speechSynthesis.getVoices();
+  let convert = document.getElementById("text").innerHTML;
+
+    speech.text = convert;
+
+    speech.lang = 'en-US';
+   
+    speech.volume = 1;
+    speech.rate = 1;
+   
+  
+      
+    window.speechSynthesis.speak(speech);
+    speechSynthesis.speak(speech);
+}
+
+
+
+
+function stop()
+{
+    speechSynthesis.cancel();
+}
+
+speakBtn.addEventListener('click', textToSpeech);
+
+cancelBtn.addEventListener('click', stop);
+
+
+</script>
+
+
+<script>
+        
+const shareData = {
+  title: "What’s it like to work with your sister? - Salua",
+  text: "What’s it like to work with your sister? - Salua",
+   url: "https://salua3.github.io/what-s-it-like-to-work-with-your-sister.html",
+};
+
+const shareBtn = document.getElementById("share-btn");
+
+shareBtn.addEventListener("click", async () => {
+
+  if (navigator.share) {
+
+    try {
+      await navigator.share(shareData);
+      console.log("Data shared successfully");
+    } catch (err) {
+
+      console.error("Error while sharing:", err);
+    }
+  } else {
+
+    console.log("Web Share API not supported");
+  }
+});
+    </script>
+
+
+
+
+<script>
+
+function myFunction() {
+   var element = document.body; 
+   element.classList.toggle("dark-mode");
+}
+
+</script>
+
+
+<style>
+.dark-mode { 
+background-color: black;
+    color: gray;
+       opacity: 80%;
+    h1, h2, h3, h4, h5, h6, p, a, div, input, span, header  {color: gray; }
+   color: rgb(128, 128, 128) !important;
+   -webkit-text-fill-color: rgb(128, 128, 128) !important;
+    }
+
+ @media (prefers-color-scheme: dark) {
+      body {
+        background-color: black;
+    color: gray;
+   opacity: 80%;
+   h1, h2, h3, h4, h5, h6, p, a, div, input, span, header  {color: gray; }
+   color: rgb(128, 128, 128) !important;
+  -webkit-text-fill-color: rgb(128, 128, 128) !important;
+    
+    }
+
+
+</style>
 
 </body>
 
