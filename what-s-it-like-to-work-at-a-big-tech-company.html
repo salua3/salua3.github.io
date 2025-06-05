@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>What’s it like to work at a big tech company? - Interview - Salua</title>
+    <title>What’s it like to work at a big tech company? - Salua</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -14,12 +14,13 @@
 	<meta name="keywords" content="blog, big tech, faang, work, company, magnificent 7, employee, interview, writing, writer, woman, businesswoman">
 	<meta name="description" content="I wanted to impact millions, I've been working toward getting into a big tech company since day one, but now that I've experienced working at one of the magnificent 7... Interview. ">
 
-
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+        <meta name="color-scheme" content="dark light">
+	
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico" >
 
             <!-- Favicon -->
-            <link rel="icon" href="./images/favicon/favicon.ico" >
-            <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+            <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico" >
+            <link rel="shortcut icon" type="image/x-icon" href="/images/favicon/favicon.ico" />
             <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96" />
             <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
             <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
@@ -29,15 +30,18 @@
             <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
 
        <!-- Open Graph and Twitter Card data -->
-	<meta property="og:title" content="What’s it like to work at a big tech company? - Interview - Salua"/>
+	<meta property="og:title" content="What’s it like to work at a big tech company? - Salua"/>
 	<meta property="og:image" content="https://salua3.github.io/images/blog/blog-27.png"/>
 	<meta property="og:url" content="https://salua3.github.io/what-s-it-like-to-work-at-a-big-tech-company.html"/>
 	<meta property="og:description" content="I wanted to impact millions, I've been working toward getting into a big tech company since day one, but now that I've experienced working at one of the magnificent 7... Interview. "/>
-        <meta property="og:type" content="website" />
-        <meta property="article:published_time" content="2025-04-25" />
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="en-US" />
+        <meta property="og:updated_time" content="2025-04-25T12:00:00+00:00" />
+        <meta property="article:published_time" content="2025-04-25T12:00:00+00:00" />
+        <meta property="article:modified_time" content="2025-04-25T12:00:00+00:00" />
 
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="What’s it like to work at a big tech company? - Interview - Salua" />
+	<meta name="twitter:title" content="What’s it like to work at a big tech company? - Salua" />
 	<meta name="twitter:image" content="https://salua3.github.io/images/blog/blog-27.png" />
 	<meta name="twitter:site" content="https://salua3.github.io/what-s-it-like-to-work-at-a-big-tech-company.html" />
 	<meta name="twitter:description" content="I wanted to impact millions, I've been working toward getting into a big tech company since day one, but now that I've experienced working at one of the magnificent 7... Interview. " />
@@ -49,6 +53,8 @@
       <link rel="alternate" hreflang="en" href="https://salua3.github.io/index.html">
       <link rel="alternate" href="https://salua3.github.io/" hreflang="x-default" />
 
+	<meta name="referrer" content="no-referrer">
+	
         <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
     <meta name="AdsBot-Google" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
     <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
@@ -123,6 +129,28 @@ html {  scroll-behavior: smooth;}
 
 	</header>
 
+	<div class="container" >
+            <div class="row" >
+     
+                               <div class="col-sm-12" >
+                                   <div     class="tags-share-box center-box d-flex text-center justify-content-between  py-3 ">
+
+                                <span class="single-comment-o"><i class="fa fa-commm "></i> </span>
+
+                                <div class="post-share">
+                                    <span class="count-number-like"> </span>
+                                    <a class="penci-post-like single-like-button"><i class="ti-hea"></i></a>
+                                </div>
+
+                                <div class="list-posts-share" style="font-size:70%;">
+                                    <a href="#" onclick="myFunction()" title="Light/Dark Mode"><i style="color:gray;" class="fa fa-moon-o"></i></a>
+                                    <a href="#" onclick="window.print()" title="Save as pdf"><i style="color:gray;" class="fa fa-bookmark-o"></i></a>
+                                    <a href="#" onclick="window.print()" title="Print"><i style="color:gray;" class="fa fa-print"></i></a>
+                                    <a href="#" id="share-btn"  title="Share"><i style="color:gray;" class="fa fa-share-alt"></i></a>
+                                </div>
+                            </div> </div>
+                            </div> </div> 
+	
 
     <section class="single-block-wrapper section-padding">
         <div class="container">
@@ -147,59 +175,81 @@ html {  scroll-behavior: smooth;}
                             </div>
                            
                             <div class="post-featured-image mt-5">
-                                <img src="images/blog/blog-27.png" class="img-fluid w-100" alt="featured-image">
+                                <img src="images/blog/blog-27.png" class="img-fluid w-100" alt="featured-image" style="filter: drop-shadow(8px 8px 10px gray);">
                             </div>
+<br />
+<a  onclick="textToSpeech()" id="speakBtn" title="Listen" class="btn" style="  color:darkgray; width:25px; height: 5px; padding: 5px 5px; font-size:105%;"><i class="fa fa-play-circle-o" ></i></a> 
+<a  onclick="cancel()" id="cancelBtn" title="Stop" class="btn" style=" color:darkgray;  width:25px; height: 5px; padding: 5px 5px; font-size:105%;"><i class="fa fa-pause-circle-o" ></i></a> 
+				
                         </div>
 
 
 
 
                         <div class="post-body">
-                            <div class="entry-content"> <br /><br />
-                                <p>  <b> Hi Jiji, what’s it like to work at big tech? </b> <br /><br />
+                            <div class="entry-content"> 
 
-Working at big tech can be interesting, I always dreamed of working for a big tech company, but now that I've experienced working at one of the Magnificent 7, I don't think it's the best career path for everyone. I advise people considering breaking into big tech to self-reflect before deciding if this path is right for them. <br /><br />
-
-I wanted to impact millions, I've been working toward getting into a big cech company since day one. I got my master’s degree and became a full-time account manager when I joined a big tech company. Mass-applying to big tech internships, networking on linkedIn, researching, attending conferences, and freelancing to build my portfolio got me in the door. I started these efforts while I was still a student, taking on several odd jobs, including working as IT support, doing unpaid work for startups, building side projects, and teaching courses... <br /><br />
-
-My second big tech breakthrough came when I scored the opportunity to intern at a big tech company. This helped me land a full-time big tech job a year later. Unlike startups, which mostly hire generalists and where you may juggle roles from programming to marketing, big tech offers opportunities for deep technical specialization. <br /><br />
-
-<b>How can people improve their chances of being hired at a big tech? </b><br /><br />
-
-Your first hurdle is to get an interview. If you manage that, then study well. If you don’t have strong fundamentals and can’t solve medium-level problems, then don’t bother. Getting an offer is just the beginning, you still have to perform on the job which is harder than the interview itself, so ask yourself if you really want to work at a big tech. <br /><br />
-
-<b>Why big tech isn't the best career path for everyone? </b><br /><br />
-
-After working at big tech for many years, I can tell you that if you fall into one of these categories, you may not be a good fit for a career there: <br /><br />
-
+<p style="display:none;" id="text">
+What’s it like to work at a big tech company?
+Hi Jiji, what’s it like to work at big tech?
+Working at big tech can be interesting, I always dreamed of working for a big tech company, but now that I've experienced working at one of the Magnificent 7, I don't think it's the best career path for everyone. I advise people considering breaking into big tech to self-reflect before deciding if this path is right for them.
+I wanted to impact millions, I've been working toward getting into a big tech company since day one. I got my master’s degree and became a full-time account manager when I joined a big tech company. Mass-applying to big tech internships, networking on linkedIn, researching, attending conferences, and freelancing to build my portfolio got me in the door. I started these efforts while I was still a student, taking on several odd jobs, including working as IT support, doing unpaid work for startups, building side projects, and teaching courses.
+My second big tech breakthrough came when I scored the opportunity to intern at a big tech company. This helped me land a full-time big tech job a year later. Unlike startups, which mostly hire generalists and where you may juggle roles from programming to marketing, big tech offers opportunities for deep technical specialization.
+How can people improve their chances of being hired at a big tech?
+Your first hurdle is to get an interview. If you manage that, then study well. If you don’t have strong fundamentals and can’t solve medium-level problems, then don’t bother. Getting an offer is just the beginning, you still have to perform on the job which is harder than the interview itself, so ask yourself if you really want to work at a big tech.
+Why big tech isn't the best career path for everyone?
+After working at big tech for many years, I can tell you that if you fall into one of these categories, you may not be a good fit for a career there.
+1. You don't like being pressured to work at a fast pace.
+If you're uncomfortable in a high-pressure environment where working at breakneck speed is essential, big tech might not be for you. Big tech companies hire people who are not only highly competent but also extremely motivated, often paying good salaries to attract the best talent. These companies focus on speed and constant innovation to stay ahead of the competition, so you usually need to move fast. I am OK with working quickly. I learned right away that making a concrete plan of action, setting sub-goals to stay on track, and ensuring I jump into the task immediately instead of procrastinating is helpful.
+2. You're not into constant learning and skills updating.
+The tech industry is fast-paced, which is further amplified when you work for a highly innovative big tech company. Candidates for this field must be comfortable adapting quickly to new tools, frameworks, and APIs. When AI tools are first introduced, many big tech companies will immediately encourage their employees to use them to work more efficiently. I've seen a surge in the use of AI tools in my job.
+3. You're not prepared for a high-stress environment.
+Rapid innovation and results are part and parcel of the tech industry. These demands can cause employees to experience serious pressure. You must ensure you choose the right team and enjoy your work, otherwise, you'll be stressed out. That is why many techies leave big tech.
+4. You're lured by big tech perks rather than making a difference.
+With best-in-class benefits that most people can only dream about, it makes sense that some people are attracted to big tech for free food or health and fitness benefits. This is a mistake. The perks exist to help you perform your best at work. If you join just for the sake of those, they can distract from your work's actual purpose and impact. They might also reduce the drive to improve and adapt, potentially hindering long-term career growth.
+</p>
+				    
+<p><b>Hi Jiji, what’s it like to work at big tech? </b> 
+<br /><br />
+Working at big tech can be interesting, I always dreamed of working for a big tech company, but now that I've experienced working at one of the Magnificent 7, I don't think it's the best career path for everyone. I advise people considering breaking into big tech to self-reflect before deciding if this path is right for them. 
+<br /><br />
+I wanted to impact millions, I've been working toward getting into a big tech company since day one. I got my master’s degree and became a full-time account manager when I joined a big tech company. Mass-applying to big tech internships, networking on linkedIn, researching, attending conferences, and freelancing to build my portfolio got me in the door. I started these efforts while I was still a student, taking on several odd jobs, including working as IT support, doing unpaid work for startups, building side projects, and teaching courses... 
+<br /><br />
+My second big tech breakthrough came when I scored the opportunity to intern at a big tech company. This helped me land a full-time big tech job a year later. Unlike startups, which mostly hire generalists and where you may juggle roles from programming to marketing, big tech offers opportunities for deep technical specialization. 
+<br /><br />
+<b>How can people improve their chances of being hired at a big tech? </b>
+<br /><br />
+Your first hurdle is to get an interview. If you manage that, then study well. If you don’t have strong fundamentals and can’t solve medium-level problems, then don’t bother. Getting an offer is just the beginning, you still have to perform on the job which is harder than the interview itself, so ask yourself if you really want to work at a big tech. 
+<br /><br />
+<b>Why big tech isn't the best career path for everyone? </b>
+<br /><br />
+After working at big tech for many years, I can tell you that if you fall into one of these categories, you may not be a good fit for a career there: 
+<br /><br />
 1. You don't like being pressured to work at a fast pace.  <br />
 If you're uncomfortable in a high-pressure environment where working at breakneck speed is essential, big tech might not be for you. Big tech companies hire people who are not only highly competent but also extremely motivated, often paying good salaries to attract the best talent. These companies focus on speed and constant innovation to stay ahead of the competition, so you usually need to move fast.
-I am OK with working quickly. I learned right away that making a concrete plan of action, setting sub-goals to stay on track, and ensuring I jump into the task immediately instead of procrastinating is helpful. <br /><br />
-
+I am OK with working quickly. I learned right away that making a concrete plan of action, setting sub-goals to stay on track, and ensuring I jump into the task immediately instead of procrastinating is helpful. 
+<br /><br />
 2. You're not into constant learning and skills updating. <br />
-The tech industry is fast-paced, which is further amplified when you work for a highly innovative big tech company. Candidates for this field must be comfortable adapting quickly to new tools, frameworks, and APIs. When AI tools are first introduced, many big tech companies will immediately encourage their employees to use them to work more efficiently. I've seen a surge in the use of AI tools in my job. <br /><br />
-
+The tech industry is fast-paced, which is further amplified when you work for a highly innovative big tech company. Candidates for this field must be comfortable adapting quickly to new tools, frameworks, and APIs. When AI tools are first introduced, many big tech companies will immediately encourage their employees to use them to work more efficiently. I've seen a surge in the use of AI tools in my job. 
+<br /><br />
 3. You're not prepared for a high-stress environment. <br />
-Rapid innovation and results are part and parcel of the tech industry. These demands can cause employees to experience serious pressure. You must ensure you choose the right team and enjoy your work, otherwise, you'll be stressed out. That is why many techies leave big tech. <br /><br />
-
+Rapid innovation and results are part and parcel of the tech industry. These demands can cause employees to experience serious pressure. You must ensure you choose the right team and enjoy your work, otherwise, you'll be stressed out. That is why many techies leave big tech. 
+<br /><br />
 4. You're lured by big tech perks rather than making a difference. <br />
-With best-in-class benefits that most people can only dream about, it makes sense that some people are attracted to big tech for free food or health and fitness benefits. This is a mistake. The perks exist to help you perform your best at work. If you join just for the sake of those, they can distract from your work's actual purpose and impact. They might also reduce the drive to improve and adapt, potentially hindering long-term career growth. <br /><br />
-
+With best-in-class benefits that most people can only dream about, it makes sense that some people are attracted to big tech for free food or health and fitness benefits. This is a mistake. The perks exist to help you perform your best at work. If you join just for the sake of those, they can distract from your work's actual purpose and impact. They might also reduce the drive to improve and adapt, potentially hindering long-term career growth. 
+<br /><br />
 5. You're in it just to make a quick buck, not because you love technology. <br />
-Engaging in work that you don't find meaningful only for the money and benefits can quickly lead to feelings of dissatisfaction and disconnection. When your primary motivation is financial, you may miss out on the joy of solving problems or creating innovative solutions. <br /><br />
-
-In conclusion, working in big tech like FAANG may not be for everyone, but it certainly offers an array of rewarding experiences, vast learning opportunities, and the potential to make a substantial impact. Ultimately, it falls upon you to discern where you would thrive more, whether within a startup or a large technology company. <br /><br />
-
-If you've ever considered starting your own company, understanding how a large business operates can provide invaluable insights. <br /><br />
-
-<b>Is working at big tech still a dream for you? </b><br /><br />
-
-I see myself working in big tech long-term, I love the impact I can make in this industry, but I never really enjoyed. <br /><br />
-
-After many years working in big tech, I left for a smaller company I co-founded with my sister Salua, it’s something I’m passionate about, with people I love and with more interesting work. 
-
-
-
+Engaging in work that you don't find meaningful only for the money and benefits can quickly lead to feelings of dissatisfaction and disconnection. When your primary motivation is financial, you may miss out on the joy of solving problems or creating innovative solutions. 
+<br /><br />
+In conclusion, working in big tech like FAANG may not be for everyone, but it certainly offers an array of rewarding experiences, vast learning opportunities, and the potential to make a substantial impact. Ultimately, it falls upon you to discern where you would thrive more, whether within a startup or a large technology company. 
+<br /><br />
+If you've ever considered starting your own company, understanding how a large business operates can provide invaluable insights. 
+<br /><br />
+<b>Is working at big tech still a dream for you? </b>
+<br /><br />
+I see myself working in big tech long-term, I love the impact I can make in this industry, but I've never really enjoyed it. 
+<br /><br />
+After many years working in big tech, I moved to a smaller company I co-founded with my sister Salua. It’s something I’m passionate about, with people I love and with more interesting work. 
 </p>
                                
 
@@ -211,7 +261,7 @@ After many years working in big tech, I left for a smaller company I co-founded 
 
                     <div class="post-author d-flex my-5">
                         <div class="author-img">
-                            <img alt="author" src="images/author.jpg" class="avatar avatar-100 photo" width="100"   height="100">
+                            <img alt="author" src="images/author.jpg" class="avatar avatar-100 photo" width="100" height="100" title="Sally">
                         </div>
 
                         <div class="author-content pl-4">
@@ -250,7 +300,7 @@ After many years working in big tech, I left for a smaller company I co-founded 
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="post-block-wrapper mb-4 mb-lg-0">
                                     <a href="why-i-love-tetouan.html">
-                                        <img class="img-fluid" src="images/news/blog-001.png" alt="post-thumbnail" />
+                                        <img class="img-fluid" src="images/news/blog-001.png" alt="post-thumbnail" style="filter: drop-shadow(8px 8px 10px gray);"/>
                                     </a>
                                     <div class="post-content mt-3">
                                         <h5>
@@ -262,7 +312,7 @@ After many years working in big tech, I left for a smaller company I co-founded 
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="post-block-wrapper mb-4 mb-lg-0">
                                     <a href="a-walk-to-remember-in-bouanane.html">
-                                        <img class="img-fluid" src="images/news/blog-002.png" alt="post-thumbnail" />
+                                        <img class="img-fluid" src="images/news/blog-002.png" alt="post-thumbnail" style="filter: drop-shadow(8px 8px 10px gray);"/>
                                     </a>
                                     <div class="post-content mt-3">
                                         <h5>
@@ -274,7 +324,7 @@ After many years working in big tech, I left for a smaller company I co-founded 
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="post-block-wrapper">
                                     <a href="paris-is-always-a-good-idea.html">
-                                        <img class="img-fluid" src="images/news/blog-003.png" alt="post-thumbnail" />
+                                        <img class="img-fluid" src="images/news/blog-003.png" alt="post-thumbnail" style="filter: drop-shadow(8px 8px 10px gray);"/>
                                     </a>
                                     <div class="post-content mt-3">
                                         <h5>
@@ -324,8 +374,8 @@ After many years working in big tech, I left for a smaller company I co-founded 
 				<div class="col-lg-4 col-md-6">
 					<div class="widget footer-widget mb-5 mb-lg-0">
 						<h5 class="widget-title text-uppercase letter-spacing-2 mb-4">About me</h5>
-						<img src="images/about.png" alt="about" class="img-fluid">
-						<p class="mt-4">I recently discovered my passion for writing and fell in love… Salua &nbsp <a href="mailto:ji_3@outlook.com" target="_blank"><i style="font-size:18px;color:gray" class="fa">&#xf0e0;</i></a></p>
+						<img src="images/about.png" alt="about" title="Sally" class="img-fluid" style="filter: drop-shadow(8px 8px 10px gray);">
+						<p class="mt-4">I recently discovered my passion for writing and fell in love… Salua.&nbsp;<a href="mailto:ji_3@outlook.com" target="_blank" rel="external nofollow noopener noreferrer" title="Contact"><i style="color:darkgray" class="fa fa-envelope"></i></a></p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
@@ -390,7 +440,7 @@ After many years working in big tech, I left for a smaller company I co-founded 
 							<li class="list-inline-item"><a href="blog.html">Blog</a></li>
 							<li class="list-inline-item"><a href="about.html">About</a></li>
 							<li class="list-inline-item"><a href="contact.html">Contact</a></li>
-							<li class="list-inline-item"><a href="feed.xml" rel="external nofollow noopener noreferrer" target="_blank"><i style="font-size:14px;color:black" class="fa">&#xf09e;</i></a></li>
+							<li class="list-inline-item"><a href="feed.xml" rel="external nofollow noopener noreferrer" target="_blank" title="Rss feed"><i style="color:black" class="fa fa-rss"></i></a></li>
              
 						</ul>
 					</div>
@@ -517,7 +567,107 @@ $(document).ready(function() {
 });
 </script>
 
+<script>
 
+function textToSpeech()
+{
+   const speech = new SpeechSynthesisUtterance();
+    let voices = speechSynthesis.getVoices();
+  let convert = document.getElementById("text").innerHTML;
+
+    speech.text = convert;
+
+    speech.lang = 'en-US';
+   
+    speech.volume = 1;
+    speech.rate = 1;
+   
+  
+      
+    window.speechSynthesis.speak(speech);
+    speechSynthesis.speak(speech);
+}
+
+
+
+
+function stop()
+{
+    speechSynthesis.cancel();
+}
+
+speakBtn.addEventListener('click', textToSpeech);
+
+cancelBtn.addEventListener('click', stop);
+
+
+</script>
+
+
+<script>
+        
+const shareData = {
+  title: "What’s it like to work at a big tech company? - Salua",
+  text: "What’s it like to work at a big tech company? - Salua",
+   url: "https://salua3.github.io/what-s-it-like-to-work-at-a-big-tech-company.html",
+};
+
+const shareBtn = document.getElementById("share-btn");
+
+shareBtn.addEventListener("click", async () => {
+
+  if (navigator.share) {
+
+    try {
+      await navigator.share(shareData);
+      console.log("Data shared successfully");
+    } catch (err) {
+
+      console.error("Error while sharing:", err);
+    }
+  } else {
+
+    console.log("Web Share API not supported");
+  }
+});
+    </script>
+
+
+
+
+<script>
+
+function myFunction() {
+   var element = document.body; 
+   element.classList.toggle("dark-mode");
+}
+
+</script>
+
+
+<style>
+.dark-mode { 
+background-color: black;
+    color: gray;
+       opacity: 80%;
+    h1, h2, h3, h4, h5, h6, p, a, div, input, span, header  {color: gray; }
+   color: rgb(128, 128, 128) !important;
+   -webkit-text-fill-color: rgb(128, 128, 128) !important;
+    }
+
+ @media (prefers-color-scheme: dark) {
+      body {
+        background-color: black;
+    color: gray;
+   opacity: 80%;
+   h1, h2, h3, h4, h5, h6, p, a, div, input, span, header  {color: gray; }
+   color: rgb(128, 128, 128) !important;
+  -webkit-text-fill-color: rgb(128, 128, 128) !important;
+    
+    }
+
+
+</style>
 
 </body>
 
