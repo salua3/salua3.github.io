@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Tall girl - Interview - Salua</title>
+    <title>Tall girl - Salua</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -14,12 +14,13 @@
 	<meta name="keywords" content="blog, tall, tall girl, self love, interview, writing, writer, woman, businesswoman">
 	<meta name="description" content="For all the things my height brought me, I love it. For all the times I felt big, unlovable and uncomfortable, I love it for teaching me how to be strong. Interview. ">
 
-
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+        <meta name="color-scheme" content="dark light">
+	
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico" >
 
             <!-- Favicon -->
-            <link rel="icon" href="./images/favicon/favicon.ico" >
-            <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+            <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico" >
+            <link rel="shortcut icon" type="image/x-icon" href="/images/favicon/favicon.ico" />
             <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96" />
             <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
             <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
@@ -29,15 +30,18 @@
             <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
 
        <!-- Open Graph and Twitter Card data -->
-	<meta property="og:title" content="Tall girl - Interview - Salua"/>
+	<meta property="og:title" content="Tall girl - Salua"/>
 	<meta property="og:image" content="https://salua3.github.io/images/blog/blog-28.png"/>
 	<meta property="og:url" content="https://salua3.github.io/tall-girl.html"/>
 	<meta property="og:description" content="For all the things my height brought me, I love it. For all the times I felt big, unlovable and uncomfortable, I love it for teaching me how to be strong. Interview. "/>
-        <meta property="og:type" content="website" />
-        <meta property="article:published_time" content="2025-04-25" />
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="en-US" />
+        <meta property="og:updated_time" content="2025-04-25T12:00:00+00:00" />
+        <meta property="article:published_time" content="2025-04-25T12:00:00+00:00" />
+        <meta property="article:modified_time" content="2025-04-25T12:00:00+00:00" />
 
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Tall girl - Interview - Salua" />
+	<meta name="twitter:title" content="Tall girl - Salua" />
 	<meta name="twitter:image" content="https://salua3.github.io/images/blog/blog-28.png" />
 	<meta name="twitter:site" content="https://salua3.github.io/tall-girl.html" />
 	<meta name="twitter:description" content="For all the things my height brought me, I love it. For all the times I felt big, unlovable and uncomfortable, I love it for teaching me how to be strong. Interview. " />
@@ -49,6 +53,8 @@
       <link rel="alternate" hreflang="en" href="https://salua3.github.io/index.html">
       <link rel="alternate" href="https://salua3.github.io/" hreflang="x-default" />
 
+	<meta name="referrer" content="no-referrer">
+	
         <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
     <meta name="AdsBot-Google" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
     <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache" />
@@ -123,6 +129,28 @@ html {  scroll-behavior: smooth;}
 
 	</header>
 
+	<div class="container" >
+            <div class="row" >
+     
+                               <div class="col-sm-12" >
+                                   <div     class="tags-share-box center-box d-flex text-center justify-content-between  py-3 ">
+
+                                <span class="single-comment-o"><i class="fa fa-commm "></i> </span>
+
+                                <div class="post-share">
+                                    <span class="count-number-like"> </span>
+                                    <a class="penci-post-like single-like-button"><i class="ti-hea"></i></a>
+                                </div>
+
+                                <div class="list-posts-share" style="font-size:70%;">
+                                    <a href="#" onclick="myFunction()" title="Light/Dark Mode"><i style="color:gray;" class="fa fa-moon-o"></i></a>
+                                    <a href="#" onclick="window.print()" title="Save as pdf"><i style="color:gray;" class="fa fa-bookmark-o"></i></a>
+                                    <a href="#" onclick="window.print()" title="Print"><i style="color:gray;" class="fa fa-print"></i></a>
+                                    <a href="#" id="share-btn"  title="Share"><i style="color:gray;" class="fa fa-share-alt"></i></a>
+                                </div>
+                            </div> </div>
+                            </div> </div> 
+	
 
     <section class="single-block-wrapper section-padding">
         <div class="container">
@@ -147,68 +175,95 @@ html {  scroll-behavior: smooth;}
                             </div>
                            
                             <div class="post-featured-image mt-5">
-                                <img src="images/blog/blog-28.png" class="img-fluid w-100" alt="featured-image">
+                                <img src="images/blog/blog-28.png" class="img-fluid w-100" alt="featured-image" style="filter: drop-shadow(8px 8px 10px gray);">
                             </div>
+<br />
+<a  onclick="textToSpeech()" id="speakBtn" title="Listen" class="btn" style="  color:darkgray; width:25px; height: 5px; padding: 5px 5px; font-size:105%;"><i class="fa fa-play-circle-o" ></i></a> 
+<a  onclick="cancel()" id="cancelBtn" title="Stop" class="btn" style=" color:darkgray;  width:25px; height: 5px; padding: 5px 5px; font-size:105%;"><i class="fa fa-pause-circle-o" ></i></a> 
+				
                         </div>
 
 
 
 
                         <div class="post-body">
-                            <div class="entry-content"> <br /><br />
-                                <p>  <b> Hi Jiji, what does it feel like to be a tall woman? </b> <br /><br />
+                            <div class="entry-content"> 
 
-Being tall actually is what makes me me. And I like me. I’m 6'1"/1,84m. Being tall has really defined my life, and I wouldn’t change it for the world. Every single day someone tells me “wow you’re tall” or comments on my height, as if I didn’t know. Sometimes, it just comes across as an innocuous observation. I really enjoy being a tall woman. <br /><br />
-
-<b>Why do tall women seem to feel self-confident? </b><br /><br />
-
-I’ve been told I’m intimidating even though I would never think I was. Maybe because of height. Maybe just being taller makes you seem more confident than you really are. I think Yes it does. If you are introverted like myself, it helps a great deal to be tall. People assume things that you are not. I don’t need to play the class clown to be noticed at an office party. I just stand there and say something smart. <br /><br />
-
-<b>Have you ever had a weird or amusing dating experience in relation to your height? </b><br /><br />
-
-I remember turning up for a date once and the guy said “I didn’t know you’d be so big” in an accusatory way. I wish people would remember “big” and “tall” are two very different adjectives. <br /><br />
-
-I also remember one day I wore two-inch/5cm heels to work. I don’t even know if these measly 2 inches (5 cm) can even count as heels, but for the three strangers who commented on my height that day, it clearly made a difference to them. With those shoes, I am easily 6 feet 2 inch tall (1,88 m), that’s the infamous height of the so-called tall girl from the Tall Girl Netflix film. <br /><br />
-
-For all the things my height brought me, I love it. For all the times I felt big, unlovable, uncomfortable, I love it for teaching me how to be strong. I’m not all the way there yet. Maybe my husband will be shorter than me, who knows. But right now, I’m focused on loving myself and my height more and more every day, all 74 inches/184cm. <br /><br />
-
-<b>How do you respond to comments about your height? </b><br /><br />
-
-Every time I walk, well pretty much anywhere, I receive endless amounts of stares, double takes, and random conversations with strangers over whether I play basketball or volleyball. This was always a struggle for me during my teenage years, but since then I have changed my perspective and learned to embrace the extra attention. When people run into a wall because they are too busy checking if you’re wearing heels or not (yes this has happened), take it as a compliment. <br /><br />
-
-<b>How did you feel about your height growing up? </b><br /><br />
-
-I hated it, especially in high school, they made fun of me often because I was taller than most of my classmates. But in college the game changed. I became aware of how beautiful my height is. My confidence grew and it was a major comeback. I wore sky-high heels and knew the only boundary I had was myself. “Oh! She is a model.” No, honey. I am not a model, but… So as I’ve gotten older I’ve learnt to really love it. I began to get positive vibes, and built my confidence. It’s part of who I am and I wouldn’t change that. And I can see everything at gigs. <br /><br />
-
-<b>Any benefits only tall girls can enjoy? </b><br /><br />
-
-Of course! You have great views at concerts… You look stunning in any outfit. Often mistaken as a model/actress. You know you could land a modeling contract if you wanted, at any time. You get advantages in sports, everyone wants you on their sports team. More career opportunities. Easy to intimidate short guys. You command attention, you cannot be ignored! <br /><br />
-
-<b>How would you define your personal style and which are the brands you most love to wear? </b> <br /><br />
-
-I don’t know how I would define it. I love Zara, h&m… I like sharp tailoring blazers, jeans, but I also adore maxi dresses (when I find one long enough). Oh and a mini. I love a mini. <br /><br />
-
-<b>Do you wear heels? </b><br /><br />
-
-I’m not a big fan of heels but I have a fab pair that I wear sometimes from Zara that I adore. <br /><br />
-
-<b>When it comes to your career, have you found your height a help or a hindrance, or really no feature at all? </b><br /><br />
-
-Because of my remote work as a marketing consultant with Salua, I am in a rare and fortunate position where my appearance is very rarely judged in the workplace. <br /><br />
-
-<b>Your ebook was published recently, which is hugely exciting! Can you tell us a little about it? </b><br /><br />
-
-Thank you! It’s a memoir from the last decade of my life and it’s a guide about self-discipline. If you are starting your self-love journey I’d highly recommend checking out my <u><a href="https://jijipage1.github.io" rel="external nofollow noopener noreferrer" target="_blank">ebook</a></u>. <br /><br />
-
-<b>What confidence tips will you share with the tall ladies? </b><br /><br />
-
-I do believe that all people: tall, short, skinny or bootylicious, are so cool. So what I say is embrace it! Love yourself, and make the best out of it! <br /><br />
-
-<b>How can tall women and girls embrace their height? </b><br /><br />
-
+<p style="display:none;" id="text">
+Tall girl.
+Hi Jiji, what does it feel like to be a tall woman?
+Being tall actually is what makes me me. And I like me. I’m 6'1" 1,84 m. Being tall has really defined my life, and I wouldn’t change it for the world. Every single day someone tells me, wow you’re tall, or comments on my height, as if I didn’t know. Sometimes, it just comes across as an innocuous observation. I really enjoy being a tall woman.
+Why do tall women seem to feel self-confident?
+I’ve been told I’m intimidating even though I would never think I was. Maybe because of height. Maybe just being taller makes you seem more confident than you really are. I think Yes it does. If you are introverted like myself, it helps a great deal to be tall. People assume things that you are not. I don’t need to play the class clown to be noticed at an office party. I just stand there and say something smart.
+Have you ever had a weird or amusing dating experience in relation to your height?
+I remember turning up for a date once and the guy said, I didn’t know you’d be so big, in an accusatory way. I wish people would remember big and tall are two very different adjectives.
+I also remember one day I wore two-inch/5cm heels to work. I don’t even know if these measly 2 inches, 5 cm, can even count as heels, but for the three strangers who commented on my height that day, it clearly made a difference to them. With those shoes, I am easily 6 feet 2 inch tall, 1,88 m, that’s the infamous height of the so-called tall girl from the Tall Girl Netflix film.
+For all the things my height brought me, I love it. For all the times I felt big, unlovable, uncomfortable, I love it for teaching me how to be strong. I’m not all the way there yet. Maybe my husband will be shorter than me, who knows. But right now, I’m focused on loving myself and my height more and more every day, all 74 inches, 184 cm.
+How do you respond to comments about your height?
+Every time I walk, well pretty much anywhere, I receive endless amounts of stares, double takes, and random conversations with strangers over whether I play basketball or volleyball. This was always a struggle for me during my teenage years, but since then I have changed my perspective and learned to embrace the extra attention. When people run into a wall because they are too busy checking if you’re wearing heels or not, yes this has happened, take it as a compliment.
+How did you feel about your height growing up?
+I hated it, especially in high school, they made fun of me often because I was taller than most of my classmates. But in college the game changed. I became aware of how beautiful my height is. My confidence grew and it was a major comeback. I wore sky-high heels and knew the only boundary I had was myself. Oh, she is a model. No, honey. I am not a model, but. So as I’ve gotten older I’ve learnt to really love it. I began to get positive vibes, and built my confidence. It’s part of who I am and I wouldn’t change that. And I can see everything at gigs.
+Any benefits only tall girls can enjoy?
+Of course! You have great views at concerts. You look stunning in any outfit. Often mistaken as a model actress. You know you could land a modeling contract if you wanted, at any time. You get advantages in sports, everyone wants you on their sports team. More career opportunities. Easy to intimidate short guys. You command attention, you cannot be ignored!
+How would you define your personal style and which are the brands you most love to wear?
+I don’t know how I would define it. I love Zara, H M, I like sharp tailoring blazers, jeans, but I also adore maxi dresses, when I find one long enough. Oh and a mini. I love a mini.
+Do you wear heels?
+I’m not a big fan of heels but I have a fab pair that I wear sometimes from Zara that I adore.
+When it comes to your career, have you found your height a help or a hindrance, or really no feature at all?
+Because of my remote work as a marketing consultant.
+</p>
+				    
+<p><b>Hi Jiji, what does it feel like to be a tall woman? </b> 
+<br /><br />
+Being tall actually is what makes me me. And I like me. I’m 6'1"/1,84m. Being tall has really defined my life, and I wouldn’t change it for the world. Every single day someone tells me “wow you’re tall” or comments on my height, as if I didn’t know. Sometimes, it just comes across as an innocuous observation. I really enjoy being a tall woman. 
+<br /><br />
+<b>Why do tall women seem to feel self-confident? </b>
+<br /><br />
+I’ve been told I’m intimidating even though I would never think I was. Maybe because of height. Maybe just being taller makes you seem more confident than you really are. I think Yes it does. If you are introverted like myself, it helps a great deal to be tall. People assume things that you are not. I don’t need to play the class clown to be noticed at an office party. I just stand there and say something smart. 
+<br /><br />
+<b>Have you ever had a weird or amusing dating experience in relation to your height? </b>
+<br /><br />
+I remember turning up for a date once and the guy said “I didn’t know you’d be so big” in an accusatory way. I wish people would remember “big” and “tall” are two very different adjectives. 
+<br /><br />
+I also remember one day I wore two-inch/5cm heels to work. I don’t even know if these measly 2 inches (5 cm) can even count as heels, but for the three strangers who commented on my height that day, it clearly made a difference to them. With those shoes, I am easily 6 feet 2 inch tall (1,88 m), that’s the infamous height of the so-called tall girl from the Tall Girl Netflix film. 
+<br /><br />
+For all the things my height brought me, I love it. For all the times I felt big, unlovable, uncomfortable, I love it for teaching me how to be strong. I’m not all the way there yet. Maybe my husband will be shorter than me, who knows. But right now, I’m focused on loving myself and my height more and more every day, all 74 inches/184cm. 
+<br /><br />
+<b>How do you respond to comments about your height? </b>
+<br /><br />
+Every time I walk, well pretty much anywhere, I receive endless amounts of stares, double takes, and random conversations with strangers over whether I play basketball or volleyball. This was always a struggle for me during my teenage years, but since then I have changed my perspective and learned to embrace the extra attention. When people run into a wall because they are too busy checking if you’re wearing heels or not (yes this has happened), take it as a compliment. 
+<br /><br />
+<b>How did you feel about your height growing up? </b>
+<br /><br />
+I hated it, especially in high school, they made fun of me often because I was taller than most of my classmates. But in college the game changed. I became aware of how beautiful my height is. My confidence grew and it was a major comeback. I wore sky-high heels and knew the only boundary I had was myself. “Oh! She is a model.” No, honey. I am not a model, but… So as I’ve gotten older I’ve learnt to really love it. I began to get positive vibes, and built my confidence. It’s part of who I am and I wouldn’t change that. And I can see everything at gigs. 
+<br /><br />
+<b>Any benefits only tall girls can enjoy? </b>
+<br /><br />
+Of course! You have great views at concerts… You look stunning in any outfit. Often mistaken as a model/actress. You know you could land a modeling contract if you wanted, at any time. You get advantages in sports, everyone wants you on their sports team. More career opportunities. Easy to intimidate short guys. You command attention, you cannot be ignored! 
+<br /><br />
+<b>How would you define your personal style and which are the brands you most love to wear? </b> 
+<br /><br />
+I don’t know how I would define it. I love Zara, h&m… I like sharp tailoring blazers, jeans, but I also adore maxi dresses (when I find one long enough). Oh and a mini. I love a mini. 
+<br /><br />
+<b>Do you wear heels? </b>
+<br /><br />
+I’m not a big fan of heels but I have a fab pair that I wear sometimes from Zara that I adore. 
+<br /><br />
+<b>When it comes to your career, have you found your height a help or a hindrance, or really no feature at all? </b>
+<br /><br />
+Because of my remote work as a marketing consultant with Salua, I am in a rare and fortunate position where my appearance is very rarely judged in the workplace. 
+<br /><br />
+<b>Your ebook was published recently, which is hugely exciting! Can you tell us a little about it? </b>
+<br /><br />
+Thank you! The <u><a href="https://jijipage1.github.io" rel="external nofollow noopener noreferrer" target="_blank">ebook</a></u> is a memoir of the last decade of my life and a guide to self-discipline. 
+<br /><br />
+<b>What confidence tips will you share with the tall ladies? </b>
+<br /><br />
+I do believe that all people: tall, short, skinny or bootylicious, are so cool. So what I say is embrace it! Love yourself, and make the best out of it! 
+<br /><br />
+<b>How can tall women and girls embrace their height? </b>
+<br /><br />
 Embracing your tallness. Be proud of your height. There is purpose in each of our differences. We are meant to learn from these differences. Embrace all that makes you unique. It is what makes you, YOU. Don’t strive to be average; average is boring.
-
-
 </p>
                                
 
@@ -220,7 +275,7 @@ Embracing your tallness. Be proud of your height. There is purpose in each of ou
 
                     <div class="post-author d-flex my-5">
                         <div class="author-img">
-                            <img alt="author" src="images/author.jpg" class="avatar avatar-100 photo" width="100"   height="100">
+                            <img alt="author" src="images/author.jpg" class="avatar avatar-100 photo" width="100" height="100" title="Sally">
                         </div>
 
                         <div class="author-content pl-4">
@@ -259,7 +314,7 @@ Embracing your tallness. Be proud of your height. There is purpose in each of ou
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="post-block-wrapper mb-4 mb-lg-0">
                                     <a href="why-i-love-tetouan.html">
-                                        <img class="img-fluid" src="images/news/blog-001.png" alt="post-thumbnail" />
+                                        <img class="img-fluid" src="images/news/blog-001.png" alt="post-thumbnail" style="filter: drop-shadow(8px 8px 10px gray);"/>
                                     </a>
                                     <div class="post-content mt-3">
                                         <h5>
@@ -271,7 +326,7 @@ Embracing your tallness. Be proud of your height. There is purpose in each of ou
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="post-block-wrapper mb-4 mb-lg-0">
                                     <a href="a-walk-to-remember-in-bouanane.html">
-                                        <img class="img-fluid" src="images/news/blog-002.png" alt="post-thumbnail" />
+                                        <img class="img-fluid" src="images/news/blog-002.png" alt="post-thumbnail" style="filter: drop-shadow(8px 8px 10px gray);"/>
                                     </a>
                                     <div class="post-content mt-3">
                                         <h5>
@@ -283,7 +338,7 @@ Embracing your tallness. Be proud of your height. There is purpose in each of ou
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="post-block-wrapper">
                                     <a href="paris-is-always-a-good-idea.html">
-                                        <img class="img-fluid" src="images/news/blog-003.png" alt="post-thumbnail" />
+                                        <img class="img-fluid" src="images/news/blog-003.png" alt="post-thumbnail" style="filter: drop-shadow(8px 8px 10px gray);"/>
                                     </a>
                                     <div class="post-content mt-3">
                                         <h5>
@@ -333,8 +388,8 @@ Embracing your tallness. Be proud of your height. There is purpose in each of ou
 				<div class="col-lg-4 col-md-6">
 					<div class="widget footer-widget mb-5 mb-lg-0">
 						<h5 class="widget-title text-uppercase letter-spacing-2 mb-4">About me</h5>
-						<img src="images/about.png" alt="about" class="img-fluid">
-						<p class="mt-4">I recently discovered my passion for writing and fell in love… Salua &nbsp <a href="mailto:ji_3@outlook.com" target="_blank"><i style="font-size:18px;color:gray" class="fa">&#xf0e0;</i></a></p>
+						<img src="images/about.png" alt="about" title="Sally" class="img-fluid" style="filter: drop-shadow(8px 8px 10px gray);">
+						<p class="mt-4">I recently discovered my passion for writing and fell in love… Salua.&nbsp;<a href="mailto:ji_3@outlook.com" target="_blank" rel="external nofollow noopener noreferrer" title="Contact"><i style="color:darkgray" class="fa fa-envelope"></i></a></p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
@@ -399,7 +454,7 @@ Embracing your tallness. Be proud of your height. There is purpose in each of ou
 							<li class="list-inline-item"><a href="blog.html">Blog</a></li>
 							<li class="list-inline-item"><a href="about.html">About</a></li>
 							<li class="list-inline-item"><a href="contact.html">Contact</a></li>
-							<li class="list-inline-item"><a href="feed.xml" rel="external nofollow noopener noreferrer" target="_blank"><i style="font-size:14px;color:black" class="fa">&#xf09e;</i></a></li>
+							<li class="list-inline-item"><a href="feed.xml" rel="external nofollow noopener noreferrer" target="_blank" title="Rss feed"><i style="color:black" class="fa fa-rss"></i></a></li>
              
 						</ul>
 					</div>
@@ -526,7 +581,107 @@ $(document).ready(function() {
 });
 </script>
 
+<script>
 
+function textToSpeech()
+{
+   const speech = new SpeechSynthesisUtterance();
+    let voices = speechSynthesis.getVoices();
+  let convert = document.getElementById("text").innerHTML;
+
+    speech.text = convert;
+
+    speech.lang = 'en-US';
+   
+    speech.volume = 1;
+    speech.rate = 1;
+   
+  
+      
+    window.speechSynthesis.speak(speech);
+    speechSynthesis.speak(speech);
+}
+
+
+
+
+function stop()
+{
+    speechSynthesis.cancel();
+}
+
+speakBtn.addEventListener('click', textToSpeech);
+
+cancelBtn.addEventListener('click', stop);
+
+
+</script>
+
+
+<script>
+        
+const shareData = {
+  title: "Tall girl - Salua",
+  text: "Tall girl - Salua",
+   url: "https://salua3.github.io/tall-girl.html",
+};
+
+const shareBtn = document.getElementById("share-btn");
+
+shareBtn.addEventListener("click", async () => {
+
+  if (navigator.share) {
+
+    try {
+      await navigator.share(shareData);
+      console.log("Data shared successfully");
+    } catch (err) {
+
+      console.error("Error while sharing:", err);
+    }
+  } else {
+
+    console.log("Web Share API not supported");
+  }
+});
+    </script>
+
+
+
+
+<script>
+
+function myFunction() {
+   var element = document.body; 
+   element.classList.toggle("dark-mode");
+}
+
+</script>
+
+
+<style>
+.dark-mode { 
+background-color: black;
+    color: gray;
+       opacity: 80%;
+    h1, h2, h3, h4, h5, h6, p, a, div, input, span, header  {color: gray; }
+   color: rgb(128, 128, 128) !important;
+   -webkit-text-fill-color: rgb(128, 128, 128) !important;
+    }
+
+ @media (prefers-color-scheme: dark) {
+      body {
+        background-color: black;
+    color: gray;
+   opacity: 80%;
+   h1, h2, h3, h4, h5, h6, p, a, div, input, span, header  {color: gray; }
+   color: rgb(128, 128, 128) !important;
+  -webkit-text-fill-color: rgb(128, 128, 128) !important;
+    
+    }
+
+
+</style>
 
 </body>
 
