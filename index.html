@@ -75,41 +75,55 @@ html {  scroll-behavior: smooth;}
 
 <body data-bs-spy="scroll" data-bs-target="#header" tabindex="0">
 
-		<div id="header-wrap"  >
+		<div id="header-wrap">
+
 		<div class="top-content">
 			<div class="container-fluid">
-				<div class="row" > 
+				<div class="row">
 					<div class="col-md-6">
-						
-
-					</div>
-
-                                           <div class="col-md-6">
-						
-                                          <div class="social-links" style="float:right; ">
+						<div class="social-links">
 							<ul>
-
 								<li>
-					 <a href="#" onclick="myFunction()" title="Light/Dark Mode" ><i class="fa fa-moon-o" ></i></a> &nbsp;
-								</li>								
-								<li>
-					 <a href="#" onclick="window.print()" title="Save as pdf" ><i class="fa fa-bookmark-o" ></i></a> &nbsp;
+					 <a href="#" onclick="myFunction()" title="Light/Dark Mode" ><i class="fa fa-moon-o" ></i></a> 
 								</li>
-								<li>
-					<a href="#" onclick="window.print()" title="Print"><i class="fa fa-print" ></i></a> &nbsp;
+                                                                <li>
+					 <a href="#" onclick="window.print()" title="Save as pdf" ><i class="fa fa-bookmark-o" ></i></a> 
+								</li>
+                                                                 <li>
+					<a href="#" onclick="window.print()" title="Print"><i class="fa fa-print" ></i></a> 
 								</li>
                                                                    <li>
-					<a href="#" id="share-btn"  title="Share"><i class="fa fa-share-alt" ></i></a> &nbsp;
+					<a href="#" id="share-btn"  title="Share"><i class="fa fa-share-alt" ></i></a> 
 								</li>
-				            	</ul>
-						</div>
+							</ul>
+						</div><!--social-links-->
+					</div>
+					<div class="col-md-6">
+						<div class="right-element">
+							<a href="#" class="user-account for-buy"><i
+									class="icon icon-user"></i><span>Account</span></a>
+							<a href="#" class="cart for-buy"><i class="icon icon-clipboard"></i><span>Cart:(0
+									€)</span></a>
 
-						</div>
-                                     </div>
+							<div class="action-menu">
+
+								<div class="search-bar">
+									<a href="#" class="search-button search-toggle" data-selector="#header-wrap">
+										<i class="icon icon-search"></i>
+									</a>
+									<form role="search" method="get" class="search-box">
+										<input class="search-field text search-input" placeholder="Search"
+											type="search">
+									</form>
+								</div>
+							</div>
+
+						</div><!--top-right-->
+					</div>
 
 				</div>
 			</div>
-		</div> 
+		</div><!--top-content-->
 
 
 		<header id="header">
@@ -732,7 +746,7 @@ class="icon icon-ns-arrow-right"></i></a>  &nbsp; &nbsp;
 <img src="images/about.png" alt="about" class="img-fluid" style="filter: drop-shadow(8px 8px 10px gray);">
 <p style="position: absolute;  top: 50%;  left: 50%;  transform: translate(-50%, -50%);   text-align: center;  font-size: 38px;  color:white; text-shadow:2px 2px 4px #000000;" class="fa"><a href="#gallery-1" style="color:white;" title="View gallery"><i class="fa fa-play"></i></a></p></div>
 <small><p class="mt-4">Hi, my name is Salua. To purchase, please contact me.&nbsp;<a href="mailto:ji_3@outlook.com" target="_blank" rel="external nofollow noopener noreferrer" title="Contact"><i style="color:darkgray" class="fa fa-envelope"></i></a>&nbsp;&nbsp;
-<a href="#" title="Send message"><i style="color:darkgray" class="fa fa-telegram"></i></a> </p></small> 
+<a href="#footer" title="Send message"><i style="color:darkgray" class="fa fa-telegram"></i></a> </p></small> 
 			</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
@@ -1038,6 +1052,7 @@ body {
 </body>
 
 </html>
+
 
 
 
