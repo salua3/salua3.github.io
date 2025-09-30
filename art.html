@@ -77,41 +77,55 @@ html {  scroll-behavior: smooth;}
 
 <body data-bs-spy="scroll" data-bs-target="#header" tabindex="0">
 
-	<div id="header-wrap"  >
+	<div id="header-wrap">
+
 		<div class="top-content">
 			<div class="container-fluid">
-				<div class="row" > 
+				<div class="row">
 					<div class="col-md-6">
-						
-
-					</div>
-
-                                           <div class="col-md-6">
-						
-                                          <div class="social-links" style="float:right;">
+						<div class="social-links">
 							<ul>
 								<li>
-					 <a href="#" onclick="myFunction()" title="Light/Dark Mode" ><i class="fa fa-moon-o" ></i></a> &nbsp;
+					 <a href="#" onclick="myFunction()" title="Light/Dark Mode" ><i class="fa fa-moon-o" ></i></a> 
 								</li>
                                                                 <li>
-					 <a href="#" onclick="window.print()" title="Save as pdf" ><i class="fa fa-bookmark-o" ></i></a> &nbsp;
+					 <a href="#" onclick="window.print()" title="Save as pdf" ><i class="fa fa-bookmark-o" ></i></a> 
 								</li>
                                                                  <li>
-					<a href="#" onclick="window.print()" title="Print"><i class="fa fa-print" ></i></a> &nbsp;
+					<a href="#" onclick="window.print()" title="Print"><i class="fa fa-print" ></i></a> 
 								</li>
                                                                    <li>
-					<a href="#" id="share-btn"  title="Share"><i class="fa fa-share-alt" ></i></a> &nbsp;
+					<a href="#" id="share-btn"  title="Share"><i class="fa fa-share-alt" ></i></a> 
 								</li>
-
 							</ul>
-						</div>
+						</div><!--social-links-->
+					</div>
+					<div class="col-md-6">
+						<div class="right-element">
+							<a href="#" class="user-account for-buy"><i
+									class="icon icon-user"></i><span>Account</span></a>
+							<a href="#" class="cart for-buy"><i class="icon icon-clipboard"></i><span>Cart:(0
+									€)</span></a>
 
-						</div>
-                                     </div>
+							<div class="action-menu">
+
+								<div class="search-bar">
+									<a href="#" class="search-button search-toggle" data-selector="#header-wrap">
+										<i class="icon icon-search"></i>
+									</a>
+									<form role="search" method="get" class="search-box">
+										<input class="search-field text search-input" placeholder="Search"
+											type="search">
+									</form>
+								</div>
+							</div>
+
+						</div><!--top-right-->
+					</div>
 
 				</div>
 			</div>
-		</div> 
+		</div><!--top-content-->
 	
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
 
@@ -192,7 +206,7 @@ html {  scroll-behavior: smooth;}
 <a href="images/prod/design-09.png" data-fancybox="gallery" data-caption="9. &quot;Memory of a dream&quot; (42x34 cm) - Salua" title="9. Memory of a dream (42x34 cm) - Salua">9,</a>
 <a href="images/prod/design-10.png" data-fancybox="gallery" data-caption="10. &quot;Happy to hear critics&quot; (63x53 cm) - Salua" title="10. Happy to hear critics (63x53 cm) - Salua">10,</a>
 <a href="images/prod/design-11.png" data-fancybox="gallery" data-caption="11. &quot;Embracing the green&quot; (55x45 cm) - Salua" title="11. Embracing the green (55x45 cm) - Salua">11,</a>
-<a href="images/prod/design-12.png" data-fancybox="gallery" data-caption="12. &quot;The seventh heaven&quot; (52x43 cm) - Salua" title="12. The seventh heaven (52x43 cm) - Salua"12,</a>
+<a href="images/prod/design-12.png" data-fancybox="gallery" data-caption="12. &quot;The seventh heaven&quot; (52x43 cm) - Salua" title="12. The seventh heaven (52x43 cm) - Salua">12,</a>
 <a href="images/prod/design-13.png" data-fancybox="gallery" data-caption="13. &quot;Blue travel diary&quot; (42x34 cm) - Salua" title="13. Blue travel diary (42x34 cm) - Salua">13,</a>
 <a href="images/prod/design-14.png" data-fancybox="gallery" data-caption="14. &quot;Abstract No. III&quot; (52x42 cm) - Salua" title="14. Abstract No. III (52x42 cm) - Salua">14,</a>
 <a href="images/prod/design-15.png" data-fancybox="gallery" data-caption="15. &quot;Happy June&quot; (53x44 cm) - Salua" title="15. Happy June (53x44 cm) - Salua">15,</a>
@@ -767,7 +781,7 @@ function topFunction() {
 
 <!-- Cookies consent -->
     <div id="div-cookies" style="display: none; color: gray;" >
-<small>We use cookies on our website to provide you with the best possible user experience. By continuing to use our website or services, you agree to their use. <a hreflang="en" href="#" style="color: gray;"><u>More</u> </a>  &nbsp OK </small>
+<small>We use cookies on our website to provide you with the best possible user experience. By continuing to use our website or services, you agree to their use. <a hreflang="en" href="#" style="color: gray;"><u>More</u> </a>  &nbsp; OK </small>
 </div>
 
 <style>
@@ -943,6 +957,7 @@ body {
 </body>
 
 </html>
+
 
 
 
