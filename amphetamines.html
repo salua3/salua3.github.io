@@ -82,41 +82,56 @@ html {  scroll-behavior: smooth;}
 
 <body data-bs-spy="scroll" data-bs-target="#header" tabindex="0">
 
-	<div id="header-wrap"  >
+	<div id="header-wrap">
+
 		<div class="top-content">
 			<div class="container-fluid">
-				<div class="row" > 
+				<div class="row">
 					<div class="col-md-6">
-						
-
-					</div>
-
-                                           <div class="col-md-6">
-						
-                                          <div class="social-links" style="float:right;">
+						<div class="social-links">
 							<ul>
 								<li>
-					 <a href="#" onclick="myFunction()" title="Light/Dark Mode" ><i class="fa fa-moon-o" ></i></a> &nbsp;
+					 <a href="#" onclick="myFunction()" title="Light/Dark Mode" ><i class="fa fa-moon-o" ></i></a> 
 								</li>
                                                                 <li>
-					 <a href="#" onclick="window.print()" title="Save as pdf" ><i class="fa fa-bookmark-o" ></i></a> &nbsp;
+					 <a href="#" onclick="window.print()" title="Save as pdf" ><i class="fa fa-bookmark-o" ></i></a> 
 								</li>
                                                                  <li>
-					<a href="#" onclick="window.print()" title="Print"><i class="fa fa-print" ></i></a> &nbsp;
+					<a href="#" onclick="window.print()" title="Print"><i class="fa fa-print" ></i></a> 
 								</li>
                                                                    <li>
-					<a href="#" id="share-btn"  title="Share"><i class="fa fa-share-alt" ></i></a> &nbsp;
+					<a href="#" id="share-btn"  title="Share"><i class="fa fa-share-alt" ></i></a> 
 								</li>
-
 							</ul>
-						</div>
+						</div><!--social-links-->
+					</div>
+					<div class="col-md-6">
+						<div class="right-element">
+							<a href="#" class="user-account for-buy"><i
+									class="icon icon-user"></i><span>Account</span></a>
+							<a href="#" class="cart for-buy"><i class="icon icon-clipboard"></i><span>Cart:(0
+									€)</span></a>
 
-						</div>
-                                     </div>
+							<div class="action-menu">
+
+								<div class="search-bar">
+									<a href="#" class="search-button search-toggle" data-selector="#header-wrap">
+										<i class="icon icon-search"></i>
+									</a>
+									<form role="search" method="get" class="search-box">
+										<input class="search-field text search-input" placeholder="Search"
+											type="search">
+									</form>
+								</div>
+							</div>
+
+						</div><!--top-right-->
+					</div>
 
 				</div>
 			</div>
-		</div>
+		</div><!--top-content-->
+		
 
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
 
@@ -497,7 +512,7 @@ function topFunction() {
 
 <!-- Cookies consent -->
     <div id="div-cookies" style="display: none; color: gray;" >
-<small>We use cookies on our website to provide you with the best possible user experience. By continuing to use our website or services, you agree to their use. <a hreflang="en" href="#" style="color: gray;"><u>More</u> </a>  &nbsp OK </small>
+<small>We use cookies on our website to provide you with the best possible user experience. By continuing to use our website or services, you agree to their use. <a hreflang="en" href="#" style="color: gray;"><u>More</u> </a> &nbsp; OK </small>
 </div>
 
 <style>
@@ -669,6 +684,7 @@ body {
 </body>
 
 </html>
+
 
 
 
